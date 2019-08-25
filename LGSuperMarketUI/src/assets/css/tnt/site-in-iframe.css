@@ -1,0 +1,43 @@
+/*!v.2.42.0*/
+.ux.lct .logo {
+  display: none;
+}
+
+.ux.lct .masthead {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.ux.lct .page .icon-help-center {
+  width: 45px;
+  height: 45px;
+}
+
+@media (min-width: 600px) {
+  .ux.lct .page .icon-help-center {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.ux.lct .help::after {
+  top: 13px;
+  right: 38px;
+}
+
+@media (min-width: 600px) {
+  .ux.lct .help::after {
+    top: 50px;
+    right: 11px;
+  }
+}
+
+.ux.lct .header {
+  border: 0;
+}
+
+.ux.lct .header::after {
+  display: none;
+}
+
+/*# sourceMappingURL=site-in-iframe.css.map */

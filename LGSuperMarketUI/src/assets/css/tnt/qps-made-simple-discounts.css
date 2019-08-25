@@ -1,0 +1,298 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.qps-made-simple.ux .qps-opt, .qps-made-simple.ux.lct .qps-opt {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-discounts .collapsible-header,
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-features .collapsible-header,
+.qps-made-simple.ux #quote-summary-container .content-region-discounts .collapsible-header,
+.qps-made-simple.ux #quote-summary-container .content-region-features .collapsible-header, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-discounts .collapsible-header,
+.qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-features .collapsible-header,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-discounts .collapsible-header,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-features .collapsible-header {
+  border-top: solid 1px #C7C7C7;
+}
+
+@media (min-width: 725px) {
+  .qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-discounts .collapsible-header .icon-collapsible,
+  .qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-features .collapsible-header .icon-collapsible,
+  .qps-made-simple.ux #quote-summary-container .content-region-discounts .collapsible-header .icon-collapsible,
+  .qps-made-simple.ux #quote-summary-container .content-region-features .collapsible-header .icon-collapsible, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-discounts .collapsible-header .icon-collapsible,
+  .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-features .collapsible-header .icon-collapsible,
+  .qps-made-simple.ux.lct #quote-summary-container .content-region-discounts .collapsible-header .icon-collapsible,
+  .qps-made-simple.ux.lct #quote-summary-container .content-region-features .collapsible-header .icon-collapsible {
+    display: block;
+  }
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-discounts:last-child,
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-features:last-child,
+.qps-made-simple.ux #quote-summary-container .content-region-discounts:last-child,
+.qps-made-simple.ux #quote-summary-container .content-region-features:last-child, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-discounts:last-child,
+.qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-features:last-child,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-discounts:last-child,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-features:last-child {
+  margin-bottom: -20px;
+}
+
+@media (min-width: 600px) {
+  .qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-discounts:last-child,
+  .qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-features:last-child,
+  .qps-made-simple.ux #quote-summary-container .content-region-discounts:last-child,
+  .qps-made-simple.ux #quote-summary-container .content-region-features:last-child, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-discounts:last-child,
+  .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-features:last-child,
+  .qps-made-simple.ux.lct #quote-summary-container .content-region-discounts:last-child,
+  .qps-made-simple.ux.lct #quote-summary-container .content-region-features:last-child {
+    margin-bottom: -25px;
+  }
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .hero .align-to-page .quote,
+.qps-made-simple.ux #quote-summary-container .hero .align-to-page .quote, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .hero .align-to-page .quote,
+.qps-made-simple.ux.lct #quote-summary-container .hero .align-to-page .quote {
+  padding-bottom: 20px;
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .hero .align-to-page .quote .flex-item:nth-child(2),
+.qps-made-simple.ux #quote-summary-container .hero .align-to-page .quote .flex-item:nth-child(2), .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .hero .align-to-page .quote .flex-item:nth-child(2),
+.qps-made-simple.ux.lct #quote-summary-container .hero .align-to-page .quote .flex-item:nth-child(2) {
+  align-self: center;
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount,
+.qps-made-simple.ux #quote-summary-container .pg-mssg.icon-discount, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount,
+.qps-made-simple.ux.lct #quote-summary-container .pg-mssg.icon-discount {
+  margin: 0;
+  min-height: 12px;
+  display: table;
+  padding: 24px 0 24px 40px;
+}
+
+@media (min-width: 340px) {
+  .qps-made-simple.ux .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount,
+  .qps-made-simple.ux #quote-summary-container .pg-mssg.icon-discount, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount,
+  .qps-made-simple.ux.lct #quote-summary-container .pg-mssg.icon-discount {
+    padding: 24px 0 24px 50px;
+  }
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount::after,
+.qps-made-simple.ux #quote-summary-container .pg-mssg.icon-discount::after, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount::after,
+.qps-made-simple.ux.lct #quote-summary-container .pg-mssg.icon-discount::after {
+  border-top: 0 !important;
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount div,
+.qps-made-simple.ux #quote-summary-container .pg-mssg.icon-discount div, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount div,
+.qps-made-simple.ux.lct #quote-summary-container .pg-mssg.icon-discount div {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 25px;
+}
+
+@media (min-width: 30em) {
+  .qps-made-simple.ux .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount div,
+  .qps-made-simple.ux #quote-summary-container .pg-mssg.icon-discount div, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount div,
+  .qps-made-simple.ux.lct #quote-summary-container .pg-mssg.icon-discount div {
+    padding-right: 30px;
+  }
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount b,
+.qps-made-simple.ux #quote-summary-container .pg-mssg.icon-discount b, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount b,
+.qps-made-simple.ux.lct #quote-summary-container .pg-mssg.icon-discount b {
+  margin-right: .5em;
+  display: inline-block;
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount span,
+.qps-made-simple.ux #quote-summary-container .pg-mssg.icon-discount span, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .pg-mssg.icon-discount span,
+.qps-made-simple.ux.lct #quote-summary-container .pg-mssg.icon-discount span {
+  display: inline-block;
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-discounts.collapsible > .collapsible-content,
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-features.collapsible > .collapsible-content,
+.qps-made-simple.ux #quote-summary-container .content-region-discounts.collapsible > .collapsible-content,
+.qps-made-simple.ux #quote-summary-container .content-region-features.collapsible > .collapsible-content, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-discounts.collapsible > .collapsible-content,
+.qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-features.collapsible > .collapsible-content,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-discounts.collapsible > .collapsible-content,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-features.collapsible > .collapsible-content {
+  -webkit-transition: all 0.7s cubic-bezier(0, 1, 0.5, 1);
+  transition: all 0.7s cubic-bezier(0, 1, 0.5, 1);
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-discounts.collapsible-collapsed > .collapsible-content,
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-features.collapsible-collapsed > .collapsible-content,
+.qps-made-simple.ux #quote-summary-container .content-region-discounts.collapsible-collapsed > .collapsible-content,
+.qps-made-simple.ux #quote-summary-container .content-region-features.collapsible-collapsed > .collapsible-content, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-discounts.collapsible-collapsed > .collapsible-content,
+.qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-features.collapsible-collapsed > .collapsible-content,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-discounts.collapsible-collapsed > .collapsible-content,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-features.collapsible-collapsed > .collapsible-content {
+  max-height: 0;
+  opacity: .5;
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-discounts.collapsible-collapsed .icon-collapsible,
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-features.collapsible-collapsed .icon-collapsible,
+.qps-made-simple.ux #quote-summary-container .content-region-discounts.collapsible-collapsed .icon-collapsible,
+.qps-made-simple.ux #quote-summary-container .content-region-features.collapsible-collapsed .icon-collapsible, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-discounts.collapsible-collapsed .icon-collapsible,
+.qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-features.collapsible-collapsed .icon-collapsible,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-discounts.collapsible-collapsed .icon-collapsible,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-features.collapsible-collapsed .icon-collapsible {
+  transform: rotate(180deg) translateY(-50%) translateX(0);
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-discounts.collapsible-collapsed + .content-region,
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-features.collapsible-collapsed + .content-region,
+.qps-made-simple.ux #quote-summary-container .content-region-discounts.collapsible-collapsed + .content-region,
+.qps-made-simple.ux #quote-summary-container .content-region-features.collapsible-collapsed + .content-region, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-discounts.collapsible-collapsed + .content-region,
+.qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-features.collapsible-collapsed + .content-region,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-discounts.collapsible-collapsed + .content-region,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-features.collapsible-collapsed + .content-region {
+  border: 0;
+}
+
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-discounts .collapsible-header[aria-expanded="true"], .qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-discounts .collapsible-header:hover,
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-features .collapsible-header[aria-expanded="true"],
+.qps-made-simple.ux .QPS_SINGLE_PACKAGE .content-region-features .collapsible-header:hover,
+.qps-made-simple.ux #quote-summary-container .content-region-discounts .collapsible-header[aria-expanded="true"],
+.qps-made-simple.ux #quote-summary-container .content-region-discounts .collapsible-header:hover,
+.qps-made-simple.ux #quote-summary-container .content-region-features .collapsible-header[aria-expanded="true"],
+.qps-made-simple.ux #quote-summary-container .content-region-features .collapsible-header:hover, .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-discounts .collapsible-header[aria-expanded="true"], .qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-discounts .collapsible-header:hover,
+.qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-features .collapsible-header[aria-expanded="true"],
+.qps-made-simple.ux.lct .QPS_SINGLE_PACKAGE .content-region-features .collapsible-header:hover,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-discounts .collapsible-header[aria-expanded="true"],
+.qps-made-simple.ux.lct #quote-summary-container .content-region-discounts .collapsible-header:hover,
+.qps-made-simple.ux.lct #quote-summary-container .content-region-features .collapsible-header[aria-expanded="true"],
+.qps-made-simple.ux.lct #quote-summary-container .content-region-features .collapsible-header:hover {
+  color: black;
+}
+
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular), .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) {
+  padding: 16px 0 16px 10px;
+}
+
+@media (min-width: 340px) {
+  .qps-made-simple.ux .discount-summary:not(.icon-list-circular), .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) {
+    padding: 16px 0 16px 50px;
+  }
+}
+
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item-title, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item-title {
+  padding-right: 0 !important;
+  color: #0E751D;
+}
+
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item-title:hover, .qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item-title:focus, .qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item-title:visited, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item-title:hover, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item-title:focus, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item-title:visited {
+  color: #0E751D;
+}
+
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item-header, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item-header {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media (min-width: 37.5em) {
+  .qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item-header, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item-header {
+    float: none;
+    width: auto;
+  }
+}
+
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item-header + p, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item-header + p {
+  font-size: 0.75rem;
+  margin: 0 0 .8em;
+  color: #404040;
+}
+
+@media (min-width: 37.5em) {
+  .qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item-header + p, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item-header + p {
+    font-size: 0.875rem;
+    margin: 0 0 .5em;
+  }
+}
+
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item-content, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item-content {
+  margin: 5px 5px 5px 20px;
+  padding: 0;
+}
+
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item,
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .discount-item, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item,
+.qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .discount-item {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 0;
+}
+
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item:before,
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .discount-item:before, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item:before,
+.qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .discount-item:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2215px%22%20height%3D%2212px%22%20viewBox%3D%220%200%2015%2012%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%0A%20%20%20%20%3Cg%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20transform%3D%22translate%28-154.000000%2C%20-701.000000%29%22%20fill%3D%22%23008040%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M159.42999%2C709.038029%20L156.029493%2C705.489995%20C155.91349%2C705.368143%20155.7247%2C705.370533%20155.610971%2C705.489995%20L154.087003%2C707.100348%20C153.970999%2C707.2222%20153.970999%2C707.420508%20154.087003%2C707.542359%20C155.802035%2C709.331906%20157.514794%2C711.121453%20159.229827%2C712.908611%20C159.34583%2C713.030463%20159.53462%2C713.030463%20159.650624%2C712.908611%20L168.914985%2C703.131807%20C169.028714%2C703.009955%20169.028714%2C702.811648%20168.912711%2C702.689796%20L167.379644%2C701.091389%20C167.263641%2C700.969537%20167.074851%2C700.969537%20166.958847%2C701.091389%20L159.42999%2C709.038029%20Z%22%3E%3C/path%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+}
+
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item .discount-item-header,
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .discount-item .discount-item-header, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item .discount-item-header,
+.qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .discount-item .discount-item-header {
+  font-weight: 400;
+  margin: 0 0 4px;
+}
+
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item p,
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .discount-item p, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item p,
+.qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .discount-item p {
+  font-size: 0.75rem;
+  line-height: 1.8em;
+  margin: 0 0 22px;
+  color: #6A6A6A;
+}
+
+@media (min-width: 37.5em) {
+  .qps-made-simple.ux .discount-summary:not(.icon-list-circular) .feature-item p,
+  .qps-made-simple.ux .discount-summary:not(.icon-list-circular) .discount-item p, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .feature-item p,
+  .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .discount-item p {
+    font-size: 0.75rem;
+    margin: 0 0 22px;
+  }
+}
+
+.qps-made-simple.ux .discount-summary:not(.icon-list-circular) .collapsible-collapsed > .collapsible-content, .qps-made-simple.ux.lct .discount-summary:not(.icon-list-circular) .collapsible-collapsed > .collapsible-content {
+  margin: 0;
+}
+
+.qps-made-simple.ux .discount-summary.icon-list-circular, .qps-made-simple.ux.lct .discount-summary.icon-list-circular {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.qps-made-simple.ux .discount-summary.icon-list-circular > .feature-item, .qps-made-simple.ux.lct .discount-summary.icon-list-circular > .feature-item {
+  padding: 0;
+  border: 0;
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=qps-made-simple-discounts.css.map */

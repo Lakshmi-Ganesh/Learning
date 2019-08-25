@@ -1,0 +1,254 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+[class*='lm-Title'],
+[class*='lm-Text'] {
+  font-weight: 400;
+  max-width: 750px;
+}
+
+[class*='lm-TitleLevel1'] {
+  font-size: 2.1875rem;
+  line-height: 1.175em;
+}
+
+.lm-TitleLevel1--large {
+  font-size: 2.625rem;
+  line-height: 1.187em;
+  margin: 32px 0 48px;
+}
+
+[class*='lm-TitleLevel2'] {
+  font-size: 1.75rem;
+  line-height: 1.25em;
+}
+
+[class*='lm-TitleLevel3'] {
+  font-size: 1.3125rem;
+  line-height: 1.33em;
+}
+
+[class*='lm-TitleLevel4'] {
+  font-size: 1.125rem;
+  line-height: 1.33em;
+}
+
+[class*='lm-Text'] {
+  font-size: .875rem;
+  line-height: 1.4em;
+}
+
+[class*='lm-TextCaption'] {
+  font-size: 0.75rem;
+  line-height: 1.33em;
+}
+
+[class*='lm-TitleLevel0'],
+[class*='lm-TitleLevel1'],
+[class*='lm-TitleLevel2'] {
+  letter-spacing: -0.01em;
+}
+
+.lm-TitleLevel1--large,
+.lm-TitleLevel1--light,
+.lm-TitleLevel2--light {
+  font-weight: 300;
+}
+
+.lm-TitleLevel4--medium {
+  font-weight: 500;
+}
+
+.lm-TitleLevel2--bold,
+.lm-TitleLevel3--bold,
+.lm-Text--bold {
+  font-weight: 700;
+}
+
+@media (min-width: 384px) {
+  [class*='lm-TitleLevel1'] {
+    font-size: 2.5rem;
+    line-height: 1.175em;
+  }
+  .lm-TitleLevel1--large {
+    font-size: 3rem;
+    line-height: 1.187em;
+  }
+  [class*='lm-TitleLevel2'] {
+    font-size: 2rem;
+    line-height: 1.25em;
+  }
+  [class*='lm-TitleLevel3'] {
+    font-size: 1.5rem;
+    line-height: 1.33em;
+  }
+  [class*='lm-TitleLevel4'] {
+    font-size: 1.25rem;
+    line-height: 1.33em;
+  }
+  [class*='lm-Text'] {
+    font-size: 1rem;
+    line-height: 1.4em;
+  }
+  [class*='lm-TextCaption'] {
+    font-size: 0.75rem;
+    line-height: 1.33em;
+  }
+}
+
+[class*='lm-Title'],
+[class*='lm-Text'] {
+  font-weight: 400;
+  max-width: 750px;
+}
+
+[class*='lm-TitleLevel1'] {
+  font-size: 2.1875rem;
+  line-height: 1.175em;
+}
+
+.lm-TitleLevel1--large {
+  font-size: 2.625rem;
+  line-height: 1.187em;
+  margin: 32px 0 48px;
+}
+
+[class*='lm-TitleLevel2'] {
+  font-size: 1.75rem;
+  line-height: 1.25em;
+}
+
+[class*='lm-TitleLevel3'] {
+  font-size: 1.3125rem;
+  line-height: 1.33em;
+}
+
+[class*='lm-TitleLevel4'] {
+  font-size: 1.125rem;
+  line-height: 1.33em;
+}
+
+[class*='lm-Text'] {
+  font-size: .875rem;
+  line-height: 1.4em;
+}
+
+[class*='lm-TextCaption'] {
+  font-size: 0.75rem;
+  line-height: 1.33em;
+}
+
+[class*='lm-TitleLevel0'],
+[class*='lm-TitleLevel1'],
+[class*='lm-TitleLevel2'] {
+  letter-spacing: -0.01em;
+}
+
+.lm-TitleLevel1--large,
+.lm-TitleLevel1--light,
+.lm-TitleLevel2--light {
+  font-weight: 300;
+}
+
+.lm-TitleLevel4--medium {
+  font-weight: 500;
+}
+
+.lm-TitleLevel2--bold,
+.lm-TitleLevel3--bold,
+.lm-Text--bold {
+  font-weight: 700;
+}
+
+@media (min-width: 384px) {
+  [class*='lm-TitleLevel1'] {
+    font-size: 2.5rem;
+    line-height: 1.175em;
+  }
+  .lm-TitleLevel1--large {
+    font-size: 3rem;
+    line-height: 1.187em;
+  }
+  [class*='lm-TitleLevel2'] {
+    font-size: 2rem;
+    line-height: 1.25em;
+  }
+  [class*='lm-TitleLevel3'] {
+    font-size: 1.5rem;
+    line-height: 1.33em;
+  }
+  [class*='lm-TitleLevel4'] {
+    font-size: 1.25rem;
+    line-height: 1.33em;
+  }
+  [class*='lm-Text'] {
+    font-size: 1rem;
+    line-height: 1.4em;
+  }
+  [class*='lm-TextCaption'] {
+    font-size: 0.75rem;
+    line-height: 1.33em;
+  }
+}
+
+.qps-made-simple-renters.ux .content-region-additional-benefits .flex-region:not(.flex-region--callout) .flex-item,
+.qps-made-simple-renters.ux .content-region-belongings .flex-region:not(.flex-region--callout) .flex-item,
+.qps-made-simple-renters.ux .content-region-coverages-standard .flex-region:not(.flex-region--callout) .flex-item,
+.qps-made-simple-renters.ux .content-region-coverages-you .flex-region:not(.flex-region--callout) .flex-item, .qps-made-simple-renters.ux.lct .content-region-additional-benefits .flex-region:not(.flex-region--callout) .flex-item,
+.qps-made-simple-renters.ux.lct .content-region-belongings .flex-region:not(.flex-region--callout) .flex-item,
+.qps-made-simple-renters.ux.lct .content-region-coverages-standard .flex-region:not(.flex-region--callout) .flex-item,
+.qps-made-simple-renters.ux.lct .content-region-coverages-you .flex-region:not(.flex-region--callout) .flex-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: 725px) {
+  .qps-made-simple-renters.ux .content-region-additional-benefits #quote-summary-container .content-region-belongings.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux .content-region-additional-benefits #quote-summary-container .content-region-coverages-standard.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux .content-region-additional-benefits #quote-summary-container .content-region-coverages-you.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux .content-region-belongings #quote-summary-container .content-region-belongings.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux .content-region-belongings #quote-summary-container .content-region-coverages-standard.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux .content-region-belongings #quote-summary-container .content-region-coverages-you.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux .content-region-coverages-standard #quote-summary-container .content-region-belongings.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux .content-region-coverages-standard #quote-summary-container .content-region-coverages-standard.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux .content-region-coverages-standard #quote-summary-container .content-region-coverages-you.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux .content-region-coverages-you #quote-summary-container .content-region-belongings.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux .content-region-coverages-you #quote-summary-container .content-region-coverages-standard.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux .content-region-coverages-you #quote-summary-container .content-region-coverages-you.collapsible.collapsible-collapsed > .collapsible-content > *, .qps-made-simple-renters.ux.lct .content-region-additional-benefits #quote-summary-container .content-region-belongings.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux.lct .content-region-additional-benefits #quote-summary-container .content-region-coverages-standard.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux.lct .content-region-additional-benefits #quote-summary-container .content-region-coverages-you.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux.lct .content-region-belongings #quote-summary-container .content-region-belongings.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux.lct .content-region-belongings #quote-summary-container .content-region-coverages-standard.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux.lct .content-region-belongings #quote-summary-container .content-region-coverages-you.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux.lct .content-region-coverages-standard #quote-summary-container .content-region-belongings.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux.lct .content-region-coverages-standard #quote-summary-container .content-region-coverages-standard.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux.lct .content-region-coverages-standard #quote-summary-container .content-region-coverages-you.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux.lct .content-region-coverages-you #quote-summary-container .content-region-belongings.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux.lct .content-region-coverages-you #quote-summary-container .content-region-coverages-standard.collapsible.collapsible-collapsed > .collapsible-content > *,
+  .qps-made-simple-renters.ux.lct .content-region-coverages-you #quote-summary-container .content-region-coverages-you.collapsible.collapsible-collapsed > .collapsible-content > * {
+    transform: translateY(0px);
+  }
+}
+
+/*# sourceMappingURL=qps-made-simple-renters.css.map */

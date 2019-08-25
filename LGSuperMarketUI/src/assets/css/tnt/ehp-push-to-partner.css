@@ -1,0 +1,33 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.ehp-partner .show-all-link {
+  margin: 20px 0;
+  padding: 0;
+  font-size: initial;
+  border: 0;
+  background: transparent;
+}
+
+.ehp-partner .show-all-link + p {
+  margin: 30px 0 40px;
+  max-width: none;
+  color: #404040;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ehp-partner .show-all-link + p span {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=ehp-push-to-partner.css.map */

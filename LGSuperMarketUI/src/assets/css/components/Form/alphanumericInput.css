@@ -1,0 +1,168 @@
+.lm-FieldGroup-textarea {
+  resize: vertical;
+}
+
+.lm-FieldGroup-input, .lm-FieldGroup-textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 14px 10px 15px;
+  font-size: 16px;
+  /* 16px = magic font size number to prevent iOS text zoom */
+  border: solid 1px #C0BFC0;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  transition: all 0.1s ease-in-out;
+  line-height: 1.3;
+  background-color: transparent;
+  border-radius: 2px;
+  text-overflow: '';
+  width: 100%;
+  min-height: 50px;
+  color: rgba(64, 64, 64, 0);
+  cursor: pointer;
+  caret-color: #2A94DB;
+  outline: none;
+}
+
+.lm-FieldGroup-input::-webkit-input-placeholder, .lm-FieldGroup-textarea::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #767676;
+  opacity: 1;
+}
+
+.lm-FieldGroup-input::-moz-placeholder, .lm-FieldGroup-textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #767676;
+  opacity: 1;
+}
+
+.lm-FieldGroup-input:-ms-input-placeholder, .lm-FieldGroup-textarea:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #767676;
+  opacity: 1;
+}
+
+.lm-FieldGroup-input:-moz-placeholder, .lm-FieldGroup-textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #767676;
+  opacity: 1;
+}
+
+.is-populated .lm-FieldGroup-input,
+.is-auto-filled .lm-FieldGroup-input, .is-populated .lm-FieldGroup-textarea,
+.is-auto-filled .lm-FieldGroup-textarea {
+  color: #404040;
+  padding: 23px 50px 6px 10px;
+}
+
+.lm-FieldGroup-input:hover:not(:disabled):not(:focus), .lm-FieldGroup-textarea:hover:not(:disabled):not(:focus) {
+  border: solid 1px #1B75BB;
+}
+
+.lm-FieldGroup-input:hover + .lm-FieldGroup-actionButton .lm-ButtonClear, .lm-FieldGroup-input:focus + .lm-FieldGroup-actionButton .lm-ButtonClear, .lm-FieldGroup-textarea:hover + .lm-FieldGroup-actionButton .lm-ButtonClear, .lm-FieldGroup-textarea:focus + .lm-FieldGroup-actionButton .lm-ButtonClear {
+  display: inline;
+}
+
+.lm-FieldGroup-input:focus, .lm-FieldGroup-textarea:focus {
+  color: #404040;
+}
+
+.is-focused .lm-FieldGroup-input, .is-focused .lm-FieldGroup-textarea {
+  color: #404040;
+  border: solid 1px #2A94DB;
+  padding: 23px 50px 6px 10px;
+  box-shadow: 0 0 0 1px #2a94db;
+  border-radius: 0;
+}
+
+.is-disabled .lm-FieldGroup-input, .is-disabled .lm-FieldGroup-textarea {
+  border: solid 1px #E6E6E6;
+  cursor: default;
+}
+
+.is-populated .is-disabled .lm-FieldGroup-input, .is-populated .is-disabled .lm-FieldGroup-textarea {
+  color: #404040;
+}
+
+.lm-FieldGroup-input::-ms-expand, .lm-FieldGroup-textarea::-ms-expand {
+  display: none;
+}
+
+.is-error .lm-FieldGroup-input, .is-error .lm-FieldGroup-textarea {
+  border: solid 1px #E00720;
+  background-color: #FFF4F5;
+}
+
+.is-error .lm-FieldGroup-input:hover:not(:focus), .is-error .lm-FieldGroup-textarea:hover:not(:focus) {
+  border: solid 1px #af0519;
+}
+
+.is-error .lm-FieldGroup-input:focus, .is-error .lm-FieldGroup-textarea:focus {
+  box-shadow: 0 0 0 1px #e00720;
+  border-radius: 0;
+}
+
+.is-alert .lm-FieldGroup-input, .is-alert .lm-FieldGroup-textarea {
+  border: solid 1px #A36120;
+  background-color: #fef0e5;
+}
+
+.is-alert .lm-FieldGroup-input:hover:not(:focus), .is-alert .lm-FieldGroup-textarea:hover:not(:focus) {
+  border: solid 1px #784818;
+}
+
+.is-alert .lm-FieldGroup-input:focus, .is-alert .lm-FieldGroup-textarea:focus {
+  box-shadow: 0 0 0 1px  #A36120;
+  border-radius: 0;
+}
+
+.is-positive .lm-FieldGroup-input, .is-positive .lm-FieldGroup-textarea {
+  border: solid 1px #0E751D;
+  background-color: #e1eee3;
+}
+
+.is-positive .lm-FieldGroup-input:hover:not(:focus), .is-positive .lm-FieldGroup-textarea:hover:not(:focus) {
+  border: solid 1px #094712;
+}
+
+.is-positive .lm-FieldGroup-input:focus, .is-positive .lm-FieldGroup-textarea:focus {
+  box-shadow: 0 0 0 1px #0e751d;
+  border-radius: 0;
+}
+
+.is-info .lm-FieldGroup-input, .is-info .lm-FieldGroup-textarea {
+  border: solid 1px #0E66A8;
+  background-color: #e7f0f6;
+}
+
+.is-info .lm-FieldGroup-input:hover:not(:focus), .is-info .lm-FieldGroup-textarea:hover:not(:focus) {
+  border: solid 1px #0a4979;
+}
+
+.is-info .lm-FieldGroup-input:focus, .is-info .lm-FieldGroup-textarea:focus {
+  box-shadow: 0 0 0 1px #0E66A8;
+  border-radius: 0;
+}
+
+.lm-FieldGroup .lm-Icon {
+  display: block;
+}
+
+.lm-FieldGroup-actionButton {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+}
+
+.lm-FieldGroup-actionButton .lm-ButtonClear {
+  display: none;
+}
+
+.lm-FieldGroup-actionButton .lm-ButtonClear:hover, .lm-FieldGroup-actionButton .lm-ButtonClear:focus {
+  display: inline;
+}
+
+/*# sourceMappingURL=alphanumericInput.css.map */

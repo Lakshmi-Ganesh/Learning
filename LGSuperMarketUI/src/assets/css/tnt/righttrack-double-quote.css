@@ -1,0 +1,175 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+video {
+  width: 100%;
+  height: auto;
+}
+
+.group-3b > .group-section-a, .group-3b > .group-section-b, .group-3b > .group-section-c {
+  width: 50%;
+}
+
+.price-ladder {
+  width: 100%;
+  margin: -15px 0 0;
+}
+
+.price-ladder .qps-cov-type {
+  width: 1250px;
+  margin-left: -625px;
+}
+
+.price-ladder .qps-cov-amt {
+  text-align: left;
+  padding-left: 0;
+  margin-left: 1em;
+  height: auto;
+  display: inline-block;
+}
+
+.price-ladder .qps-cov-amt li {
+  margin-bottom: .5em;
+}
+
+.price-ladder .qps-cov-amt + p {
+  padding: 0;
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.price-ladder .qps-coverage-three-limits .qps-cov-amt {
+  display: block;
+}
+
+.price-ladder .qps-opt {
+  padding: .3em 0 .5em;
+}
+
+.price-ladder .qps-opt + .qps-coverage {
+  margin-top: .5em;
+}
+
+.price-ladder .qps-opt-title {
+  display: flex;
+  align-items: center;
+}
+
+.price-ladder .qps-opt-title span {
+  display: block;
+  margin: 0 auto;
+  font: inherit;
+}
+
+.price-ladder .qps-opt-price {
+  margin-bottom: .25em;
+}
+
+.double-quote .smlprint {
+  color: #6A6A6A;
+  font-size: 0.75em;
+  margin-top: 5px;
+}
+
+.double-quote .pg-included {
+  text-align: center;
+  margin-top: 20px;
+  padding: .5em 10px;
+  border: 1px solid #bdbdbd;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.double-quote .pg-included .pg-subtitle {
+  margin: 0 0 10px;
+  font-size: 0.875rem;
+}
+
+.double-quote .pg-included b {
+  display: block;
+  margin-bottom: .5em;
+}
+
+.double-quote .pg-included p {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.double-quote .pg-included a {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.double-quote .pg-included .count {
+  background: #f1f1f2;
+  color: #396791;
+  height: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 .5em;
+  margin-top: -2px;
+}
+
+@media (min-width: 30em) {
+  .price-ladder {
+    margin: -15px 0 0;
+  }
+  .double-quote .pg-subtitle {
+    margin-right: 5px;
+    margin-bottom: 0;
+  }
+  .double-quote .pg-included p,
+  .double-quote .pg-subtitle {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 41.75em) {
+  .double-quote .pg-included {
+    padding: .5em 15px;
+  }
+  .view-packages-bottom {
+    display: none;
+  }
+  .view-packages-top {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -20px;
+  }
+  .customer-service:not(.hidden) + .cart .view-packages-top {
+    top: 20px;
+  }
+}
+
+.ux .price-ladder .qps-cov-type {
+  width: 2016px;
+  margin-left: -1008px;
+}
+
+.ux .double-quote .smlprint {
+  font-size: 12px;
+}
+
+@media (min-width: 600px) {
+  .ux .double-quote .smlprint {
+    font-size: 0.75em;
+  }
+}
+
+/*# sourceMappingURL=righttrack-double-quote.css.map */

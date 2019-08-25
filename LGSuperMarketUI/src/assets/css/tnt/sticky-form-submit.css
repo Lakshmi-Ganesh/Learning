@@ -1,0 +1,56 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.sticky.form-submit {
+  position: fixed;
+  margin: 0;
+  padding: 20px 15px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 5px solid #F7B30A !important;
+  box-shadow: 1px 1px 8px rgba(102, 102, 102, 0.3);
+  overflow: hidden;
+  z-index: 99;
+}
+
+@media (min-width: 30em) {
+  .sticky.form-submit {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .sticky.form-submit {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 50em) {
+  .sticky.form-submit {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .sticky.form-submit {
+    padding-left: calc( 0.5 * 100vw - 340px);
+    padding-right: calc( 0.5 * 100vw - 340px);
+  }
+}
+
+/*# sourceMappingURL=sticky-form-submit.css.map */

@@ -1,0 +1,38 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.icon-list-check {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.icon-list-check li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+}
+
+.icon-list-check li:before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: contain;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2022.0.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2014%2013.4%22%20style%3D%22enable-background%3Anew%200%200%2014%2013.4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text/css%22%3Ecircle%2C%20ellipse%2C%20line%2C%20path%2C%20polygon%2C%20polyline%2C%20rect%2C%20text%20%7B%20fill%3A%20%235381AC%20%21important%3B%20%7D%3C/style%3E%0A%3Cstyle%20type%3D%22text/css%22%3E%0A%09.st0%7Bfill%3A%23FFFFFF%3B%7D%0A%3C/style%3E%0A%3Cpolygon%20class%3D%22st0%22%20points%3D%2211.5%2C0%205.5%2C8.8%202.1%2C5.4%200%2C7.5%206.1%2C13.4%2014%2C1.7%20%22/%3E%0A%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=bind-start-messaging.css.map */

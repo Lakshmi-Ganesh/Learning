@@ -1,0 +1,78 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.quote .quote-group .quote-summary-total {
+  margin-right: 40px;
+  padding-bottom: 6.6666666667px;
+  width: auto;
+  max-width: 200px;
+}
+
+.quote-group .quote-summary-total + .quote-summary-total .qps-opt-price, .quote-group .quote-summary-total + .quote-summary-total .quote-summary-total-title {
+  color: #6A6A6A;
+}
+
+@media (min-width: 450px) {
+  .quote-group {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 450px) {
+  .quote .quote-summary-total {
+    float: left;
+    text-align: left;
+    padding: 0;
+    display: inline-block;
+    margin-right: 40px;
+    width: auto;
+    max-width: 300px;
+  }
+}
+
+.qps-opt-detail {
+  clear: left;
+}
+
+.qps-opt-detail.mssg-positive {
+  font-weight: bold;
+  letter-spacing: normal;
+  font-size: 0.8125rem;
+}
+
+.qps-opt-detail .pg-mssg[class*="icon-"] {
+  padding-left: 40px;
+  height: auto;
+  background-size: 30px;
+  margin: 0;
+}
+
+.qps-opt-price + .qps-opt-detail {
+  margin: 10px 0 0;
+}
+
+.QPS_CQ .quote .quote-summary-total {
+  width: 100%;
+}
+
+@media (min-width: 450px) {
+  .QPS_CQ .quote .quote-summary-total {
+    width: 60%;
+    max-width: none;
+  }
+}
+
+.ux .qps-opt-detail .pg-mssg p {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=online-purchase-discount.css.map */

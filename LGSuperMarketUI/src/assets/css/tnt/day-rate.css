@@ -1,0 +1,64 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+/*.quote .quote-summary-total {
+  width: 62%;
+}
+.quote .quote-summary-mssg {
+  width: 38%;
+}*/
+/*
+.collapsible .quote {
+  box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.25);
+}
+*/
+.qps-only {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+.qps-opt-price b sup {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 2em;
+}
+
+.quote .quote-summary-total-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+.day-rate-extreme .quote-summary-total-title {
+  text-transform: none;
+  font-weight: bold;
+  letter-spacing: normal;
+}
+
+.day-rate-extreme.quote .quote-actions .btn-primary {
+  font-weight: normal;
+}
+
+.day-rate-extreme.quote .quote-summary-total {
+  width: auto;
+}
+
+
+@media (min-width: 450px) {
+  .day-rate-extreme.quote .quote-actions .btn-primary {
+    width: 200px;
+  }
+}
+
+/*# sourceMappingURL=day-rate.css.map */

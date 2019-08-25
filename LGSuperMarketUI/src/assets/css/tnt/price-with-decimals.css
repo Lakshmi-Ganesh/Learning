@@ -1,0 +1,35 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+@media (min-width: 35em) {
+  .price-with-decimals #payment-container .rate-change-compare {
+    left: 67%;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .price-with-decimals #payment-container .rate-change-compare {
+    left: 62%;
+  }
+}
+
+.price-with-decimals #payment-container .pay-frequency-options .opt i:nth-child(2) {
+  margin-left: 3px;
+}
+
+@media (min-width: 37.5em) {
+  .price-with-decimals #payment-container .pay-frequency-options .opt i {
+    width: 145px;
+  }
+}
+
+/*# sourceMappingURL=price-with-decimals.css.map */

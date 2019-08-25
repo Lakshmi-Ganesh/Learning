@@ -1,0 +1,52 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.AddDrivers .resource-list.hidden {
+  display: none;
+}
+
+.DriverInfo .resource-header,
+.AddDrivers .resource-header {
+  border-top: 0;
+}
+
+.DriverInfo .resource-title,
+.AddDrivers .resource-title {
+  font-size: 1.5rem;
+  line-height: 1.33em;
+}
+
+.DriverInfo .resource-subtitle,
+.AddDrivers .resource-subtitle {
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1.2em;
+}
+
+.DriverInfo .resource-details,
+.AddDrivers .resource-details {
+  font-weight: normal;
+  font-size: inherit;
+  color: inherit;
+}
+
+.DriverInfo .resource-details-you,
+.AddDrivers .resource-details-you {
+  font-weight: normal;
+}
+
+.DriverInfo .resource-details-you::before,
+.AddDrivers .resource-details-you::before {
+  content: " ";
+}
+
+/*# sourceMappingURL=driver-info-restructure.css.map */

@@ -1,0 +1,106 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.show-all-link.hidden,
+.additional-coverage-items.hidden {
+  display: none;
+}
+
+.cart.tabs .pg-included {
+  margin-bottom: 20px;
+}
+
+.cart.tabs .pg-subtitle:not(.cart-subtitle) {
+  padding: 10px 0;
+  margin: 0;
+  border-top: 4px solid #F7B30A;
+  background-image: linear-gradient(to top, #fff, #fbfbfb);
+  /* Chrome 26, Firefox 16+, IE 10+, Opera */
+}
+
+.resource-header.coverage-header {
+  border-top: 1px solid #bdbdbd;
+}
+
+.pg-subtitle + .resource-header.coverage-header {
+  margin-top: 0;
+}
+
+.coverages {
+  border-top: 1px solid #bdbdbd;
+  border-bottom: 0;
+}
+
+.coverage-item {
+  border-bottom: 1px dotted #d9d9d9;
+}
+
+.show-all-link {
+  position: relative;
+  border-top: 1px dotted #d9d9d9;
+  border-bottom: 1px solid #bdbdbd;
+  background-image: linear-gradient(to top, #fff, #fbfbfb);
+  /* Chrome 26, Firefox 16+, IE 10+, Opera */
+  padding: 10px 0;
+  margin: 0 0 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.show-all-link a {
+  cursor: pointer;
+}
+
+.alternative-borders .coverage-item {
+  border-top: 1px dotted #d9d9d9;
+  /* Changes normal behavior to move borders to top */
+  border-bottom: 0;
+  /* Changes normal behavior to move borders to top */
+}
+
+.alternative-borders .coverage-item:first-child {
+  border-top: 0;
+  /* Changes normal behavior to move borders to top */
+}
+
+.alternative-borders .show-all-link {
+  position: relative;
+  border-top: 1px dotted #d9d9d9;
+  /* Changes normal behavior to move borders to top */
+  border-bottom: 1px solid #bdbdbd;
+  background-image: linear-gradient(to top, #fff, #fbfbfb);
+  /* Chrome 26, Firefox 16+, IE 10+, Opera */
+  padding: 10px 0;
+  margin: 0 0 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.alternative-borders .show-all-link a {
+  cursor: pointer;
+}
+
+.additional-coverage-items .coverage-item:last-child {
+  margin: 0 0 20px;
+}
+
+@media (min-width: 352px) {
+  .resource-actions {
+    top: 0;
+  }
+}
+
+/*# sourceMappingURL=qps-collapsed.css.map */

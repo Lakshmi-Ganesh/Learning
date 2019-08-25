@@ -1,0 +1,37 @@
+/*!v.2.42.0*/
+/* -------------------------
+   This css file was originally created by NBX, NOT Area 51
+   It has been imported in to the PL solely to address a bug in the UX skin
+------------------------- */
+#paymentMethod-payment-0 div.radio.btn.btn-sml > label > span > img {
+  padding-top: 4px;
+  margin-bottom: -5px;
+}
+
+#payment-frequency-apple-0,
+#payment-frequency-paypal-0,
+#payment-frequency-android-0,
+#payment-frequency-chasepay-0,
+#payment-frequency-apple-0:after,
+#payment-frequency-paypal-0:after,
+#payment-frequency-android-0:after,
+#payment-frequency-chasepay-0:after {
+  border: hidden;
+  background-image: none;
+}
+
+@media (max-width: 450px) {
+  #PM01-0 div.check-radio-set.inline.button {
+    width: 240px;
+    margin: auto;
+  }
+  #PM01-0 div.radio.btn.btn-sml {
+    width: 110px;
+  }
+}
+
+.ux #paymentMethod-payment-0 div.radio.btn.btn-sml > label > span > img {
+  padding-top: 0;
+}
+
+/*# sourceMappingURL=alt-payment.css.map */

@@ -1,0 +1,970 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.donut-chart {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.donut-chart .quad {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.donut-chart .chart-center {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.donut-chart .chart-center span {
+  display: block;
+  text-align: center;
+}
+
+@keyframes chart94 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(338.4deg);
+  }
+}
+
+@keyframes chartRotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes chartRotate3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes chartRotate4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes chartRotate5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes chartCover {
+  0%, 90% {
+    opacity: 1;
+  }
+  91%, 100% {
+    opacity: 0;
+  }
+}
+
+.donut-chart.chart94 {
+  width: 130px;
+  height: 130px;
+  background: #bdbdbd;
+}
+
+.donut-chart.chart94 .quad {
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  border-radius: 100% 0 0 0;
+  display: none;
+}
+
+.donut-chart.chart94 .quad.one {
+  transform: rotate(338.4deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chart94 1s linear;
+  display: block;
+}
+
+.donut-chart.chart94 .quad.two {
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chartRotate2 1s linear;
+  display: block;
+  animation: chartRotate5 0.5s linear;
+}
+
+.donut-chart.chart94 .quad.three {
+  transform: rotate(180deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chartRotate3 1s linear;
+  display: block;
+}
+
+.donut-chart.chart94 .quad.four {
+  transform: rotate(270deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chartRotate4 1s linear;
+  display: block;
+}
+
+.donut-chart.chart94 .quad.top {
+  display: block;
+  background: #bdbdbd;
+  opacity: 0;
+  animation: chartCover 0.01s linear 0.8333333333s both;
+}
+
+.donut-chart.chart94 .chart-center {
+  top: 10px;
+  left: 10px;
+  width: 110px;
+  height: 110px;
+  background: #fff;
+}
+
+.donut-chart.chart94 .chart-center:after {
+  display: inline-block;
+  width: 100%;
+  font-size: 43.3333333333px;
+  color: #002663;
+  text-align: center;
+  line-height: 110px;
+  content: "94%";
+}
+
+@keyframes chart93 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(334.8deg);
+  }
+}
+
+@keyframes chartRotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes chartRotate3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes chartRotate4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes chartRotate5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes chartCover {
+  0%, 90% {
+    opacity: 1;
+  }
+  91%, 100% {
+    opacity: 0;
+  }
+}
+
+.donut-chart.chart93 {
+  width: 130px;
+  height: 130px;
+  background: #bdbdbd;
+}
+
+.donut-chart.chart93 .quad {
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  border-radius: 100% 0 0 0;
+  display: none;
+}
+
+.donut-chart.chart93 .quad.one {
+  transform: rotate(334.8deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chart93 1s linear;
+  display: block;
+}
+
+.donut-chart.chart93 .quad.two {
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chartRotate2 1s linear;
+  display: block;
+  animation: chartRotate5 0.5s linear;
+}
+
+.donut-chart.chart93 .quad.three {
+  transform: rotate(180deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chartRotate3 1s linear;
+  display: block;
+}
+
+.donut-chart.chart93 .quad.four {
+  transform: rotate(270deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chartRotate4 1s linear;
+  display: block;
+}
+
+.donut-chart.chart93 .quad.top {
+  display: block;
+  background: #bdbdbd;
+  opacity: 0;
+  animation: chartCover 0.01s linear 0.8333333333s both;
+}
+
+.donut-chart.chart93 .chart-center {
+  top: 10px;
+  left: 10px;
+  width: 110px;
+  height: 110px;
+  background: #fff;
+}
+
+.donut-chart.chart93 .chart-center:after {
+  display: inline-block;
+  width: 100%;
+  font-size: 43.3333333333px;
+  color: #002663;
+  text-align: center;
+  line-height: 110px;
+  content: "93%";
+}
+
+/* -------------------------
+     Rotating slides with charts
+  ------------------------- */
+.loading-mssg-rotate-group.loading-mssg {
+  max-width: 360px;
+}
+
+@media (min-width: 600px) {
+  .loading-mssg-rotate-group.loading-mssg {
+    max-width: 552px;
+  }
+}
+
+.loading-mssg-rotate-group .progress {
+  margin: 0 1em 2em;
+}
+
+.loading-mssg-group {
+  position: relative;
+  height: 260px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .loading-mssg-group {
+    height: 320px;
+  }
+}
+
+.loading-mssg-group p {
+  margin: 1.5em 1em;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #002663;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .loading-mssg-group p {
+    font-size: 1.375rem;
+  }
+}
+
+.loading-mssg-group p span {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.loading-mssg-group img, .loading-mssg-group svg {
+  width: auto;
+  max-height: 120px;
+}
+
+@media (min-width: 600px) {
+  .loading-mssg-group img, .loading-mssg-group svg {
+    max-height: 130px;
+  }
+}
+
+.loading-mssg-group .chart {
+  max-width: 130px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.loading-mssg-group .chart h5 {
+  position: absolute;
+  left: 0;
+  font-weight: normal;
+  font-size: 43px;
+  line-height: 0;
+  margin: 60px 25px;
+}
+
+@media (min-width: 600px) {
+  .loading-mssg-group .chart h5 {
+    margin-top: 65px;
+  }
+}
+
+.loading-mssg-group .chart img {
+  height: 130px;
+}
+
+.loading-mssg-group-item {
+  position: absolute;
+  z-index: 9;
+  max-width: 360px;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 5.5s;
+  animation-name: rotateDown_slide;
+  animation-timing-function: ease;
+}
+
+@media (min-width: 600px) {
+  .loading-mssg-group-item {
+    max-width: 552px;
+  }
+}
+
+.loading-mssg-group-item:nth-child(1) {
+  animation-delay: 0s;
+  /* -------------------------
+         Chart svg animations
+      ------------------------- */
+}
+
+.loading-mssg-group-item:nth-child(1):not(:last-child) {
+  animation-name: rotateUp_slide;
+  animation-delay: 0s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 {
+  overflow: visible;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 g path {
+  transform-origin: 50% 50%;
+  animation-name: FadeIn, ScaleIn;
+  animation-duration: 0.15s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.53, 0.14, 0.83, 0.67);
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 g:nth-child(1) path {
+  animation-delay: 0s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 g:nth-child(2) path {
+  animation-delay: 0.15s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 g:nth-child(3) path {
+  animation-delay: 0.3s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 g:nth-child(4) path {
+  animation-delay: 0.45s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 g:nth-child(5) path {
+  animation-delay: 0.6s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 g:nth-child(6) path {
+  animation-delay: 0.75s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 g:nth-child(7) path {
+  animation-delay: 0.9s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 g:nth-child(8) path {
+  animation-delay: 1.05s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 g:nth-child(9) path {
+  animation-delay: 1.2s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 g:nth-child(10) path {
+  animation-delay: 1.35s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-9in10 g:nth-child(10) path {
+  animation-name: FadeIn;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-map {
+  overflow: visible;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-map g polygon {
+  transform-origin: 50% 50%;
+  animation-name: FadeIn, ScaleIn;
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.53, 0.14, 0.83, 0.67);
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-map g polygon:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-map g polygon:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-map g polygon:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-map g polygon:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-map g polygon:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-map g polygon:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-map g polygon:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-map g polygon:nth-child(8) {
+  animation-delay: 1.75s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-map g polygon:nth-child(9) {
+  animation-delay: 2s;
+}
+
+.loading-mssg-group-item:nth-child(1) #chart-map g polygon:nth-child(10) {
+  animation-delay: 2.25s;
+}
+
+.loading-mssg-group-item:nth-child(1) .donut-chart .quad.one, .loading-mssg-group-item:nth-child(1) .donut-chart .quad.two, .loading-mssg-group-item:nth-child(1) .donut-chart .quad.three, .loading-mssg-group-item:nth-child(1) .donut-chart .quad.four {
+  animation-delay: 0s;
+}
+
+.loading-mssg-group-item:nth-child(1) .donut-chart .quad.top {
+  animation-delay: 0.5s;
+}
+
+.loading-mssg-group-item:nth-child(2) {
+  animation-delay: 5.6s;
+  /* -------------------------
+         Chart svg animations
+      ------------------------- */
+}
+
+.loading-mssg-group-item:nth-child(2):not(:last-child) {
+  animation-name: rotateUp_slide;
+  animation-delay: 5.6s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 {
+  overflow: visible;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 g path {
+  transform-origin: 50% 50%;
+  animation-name: FadeIn, ScaleIn;
+  animation-duration: 0.15s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.53, 0.14, 0.83, 0.67);
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 g:nth-child(1) path {
+  animation-delay: 5.6s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 g:nth-child(2) path {
+  animation-delay: 5.75s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 g:nth-child(3) path {
+  animation-delay: 5.9s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 g:nth-child(4) path {
+  animation-delay: 6.05s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 g:nth-child(5) path {
+  animation-delay: 6.2s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 g:nth-child(6) path {
+  animation-delay: 6.35s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 g:nth-child(7) path {
+  animation-delay: 6.5s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 g:nth-child(8) path {
+  animation-delay: 6.65s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 g:nth-child(9) path {
+  animation-delay: 6.8s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 g:nth-child(10) path {
+  animation-delay: 6.95s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-9in10 g:nth-child(10) path {
+  animation-name: FadeIn;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-map {
+  overflow: visible;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-map g polygon {
+  transform-origin: 50% 50%;
+  animation-name: FadeIn, ScaleIn;
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.53, 0.14, 0.83, 0.67);
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-map g polygon:nth-child(1) {
+  animation-delay: 5.6s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-map g polygon:nth-child(2) {
+  animation-delay: 5.85s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-map g polygon:nth-child(3) {
+  animation-delay: 6.1s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-map g polygon:nth-child(4) {
+  animation-delay: 6.35s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-map g polygon:nth-child(5) {
+  animation-delay: 6.6s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-map g polygon:nth-child(6) {
+  animation-delay: 6.85s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-map g polygon:nth-child(7) {
+  animation-delay: 7.1s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-map g polygon:nth-child(8) {
+  animation-delay: 7.35s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-map g polygon:nth-child(9) {
+  animation-delay: 7.6s;
+}
+
+.loading-mssg-group-item:nth-child(2) #chart-map g polygon:nth-child(10) {
+  animation-delay: 7.85s;
+}
+
+.loading-mssg-group-item:nth-child(2) .donut-chart .quad.one, .loading-mssg-group-item:nth-child(2) .donut-chart .quad.two, .loading-mssg-group-item:nth-child(2) .donut-chart .quad.three, .loading-mssg-group-item:nth-child(2) .donut-chart .quad.four {
+  animation-delay: 5.6s;
+}
+
+.loading-mssg-group-item:nth-child(2) .donut-chart .quad.top {
+  animation-delay: 6.1s;
+}
+
+.loading-mssg-group-item:nth-child(3) {
+  animation-delay: 11.2s;
+  /* -------------------------
+         Chart svg animations
+      ------------------------- */
+}
+
+.loading-mssg-group-item:nth-child(3):not(:last-child) {
+  animation-name: rotateUp_slide;
+  animation-delay: 11.2s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 {
+  overflow: visible;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 g path {
+  transform-origin: 50% 50%;
+  animation-name: FadeIn, ScaleIn;
+  animation-duration: 0.15s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.53, 0.14, 0.83, 0.67);
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 g:nth-child(1) path {
+  animation-delay: 11.2s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 g:nth-child(2) path {
+  animation-delay: 11.35s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 g:nth-child(3) path {
+  animation-delay: 11.5s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 g:nth-child(4) path {
+  animation-delay: 11.65s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 g:nth-child(5) path {
+  animation-delay: 11.8s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 g:nth-child(6) path {
+  animation-delay: 11.95s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 g:nth-child(7) path {
+  animation-delay: 12.1s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 g:nth-child(8) path {
+  animation-delay: 12.25s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 g:nth-child(9) path {
+  animation-delay: 12.4s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 g:nth-child(10) path {
+  animation-delay: 12.55s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-9in10 g:nth-child(10) path {
+  animation-name: FadeIn;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-map {
+  overflow: visible;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-map g polygon {
+  transform-origin: 50% 50%;
+  animation-name: FadeIn, ScaleIn;
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.53, 0.14, 0.83, 0.67);
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-map g polygon:nth-child(1) {
+  animation-delay: 11.2s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-map g polygon:nth-child(2) {
+  animation-delay: 11.45s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-map g polygon:nth-child(3) {
+  animation-delay: 11.7s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-map g polygon:nth-child(4) {
+  animation-delay: 11.95s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-map g polygon:nth-child(5) {
+  animation-delay: 12.2s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-map g polygon:nth-child(6) {
+  animation-delay: 12.45s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-map g polygon:nth-child(7) {
+  animation-delay: 12.7s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-map g polygon:nth-child(8) {
+  animation-delay: 12.95s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-map g polygon:nth-child(9) {
+  animation-delay: 13.2s;
+}
+
+.loading-mssg-group-item:nth-child(3) #chart-map g polygon:nth-child(10) {
+  animation-delay: 13.45s;
+}
+
+.loading-mssg-group-item:nth-child(3) .donut-chart .quad.one, .loading-mssg-group-item:nth-child(3) .donut-chart .quad.two, .loading-mssg-group-item:nth-child(3) .donut-chart .quad.three, .loading-mssg-group-item:nth-child(3) .donut-chart .quad.four {
+  animation-delay: 11.2s;
+}
+
+.loading-mssg-group-item:nth-child(3) .donut-chart .quad.top {
+  animation-delay: 11.7s;
+}
+
+.loading-mssg-group-item:nth-child(4) {
+  animation-delay: 16.8s;
+  /* -------------------------
+         Chart svg animations
+      ------------------------- */
+}
+
+.loading-mssg-group-item:nth-child(4):not(:last-child) {
+  animation-name: rotateUp_slide;
+  animation-delay: 16.8s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 {
+  overflow: visible;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 g path {
+  transform-origin: 50% 50%;
+  animation-name: FadeIn, ScaleIn;
+  animation-duration: 0.15s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.53, 0.14, 0.83, 0.67);
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 g:nth-child(1) path {
+  animation-delay: 16.8s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 g:nth-child(2) path {
+  animation-delay: 16.95s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 g:nth-child(3) path {
+  animation-delay: 17.1s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 g:nth-child(4) path {
+  animation-delay: 17.25s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 g:nth-child(5) path {
+  animation-delay: 17.4s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 g:nth-child(6) path {
+  animation-delay: 17.55s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 g:nth-child(7) path {
+  animation-delay: 17.7s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 g:nth-child(8) path {
+  animation-delay: 17.85s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 g:nth-child(9) path {
+  animation-delay: 18s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 g:nth-child(10) path {
+  animation-delay: 18.15s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-9in10 g:nth-child(10) path {
+  animation-name: FadeIn;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-map {
+  overflow: visible;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-map g polygon {
+  transform-origin: 50% 50%;
+  animation-name: FadeIn, ScaleIn;
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.53, 0.14, 0.83, 0.67);
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-map g polygon:nth-child(1) {
+  animation-delay: 16.8s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-map g polygon:nth-child(2) {
+  animation-delay: 17.05s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-map g polygon:nth-child(3) {
+  animation-delay: 17.3s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-map g polygon:nth-child(4) {
+  animation-delay: 17.55s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-map g polygon:nth-child(5) {
+  animation-delay: 17.8s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-map g polygon:nth-child(6) {
+  animation-delay: 18.05s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-map g polygon:nth-child(7) {
+  animation-delay: 18.3s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-map g polygon:nth-child(8) {
+  animation-delay: 18.55s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-map g polygon:nth-child(9) {
+  animation-delay: 18.8s;
+}
+
+.loading-mssg-group-item:nth-child(4) #chart-map g polygon:nth-child(10) {
+  animation-delay: 19.05s;
+}
+
+.loading-mssg-group-item:nth-child(4) .donut-chart .quad.one, .loading-mssg-group-item:nth-child(4) .donut-chart .quad.two, .loading-mssg-group-item:nth-child(4) .donut-chart .quad.three, .loading-mssg-group-item:nth-child(4) .donut-chart .quad.four {
+  animation-delay: 16.8s;
+}
+
+.loading-mssg-group-item:nth-child(4) .donut-chart .quad.top {
+  animation-delay: 17.3s;
+}
+
+@keyframes rotateDown_slide {
+  0% {
+    top: -7%;
+  }
+  10% {
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes rotateUp_slide {
+  0% {
+    top: -7%;
+  }
+  10% {
+    opacity: 1;
+    top: 0;
+  }
+  97% {
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    top: -7%;
+  }
+}
+
+@keyframes dashOffset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ScaleIn {
+  0% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=at-a-glance-charts.css.map */

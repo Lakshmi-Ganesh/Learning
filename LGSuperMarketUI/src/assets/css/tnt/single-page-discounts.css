@@ -1,0 +1,27 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.confirm-instructions .form-section-title {
+  padding-top: 0;
+  border-bottom: 0;
+}
+
+.confirm-instructions .pg-mssg-positive.icon-discount {
+  margin-top: 0;
+}
+
+.confirm-instructions .form-question {
+  background-color: white;
+  border-top: 0;
+}
+
+/*# sourceMappingURL=single-page-discounts.css.map */

@@ -1,0 +1,112 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+@keyframes showSticky {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navigation-persistent-wrapper {
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-top: 5px solid #F7B30A;
+  box-shadow: 1px 1px 8px rgba(102, 102, 102, 0.3);
+  overflow: hidden;
+}
+
+.navigation-persistent-wrapper.hidden {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.navigation-persistent-wrapper:not(.hidden) {
+  animation: showSticky .4s forwards ease-in;
+  position: fixed;
+  z-index: 97;
+}
+
+.navigation-persistent {
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+  max-width: 1020px;
+}
+
+.navigation-persistent .form-title {
+  border: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.navigation-persistent .qps-opt-price {
+  float: left;
+  transition: opacity .4s linear;
+  height: auto;
+}
+
+.navigation-persistent .qps-opt-price.disabled {
+  opacity: .2;
+}
+
+.navigation-persistent .qps-opt-price.hidden {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+}
+
+.navigation-persistent .btn-primary {
+  width: auto;
+  float: right;
+  margin-bottom: 3px;
+}
+
+.navigation-persistent .btn-animated {
+  float: right;
+  margin-bottom: 3px;
+}
+
+.navigation-persistent .stale {
+  text-decoration: line-through;
+}
+
+@media (min-width: 600px) {
+  .navigation-persistent {
+    padding: 10px 40px;
+  }
+}
+
+@media (min-width: 800px) {
+  .navigation-persistent {
+    padding: 10px 80px;
+  }
+}
+
+@media (min-width: 920px) {
+  .navigation-persistent {
+    padding: 10px 130px;
+  }
+}
+
+/*# sourceMappingURL=persistent-price-module.css.map */

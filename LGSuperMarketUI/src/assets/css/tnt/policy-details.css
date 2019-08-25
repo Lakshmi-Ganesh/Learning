@@ -1,0 +1,54 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.rate-change {
+  margin-bottom: 0;
+}
+
+.rate-change + .pg-included {
+  margin-bottom: 30px;
+}
+
+.rate-change + .pg-included {
+  margin-top: -1px;
+  padding: .5em 15px;
+  border: 1px solid #bdbdbd;
+  background: #fff;
+}
+
+.rate-change + .pg-included p {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.rate-change + .pg-included a {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.rate-change + .pg-included .count {
+  background: #f1f1f2;
+  color: #396791;
+  height: 18px;
+  border: 1px solid #d9d9d9;
+  border-radius: 18px;
+  font-size: 0.625rem;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 .5em;
+  margin-top: -2px;
+}
+
+/*# sourceMappingURL=policy-details.css.map */

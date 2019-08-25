@@ -1,0 +1,159 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.ehp-partner .partners {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+.ehp-partner .partners .pg-subtitle {
+  text-align: center;
+  width: 100%;
+}
+
+.ehp-partner .partners .pg-subtitle span {
+  display: block;
+}
+
+@media (min-width: 400px) {
+  .ehp-partner .partners .pg-subtitle span {
+    display: inline-block;
+  }
+}
+
+.ehp-partner .partners .pg-subtitle + .smlprint {
+  margin-top: -10px;
+  text-align: center;
+  width: 100%;
+}
+
+.ehp-partner .partners .callout {
+  height: auto;
+  min-width: 290px;
+  width: 46%;
+  display: block;
+  margin: .6em;
+}
+
+.ehp-partner .partners .callout .list {
+  max-width: 100%;
+}
+
+.ehp-partner .group-section-b {
+  padding-bottom: 45px;
+}
+
+.ehp-partner .group-section-c {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 20px;
+}
+
+.ehp-partner .group-3g > [class^=group-section] {
+  width: 100%;
+  margin-top: .6em;
+  text-align: center;
+}
+
+.dialog-partners .callout {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.dialog-partners .callout ul {
+  text-align: left;
+  font-size: 0.8125rem;
+}
+
+.dialog-partners .callout p, .dialog-partners .callout li {
+  color: black;
+}
+
+.dialog-partners .group-3g > [class^=group-section] {
+  width: 100%;
+  margin-top: .6em;
+  text-align: center;
+}
+
+@media (min-width: 43.75em) {
+  .partner-suggest {
+    display: inline-block;
+  }
+  .partner-cta {
+    margin-top: 0;
+    margin-left: 15px;
+    display: inline-block;
+  }
+}
+
+.callout-link {
+  display: block;
+  margin: 13.3333333333px 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #404040;
+  background-color: #fff;
+  border: 1px solid #1b75bb;
+  border-radius: 4px;
+  transition: none;
+}
+
+.callout-link:hover, .callout-link:active, .callout-link:focus, .callout-link:visited {
+  color: #404040;
+}
+
+.callout-link:hover .active, .callout-link:active .active, .callout-link:focus .active, .callout-link:visited .active {
+  color: #2a94db;
+  transition: color .5s;
+}
+
+.callout-link p {
+  display: block;
+  margin: 0 0 .5em;
+  font-size: 1em;
+  max-width: none;
+}
+
+@media (min-width: 36em) {
+  .callout-link p {
+    display: inline-block;
+    margin: 0 .3em 0 0;
+  }
+}
+
+@media (min-width: 50em) {
+  .callout-link p {
+    display: inline-block;
+    margin: 0 .3em 0 0;
+  }
+}
+
+.callout-link p.active {
+  color: #1b75bb;
+  font-weight: bold;
+}
+
+@media (min-width: 36em) {
+  .callout-link p.active {
+    display: inline-block;
+    margin: 0 .3em 0 0;
+  }
+}
+
+/*# sourceMappingURL=push-to-partner.css.map */

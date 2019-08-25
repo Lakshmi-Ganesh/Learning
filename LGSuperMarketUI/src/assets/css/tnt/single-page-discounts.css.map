@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "single-page-discounts.css",
+	"sources": [
+		"../../../../assets/css/tnt/single-page-discounts.scss",
+		"../../../../assets/css/_mixins.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,oBAAoB;AC8FpB,iDAAiD;AAuDhD,4CAA4C;AAwB7C,uCAAuC;AAiBvC,kEAAkE;AA0ClE,sBAAsB;AAYtB;;;IAGI;AAiCJ,+BAA+B;AAiD/B,2DAA2D;ADtU3D,AACE,qBADmB,CACnB,mBAAmB,CAAA;EACjB,WAAW,EAAC,CAAC;EACb,aAAa,EAAE,CAAC;CACjB;;AAJH,AAKE,qBALmB,CAKnB,iBAAiB,AAAA,cAAc,CAAC;EAC9B,UAAU,EAAE,CAAC;CACd;;AAPH,AAQE,qBARmB,CAQnB,cAAc,CAAC;EACd,gBAAgB,EAAE,KAAK;EACtB,UAAU,EAAC,CAAC;CACb"
+}

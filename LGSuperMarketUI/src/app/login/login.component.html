@@ -1,0 +1,12 @@
+<div class="loginheader">Welcome to LG SuperMarket</div>
+<div class="logincontent">
+  <!-- <div class="title">Log in</div> -->
+  <input  id="username" type="text"  placeholder="UserId" />
+  <input  id="password" type="password"  placeholder="Password" />
+  <button (click)="nextPage()">Sign in</button>
+  <div class="already">Dont have an account? <a (click)="navigateToSignUpPage()">Sign Up</a></div>
+   <a (click)="openModal('contact')">Forgot Password</a>
+  <br>
+  <div class="errorMsg" *ngIf="hasErrorMessage">{{message}}</div>
+</div>
+

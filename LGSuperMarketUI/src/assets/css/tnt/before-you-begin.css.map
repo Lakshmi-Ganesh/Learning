@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "before-you-begin.css",
+	"sources": [
+		"../../../../assets/css/tnt/before-you-begin.scss",
+		"../../../../assets/css/_mixins.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,oBAAoB;AC8FpB,iDAAiD;AAuDhD,4CAA4C;AAwB7C,uCAAuC;AAiBvC,kEAAkE;AA0ClE,sBAAsB;AAYtB;;;IAGI;AAiCJ,+BAA+B;AAiD/B,2DAA2D;ADtU3D,AAEE,cAFY,CAEZ,KAAK;AAFP,cAAc,CAGZ,aAAa,CAAC;EACZ,OAAO,EAAE,IAAI;CACd;;AALH,AAOE,cAPY,CAOZ,eAAe,CAAC;EACd,YAAY,EAAE,CAAC;CAChB;;AATH,AAWE,cAXY,CAWZ,CAAC,CAAC;EACA,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,cAAgB,CAAC,CAAC,CAAC,CAAC;CAC7B"
+}

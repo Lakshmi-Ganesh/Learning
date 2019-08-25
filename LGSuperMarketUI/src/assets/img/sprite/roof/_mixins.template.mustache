@@ -1,0 +1,143 @@
+{
+'functions': true
+}
+
+$sprite: (
+{{#items}}
+	{{name}}: (
+	offset-x: {{px.offset_x}},
+	offset-y: {{px.offset_y}},
+	width: {{px.width}},
+	height: {{px.height}},
+	total-width: {{px.total_width}},
+	total-height: {{px.total_height}},
+	image: '{{{escaped_image}}}'
+	),
+{{/items}}
+);
+
+{{#options.functions}}
+
+    @mixin sprite-size($image) {
+    background-size: map-get(map-get($sprite, $image), 'total-width') map-get(map-get($sprite, $image), 'total-height');
+    }
+
+    @mixin sprite-size-small($image) {
+	background-size: map-get(map-get($sprite, $image), 'total-width')/2 map-get(map-get($sprite, $image), 'total-height')/2;
+	}
+
+	@mixin sprite-width($image) {
+	width: map-get(map-get($sprite, $image), 'width');
+	}
+
+	@mixin sprite-height($image) {
+	height: map-get(map-get($sprite, $image), 'height');
+	}
+
+    @mixin sprite-width-small($image) {
+    width: map-get(map-get($sprite, $image), 'width')/2;
+    }
+
+    @mixin sprite-height-small($image) {
+    height: map-get(map-get($sprite, $image), 'height')/2;
+    }
+
+    @mixin sprite-position($image) {
+    background-position: map-get(map-get($sprite, $image), 'offset-x') map-get(map-get($sprite, $image), 'offset-y');
+    }
+
+    @mixin sprite-position-small($image) {
+	background-position: map-get(map-get($sprite, $image), 'offset-x')/2 map-get(map-get($sprite, $image), 'offset-y')/2;
+	}
+
+	@mixin sprite-image($image) {
+	background-image: url(map-get(map-get($sprite, $image), 'image'));
+	}
+
+	@mixin sprite-image-retina($image) {
+	$image-path: map-get(map-get($sprite, $image), 'image');
+	$image-path-retina: str-slice($image-path, 1, str-index($image-path, '.png') - 1) + '@2x.png';
+
+	background-image: url($image-path-retina);
+	}
+
+
+    //START ALL 4 ITERATIONS
+    @mixin roof-sprite($image, $size: true) {
+
+
+        /*1. NON-RETINA, MOBILE*/
+        /*path to image: */
+        @include sprite-image($image);
+        /*sprite coordinates: */
+        @include sprite-position($image);
+        background-repeat: no-repeat;
+
+        /* 1a. Mobile, use SMALLER size*/
+        @if $size {
+            @include sprite-width-small($image);
+            @include sprite-height-small($image);
+        }
+
+
+        @media ( min-width: 29em ) {
+            /*3. NON-RETINA, DESKTOP*/
+            @if $size {
+                @include sprite-width($image);
+                @include sprite-height($image);
+            }
+        }
+
+        //RETINA
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1),
+        only screen and (        min-device-pixel-ratio: 2),
+        only screen and (                min-resolution: 192dpi),
+        only screen and (                min-resolution: 2dppx) {
+            /*2. RETINA, MOBILE*/
+            @include sprite-position-small($image);
+            @include sprite-size-small($image);/* 2a. Mobile, use SMALLER size */
+            @include sprite-image-retina($image);
+        }
+
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2) and ( min-width: 29em ),
+        only screen and (   min--moz-device-pixel-ratio: 2) and ( min-width: 29em ),
+        only screen and (     -o-min-device-pixel-ratio: 2/1) and ( min-width: 29em ),
+        only screen and (        min-device-pixel-ratio: 2) and ( min-width: 29em ),
+        only screen and (                min-resolution: 192dpi) and ( min-width: 29em ),
+        only screen and (                min-resolution: 2dppx) and ( min-width: 29em ) {
+            /*4. RETINA, DESKTOP*/
+            @include sprite-position($image);
+            @include sprite-size($image);
+        }
+    }
+
+
+	.roof-material {
+	.placeholder { @include roof-sprite(placeholder); }
+	.built-up-tar-and-gravel { @include roof-sprite(built-up-tar-and-gravel); }
+	.hail-proof-impact-resistant { @include roof-sprite(hail-proof-impact-resistant); }
+	.rubber { @include roof-sprite(rubber); }
+	.shingles-architectural { @include roof-sprite(shingles-architectural); }
+	.shingles-asphalt-fiberglass { @include roof-sprite(shingles-asphalt-fiberglass); }
+	.shingles-wood-shakes { @include roof-sprite(shingles-wood-shakes); }
+	.slate { @include roof-sprite(slate); }
+	.steel { @include roof-sprite(steel); }
+	.tile-clay { @include roof-sprite(tile-clay); }
+	.tile-concrete { @include roof-sprite(tile-concrete); }
+	.tile-mission { @include roof-sprite(tile-mission); }
+	.tin { @include roof-sprite(tin); }
+	img {
+	width: 80px;
+	height: 70px;
+	}
+
+	.mini-thumbnail img {
+	width: 20px;
+	height: 16px;
+	}
+	}
+{{/options.functions}}

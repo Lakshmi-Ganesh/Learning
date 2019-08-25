@@ -1,0 +1,158 @@
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.lm-FieldGroup select:-moz-focusring,
+.lm-FieldGroup select::-moz-focus-inner {
+  color: transparent !important;
+  text-shadow: 0 0 0 #000 !important;
+  background-image: none !important;
+}
+
+.lm-FieldGroup-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 14px 10px 15px;
+  font-size: 16px;
+  /* 16px = magic font size number to prevent iOS text zoom */
+  border: solid 1px #C0BFC0;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  transition: all 0.1s ease-in-out;
+  line-height: 1.3;
+  background-color: transparent;
+  border-radius: 2px;
+  text-overflow: '';
+  width: 100%;
+  min-height: 50px;
+  color: rgba(64, 64, 64, 0);
+  cursor: pointer;
+  caret-color: #2A94DB;
+  outline: none;
+}
+
+.lm-FieldGroup-select::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #767676;
+  opacity: 1;
+}
+
+.lm-FieldGroup-select::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #767676;
+  opacity: 1;
+}
+
+.lm-FieldGroup-select:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #767676;
+  opacity: 1;
+}
+
+.lm-FieldGroup-select:-moz-placeholder {
+  /* Firefox 18- */
+  color: #767676;
+  opacity: 1;
+}
+
+.is-populated .lm-FieldGroup-select,
+.is-auto-filled .lm-FieldGroup-select {
+  color: #404040;
+  padding: 23px 50px 6px 10px;
+}
+
+.lm-FieldGroup-select:hover:not(:disabled):not(:focus) {
+  border: solid 1px #1B75BB;
+}
+
+.lm-FieldGroup-select:hover + .lm-FieldGroup-actionButton .lm-ButtonClear, .lm-FieldGroup-select:focus + .lm-FieldGroup-actionButton .lm-ButtonClear {
+  display: inline;
+}
+
+.lm-FieldGroup-select:focus {
+  color: #404040;
+}
+
+.is-focused .lm-FieldGroup-select {
+  color: #404040;
+  border: solid 1px #2A94DB;
+  padding: 23px 50px 6px 10px;
+  box-shadow: 0 0 0 1px #2a94db;
+  border-radius: 0;
+}
+
+.is-disabled .lm-FieldGroup-select {
+  border: solid 1px #E6E6E6;
+  cursor: default;
+}
+
+.is-populated .is-disabled .lm-FieldGroup-select {
+  color: #404040;
+}
+
+.lm-FieldGroup-select::-ms-expand {
+  display: none;
+}
+
+.is-error .lm-FieldGroup-select {
+  border: solid 1px #F44336;
+}
+
+.is-error .lm-FieldGroup-select:hover:not(:focus) {
+  border: solid 1px #ea1c0d;
+}
+
+.is-error .lm-FieldGroup-select:focus {
+  box-shadow: 0 0 0 1px #f44336;
+  border-radius: 0;
+}
+
+.is-alert .lm-FieldGroup-select {
+  border: solid 1px #F77F1D;
+}
+
+.is-alert .lm-FieldGroup-select:hover:not(:focus) {
+  border: solid 1px #d96608;
+}
+
+.is-alert .lm-FieldGroup-select:focus {
+  box-shadow: 0 0 0 1px #f77f1d;
+  border-radius: 0;
+}
+
+.is-positive .lm-FieldGroup-select {
+  border: solid 1px #4B9E60;
+}
+
+.is-positive .lm-FieldGroup-select:hover:not(:focus) {
+  border: solid 1px #3b7b4b;
+}
+
+.is-positive .lm-FieldGroup-select:focus {
+  box-shadow: 0 0 0 1px #4b9e60;
+  border-radius: 0;
+}
+
+.is-info .lm-FieldGroup-select {
+  border: solid 1px #98a6ff;
+}
+
+.is-info .lm-FieldGroup-select:hover:not(:focus) {
+  border: solid 1px #657aff;
+}
+
+.is-info .lm-FieldGroup-select:focus {
+  box-shadow: 0 0 0 1px #98a6ff;
+  border-radius: 0;
+}
+
+/*# sourceMappingURL=select.css.map */

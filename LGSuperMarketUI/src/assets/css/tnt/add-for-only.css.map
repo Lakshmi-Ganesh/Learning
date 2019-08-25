@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "add-for-only.css",
+	"sources": [
+		"../../../../assets/css/tnt/add-for-only.scss",
+		"../../../../assets/css/_mixins.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,oBAAoB;AC8FpB,iDAAiD;AAuDhD,4CAA4C;AAwB7C,uCAAuC;AAiBvC,kEAAkE;AA0ClE,sBAAsB;AAYtB;;;IAGI;AAiCJ,+BAA+B;AAiD/B,2DAA2D;ADtU3D,AAAA,YAAY,AAAA,aAAa,CAAC,cAAc,CAAC;EACvC,OAAO,EAAE,KAAK;EACd,WAAW,EAAE,IAAI;EACjB,KAAK,EC2EQ,OAAO;ED1EpB,SAAS,EC0BH,QAAQ;EDzBd,UAAU,EAAE,KAAK;CAClB;;AAED,AAAA,YAAY,CAAC,cAAc,CAAC;EAC1B,OAAO,EAAE,IAAI;CACd"
+}

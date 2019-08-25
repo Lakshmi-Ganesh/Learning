@@ -1,0 +1,246 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+/* use  variabls instead
+$geicoBlue: #154995;
+$lightBlue: #446daa;
+$paleBlue: #e2edf3;
+
+$geicoOrange: #ff8800;
+
+$lightGrey: #f2f0ec;
+$mediumGrey: #e6e3dd;
+
+$backgroundBeige: #f0eadd;
+*/
+/* form field text */
+.trustage,
+.ux.trustage {
+  font: 14px/1.231 Arial, Helvetica, Sans-Serif;
+  /* UNCOMMENT ONLY AS NEEDED.
+   * THESE STYLES APPEND TO EXISTING STYLES
+  @import "components/affiliate";*/
+  /*
+  @import "components/callouts";
+  @import "components/collapsible";
+  @import "components/coverage";
+  @import "components/customer-service";
+
+@import "components/dialogs";
+@import "components/ext-wall";
+
+  @import "components/icons";
+
+  @import "components/feature-list";
+  @import "components/feedback";
+  @import "components/footer";
+  @import "components/forms";
+
+  @import "components/forms-cc";
+  @import "components/help-center";
+
+  @import "components/layout";
+  @import "components/list-builder";
+  */
+  /*
+  @import "components/notification";
+  */
+  /* -------------------------
+   Outer Page Containers
+------------------------- */
+  /*
+  @import "components/panel";
+  @import "components/payment-schedule";
+  @import "components/qps";
+  @import "components/tabs";
+  @import "components/wayfinder";
+
+  @import "components/cart";
+  @import "components/table";
+  @import "components/tabs";
+
+  @import "components/hidden-elements";
+  @import "components/bind";
+*/
+}
+
+.trustage .trustage-contact.hidden,
+.trustage .help-center-group.trustage-return.hidden,
+.ux.trustage .trustage-contact.hidden,
+.ux.trustage .help-center-group.trustage-return.hidden {
+  display: block;
+}
+
+.trustage .trustage-contact,
+.ux.trustage .trustage-contact {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.trustage .form-submit-alt.trustage-return a,
+.ux.trustage .form-submit-alt.trustage-return a {
+  text-transform: uppercase;
+}
+
+@media (min-width: 24.375em) {
+  .trustage .form-submit-alt.trustage-return p,
+  .ux.trustage .form-submit-alt.trustage-return p {
+    margin-top: 15px;
+  }
+}
+
+.trustage .trustage-contact > p,
+.ux.trustage .trustage-contact > p {
+  font-weight: 700;
+  font-size: 1em;
+  margin: .2em 0;
+}
+
+.trustage .trustage-contact p > a,
+.trustage .trustage-contact p > span,
+.ux.trustage .trustage-contact p > a,
+.ux.trustage .trustage-contact p > span {
+  font-weight: bold;
+}
+
+.trustage .trustage-contact ol,
+.ux.trustage .trustage-contact ol {
+  font-size: .75em;
+  color: #6E6E6E;
+  list-style: none;
+}
+
+.trustage .trustage-contact ol,
+.trustage .trustage-contact > li,
+.ux.trustage .trustage-contact ol,
+.ux.trustage .trustage-contact > li {
+  margin: 0;
+  padding: 0;
+}
+
+.trustage .trustage-contact > li,
+.ux.trustage .trustage-contact > li {
+  padding: .1em 0;
+}
+
+.trustage .section-header,
+.ux.trustage .section-header {
+  padding-left: 0;
+}
+
+.trustage .pg-mssg-positive b,
+.trustage .pg-mssg-positive strong,
+.ux.trustage .pg-mssg-positive b,
+.ux.trustage .pg-mssg-positive strong {
+  color: #154995;
+}
+
+.trustage .pg-mssg-warning b,
+.trustage .pg-mssg-warning strong,
+.ux.trustage .pg-mssg-warning b,
+.ux.trustage .pg-mssg-warning strong {
+  color: #ff744a;
+}
+
+.trustage .btn,
+.ux.trustage .btn {
+  font-family: Arial, Helvetica, Sans-Serif;
+  letter-spacing: 0;
+}
+
+.trustage .btn .icon-arrow-right,
+.trustage .btn .icon-arrow-left,
+.ux.trustage .btn .icon-arrow-right,
+.ux.trustage .btn .icon-arrow-left {
+  display: none;
+}
+
+.trustage .btn-primary,
+.ux.trustage .btn-primary {
+  color: white;
+  background-color: #e97d26;
+  font-weight: 700;
+}
+
+.trustage .btn-primary:hover, .trustage .btn-primary:focus,
+.ux.trustage .btn-primary:hover,
+.ux.trustage .btn-primary:focus {
+  background-color: #df7017;
+  background-image: none;
+  text-shadow: 1px 1px 2px #666;
+}
+
+.trustage .btn-primary:active,
+.ux.trustage .btn-primary:active {
+  background-color: #e97d26;
+  background-image: none;
+}
+
+.trustage .btn-lrg,
+.ux.trustage .btn-lrg {
+  font-size: 1rem;
+  line-height: 2.2rem;
+}
+
+.trustage .masthead .logo,
+.ux.trustage .masthead .logo {
+  width: 198px;
+  max-width: 198px;
+  display: block;
+  height: 55px;
+  padding: 0 10px;
+  background-color: white;
+}
+
+.trustage .masthead .logo:after,
+.ux.trustage .masthead .logo:after {
+  display: block;
+  background-image: url("https://www.trustage.com/Sites/TruStage/Content/img/TruStage-Logo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 198px;
+  height: 38px;
+  position: absolute;
+  content: " ";
+}
+
+.trustage .masthead .logo img,
+.ux.trustage .masthead .logo img {
+  display: none;
+}
+
+@media (min-width: 360px) {
+  .trustage .masthead .logo,
+  .ux.trustage .masthead .logo {
+    padding: 0 18px;
+    width: 303px;
+  }
+  .trustage .masthead .logo:after,
+  .ux.trustage .masthead .logo:after {
+    width: 303px;
+    background-size: 198px;
+  }
+}
+
+.trustage .page .icon-help-center,
+.ux.trustage .page .icon-help-center {
+  margin-top: -47px;
+}
+
+@media (min-width: 30em) {
+  .trustage,
+  .ux.trustage {
+    /* 480px*/
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

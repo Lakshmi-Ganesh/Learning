@@ -1,0 +1,118 @@
+{
+'functions': true
+}
+
+$sprite: (
+{{#items}}
+	{{name}}: (
+	offset-x: {{px.offset_x}},
+	offset-y: {{px.offset_y}},
+	width: {{px.width}},
+	height: {{px.height}},
+	total-width: {{px.total_width}},
+	total-height: {{px.total_height}},
+	image: '{{{escaped_image}}}'
+	),
+{{/items}}
+);
+
+{{#options.functions}}
+
+	@mixin sprite-size($image) {
+	background-size: map-get(map-get($sprite, $image), 'total-width') map-get(map-get($sprite, $image), 'total-height');
+	}
+
+	@mixin sprite-width($image) {
+	width: map-get(map-get($sprite, $image), 'width');
+	}
+
+	@mixin sprite-height($image) {
+	height: map-get(map-get($sprite, $image), 'height');
+	}
+
+	@mixin sprite-position($image) {
+	background-position: map-get(map-get($sprite, $image), 'offset-x') map-get(map-get($sprite, $image), 'offset-y');
+	}
+
+	@mixin sprite-image($image) {
+	background-image: url(map-get(map-get($sprite, $image), 'image'));
+	}
+
+	@mixin sprite-image-retina($image) {
+	$image-path: map-get(map-get($sprite, $image), 'image');
+	$image-path-retina: str-slice($image-path, 1, str-index($image-path, '.png') - 1) + '@2x.png';
+
+	background-image: url($image-path-retina);
+	}
+
+	@mixin floor-sprite($image, $size: true) {
+	@include sprite-image($image);
+	@include sprite-position($image);
+	background-repeat: no-repeat;
+
+	@if $size {
+	@include sprite-width($image);
+	@include sprite-height($image);
+	}
+
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) {
+
+	@include sprite-size($image);
+	@include sprite-image-retina($image);
+
+	}
+	}
+
+
+	.floor {
+	.placeholder { @include floor-sprite(placeholder); }
+	.bamboo { @include floor-sprite(bamboo); }
+	.brick { @include floor-sprite(brick); }
+	.carpet-acrylic-nylon-above-average-quality { @include floor-sprite(carpet-acrylic-nylon-above-average-quality); }
+	.carpet-acrylic-nylon-average-quality { @include floor-sprite(carpet-acrylic-nylon-average-quality); }
+	.carpet-wool-berber { @include floor-sprite(carpet-wool-berber); }
+	.carpet-over-hardwood-acrylic-nylon { @include floor-sprite(carpet-over-hardwood-acrylic-nylon); }
+	.carpet-over-hardwood-custom-acrylic { @include floor-sprite(carpet-over-hardwood-custom-acrylic); }
+	.carpet-over-hardwood-wool-berber { @include floor-sprite(carpet-over-hardwood-wool-berber); }
+	.ceramic-imported-tile { @include floor-sprite(ceramic-imported-tile); }
+	.ceramic-tile { @include floor-sprite(ceramic-tile); }
+	.cork { @include floor-sprite(cork); }
+	.engineered-wood-flooring { @include floor-sprite(engineered-wood-flooring); }
+	.epoxy { @include floor-sprite(epoxy); }
+	.flagstone { @include floor-sprite(flagstone); }
+	.granite { @include floor-sprite(granite); }
+	.hardwood { @include floor-sprite(hardwood); }
+	.laminated-bamboo-plank { @include floor-sprite(laminated-bamboo-plank); }
+	.laminated-flooring { @include floor-sprite(laminated-flooring); }
+	.marble-tile { @include floor-sprite(marble-tile); }
+	.mural-tile { @include floor-sprite(mural-tile); }
+	.parquet { @include floor-sprite(parquet); }
+	.plank { @include floor-sprite(plank); }
+	.plywood-only { @include floor-sprite(plywood-only); }
+	.porcelain-tile { @include floor-sprite(porcelain-tile); }
+	.rubber { @include floor-sprite(rubber); }
+	.slate { @include floor-sprite(slate); }
+	.stamped-textured-concrete { @include floor-sprite(stamped-textured-concrete); }
+	.stone { @include floor-sprite(stone); }
+	.terrazzo-tile { @include floor-sprite(terrazzo-tile); }
+	.travertine-tile { @include floor-sprite(travertine-tile); }
+	.vinyl { @include floor-sprite(vinyl); }
+	img {
+	width: 40px;
+	height: 34px;
+	}
+
+	.mini-thumbnail img {
+	width: 20px;
+	height: 16px;
+	}
+	}
+
+
+{{/options.functions}}

@@ -1,0 +1,81 @@
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.lm-FieldGroupMessages {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+ul.lm-FieldGroupMessage {
+  margin: 0 0 4px 0;
+  padding: 0;
+}
+
+ul.lm-FieldGroupMessage:last-child {
+  margin: 0;
+}
+
+ul.lm-FieldGroupMessage li {
+  list-style: none;
+  font-size: 12px;
+  line-height: 1em;
+  font-weight: 400;
+  padding: 4px 0 4px 22px;
+  position: relative;
+}
+
+ul.lm-FieldGroupMessage li .lm-Icon {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+}
+
+ul.lm-FieldGroupMessage li .lm-Icon path {
+  stroke-width: 1.5;
+  stroke-miterlimit: 10;
+  fill: none;
+}
+
+ul.lm-FieldGroupMessage.is-error li {
+  color: #E00720;
+}
+
+ul.lm-FieldGroupMessage.is-error li .lm-Icon path {
+  stroke: #E00720;
+}
+
+ul.lm-FieldGroupMessage.is-alert li {
+  color: #A36120;
+}
+
+ul.lm-FieldGroupMessage.is-alert li .lm-Icon path {
+  stroke: #A36120;
+}
+
+ul.lm-FieldGroupMessage.is-info li {
+  color: #0E66A8;
+}
+
+ul.lm-FieldGroupMessage.is-info li .lm-Icon path {
+  stroke: #0E66A8;
+}
+
+ul.lm-FieldGroupMessage.is-positive li {
+  color: #0E751D;
+}
+
+ul.lm-FieldGroupMessage.is-positive li .lm-Icon path {
+  stroke: #0E751D;
+}
+
+/*# sourceMappingURL=fieldGroupMessages.css.map */

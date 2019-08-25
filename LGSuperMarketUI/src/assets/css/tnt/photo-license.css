@@ -1,0 +1,72 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.photo-license .masthead-nav,
+.photo-license .header:after,
+.photo-license .content:after,
+.photo-license .footer {
+  display: none;
+}
+
+.photo-license .header {
+  border: 0;
+}
+
+.photo-license .content {
+  border: 0;
+  background: transparent;
+}
+
+.photo-license .content p:first-child {
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.photo-license .content img {
+  display: block;
+  position: relative;
+  margin: 40px auto 20px;
+  text-align: center;
+}
+
+.photo-license .form-submit {
+  margin: 0;
+  border: 0;
+}
+
+.photo-license .form-submit + p {
+  margin: 0;
+  text-align: center;
+  color: #E6E6E6;
+  font-size: 0.625rem;
+}
+
+@media (min-width: 360px) {
+  .photo-license .content p:first-child {
+    font-size: 1.125rem;
+  }
+  .photo-license .form-submit {
+    margin: 0 0 1em;
+  }
+  .photo-license .form-submit + p {
+    text-align: left;
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .photo-license .content p:first-child {
+    font-size: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=photo-license.css.map */

@@ -1,0 +1,326 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.qps-made-simple.ux [class*=QPS_EDIT] #quote-summary-container .content-body, .qps-made-simple.ux.lct [class*=QPS_EDIT] #quote-summary-container .content-body {
+  padding-top: 20px;
+}
+
+.qps-made-simple.ux [class*=QPS_EDIT] #quote-summary-container .pg-subtitle, .qps-made-simple.ux.lct [class*=QPS_EDIT] #quote-summary-container .pg-subtitle {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.qps-made-simple.ux #quote-summary-container .coverage-item-title, .qps-made-simple.ux #quote-summary-container .edit-qps .collapsible-header, .qps-made-simple.ux.lct #quote-summary-container .coverage-item-title, .qps-made-simple.ux.lct #quote-summary-container .edit-qps .collapsible-header {
+  font-size: 1em;
+}
+
+@media (min-width: 40em) {
+  .qps-made-simple.ux #quote-summary-container .coverage-item-title, .qps-made-simple.ux #quote-summary-container .edit-qps .collapsible-header, .qps-made-simple.ux.lct #quote-summary-container .coverage-item-title, .qps-made-simple.ux.lct #quote-summary-container .edit-qps .collapsible-header {
+    font-size: 16px;
+  }
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-qps.pg-mssg, .qps-made-simple.ux.lct #quote-summary-container .edit-qps.pg-mssg {
+  max-width: 700px;
+  margin-bottom: 50px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-qps.pg-mssg p, .qps-made-simple.ux.lct #quote-summary-container .edit-qps.pg-mssg p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-qps.pg-mssg p + .collapsible:first-of-type, .qps-made-simple.ux.lct #quote-summary-container .edit-qps.pg-mssg p + .collapsible:first-of-type {
+  margin-top: 30px;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .radio, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox {
+  border-top-style: solid;
+}
+
+@media (min-width: 43em) {
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .radio, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox {
+    padding-left: 20px;
+  }
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .radio [type="radio"] + label, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox [type="radio"] + label, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio [type="radio"] + label, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox [type="radio"] + label {
+  padding-left: 35px;
+}
+
+@media (min-width: 22.5em) {
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .radio [type="radio"] + label, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox [type="radio"] + label, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio [type="radio"] + label, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox [type="radio"] + label {
+    top: 7px;
+  }
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .radio [type="radio"] + label:before, .qps-made-simple.ux #quote-summary-container .edit-coverage .radio [type="radio"] + label:after, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox [type="radio"] + label:before, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox [type="radio"] + label:after, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio [type="radio"] + label:before, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio [type="radio"] + label:after, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox [type="radio"] + label:before, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox [type="radio"] + label:after {
+  top: 23px;
+}
+
+@media (min-width: 22.5em) {
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .radio [type="radio"] + label:before, .qps-made-simple.ux #quote-summary-container .edit-coverage .radio [type="radio"] + label:after, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox [type="radio"] + label:before, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox [type="radio"] + label:after, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio [type="radio"] + label:before, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio [type="radio"] + label:after, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox [type="radio"] + label:before, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox [type="radio"] + label:after {
+    top: 20px;
+  }
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .radio .opt, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox .opt, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio .opt, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox .opt {
+  font: 16px/1.3 "Roboto", Arial, Helvetica, sans-serif;
+  width: 100%;
+  max-width: none;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .radio .opt .val, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox .opt .val, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio .opt .val, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox .opt .val {
+  display: inline-block;
+  margin-right: 1em;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #404040;
+}
+
+@media (min-width: 22.5em) {
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .radio .opt .val, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox .opt .val, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio .opt .val, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox .opt .val {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 22.5em) {
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .radio .opt .val, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox .opt .val, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio .opt .val, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox .opt .val {
+    min-width: 140px;
+  }
+}
+
+@media (min-width: 40em) {
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .radio .opt .val, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox .opt .val, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio .opt .val, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox .opt .val {
+    min-width: 160px;
+  }
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .radio .opt .val b, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox .opt .val b, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio .opt .val b, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox .opt .val b {
+  display: block;
+  font-size: 1em;
+}
+
+@media (min-width: 22.5em) {
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .radio .opt .val b, .qps-made-simple.ux #quote-summary-container .edit-coverage .checkbox .opt .val b, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .radio .opt .val b, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .checkbox .opt .val b {
+    display: inline-block;
+  }
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage.disclosure, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage.disclosure {
+  padding: 20px 30px;
+}
+
+@media (min-width: 43em) {
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage.disclosure, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage.disclosure {
+    margin: 0 0 0 3px;
+    padding: 30px 50px;
+  }
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .section-intro, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .section-intro {
+  margin: 0 0 20px;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .coverage-item-header, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .coverage-item-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .coverage-item-header .icon-arrow-solid-right, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .coverage-item-header .icon-arrow-solid-right {
+  display: none;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .coverage-item-title,
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .coverage-item-content,
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-coverage, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .coverage-item-title,
+.qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .coverage-item-content,
+.qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-coverage {
+  padding-left: 0;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .coverage-item-title:last-of-type,
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .coverage-item-content:last-of-type,
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-coverage:last-of-type, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .coverage-item-title:last-of-type,
+.qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .coverage-item-content:last-of-type,
+.qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-coverage:last-of-type {
+  padding-bottom: 0;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .coverage-item-title, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .coverage-item-title {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 40em) {
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .coverage-item-title, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .coverage-item-title {
+    padding-right: 0;
+  }
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .coverage-item, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .coverage-item {
+  border-bottom-style: solid;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .coverage-item:last-of-type, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .coverage-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .coverage-item:last-of-type .coverage-item-desc:last-of-type, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .coverage-item:last-of-type .coverage-item-desc:last-of-type {
+  padding-bottom: 0;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .coverage-item:last-of-type .coverage-item-desc p:last-child, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .coverage-item:last-of-type .coverage-item-desc p:last-child {
+  margin: 0;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-row, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-row {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-row .qps-cov-amt, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-row .qps-cov-amt {
+  display: inline-block;
+  padding-right: 0;
+  min-width: 80px;
+}
+
+@media (min-width: 22.5em) {
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-row .qps-cov-amt, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-row .qps-cov-amt {
+    min-width: 140px;
+  }
+}
+
+@media (min-width: 40em) {
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-row .qps-cov-amt, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-row .qps-cov-amt {
+    min-width: 160px;
+  }
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #404040;
+  margin: .3em 0;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt b,
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt strong, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt b,
+.qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt strong {
+  display: block;
+  color: #404040;
+  font-size: inherit;
+  font-weight: 500;
+}
+
+@media (min-width: 22.5em) {
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt b,
+  .qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt strong, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt b,
+  .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt strong {
+    display: inline-block;
+  }
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt.removed, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt.removed {
+  color: #6A6A6A;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt.removed b, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt.removed b {
+  color: #6A6A6A;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt.not-included, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt.not-included {
+  font-size: inherit;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt.not-included b, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage .qps-cov-amt.not-included b {
+  font-weight: 500;
+  color: #6A6A6A;
+  font-size: inherit;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage + .content-region-most-popular-disclaimer, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage + .content-region-most-popular-disclaimer {
+  padding-top: 0;
+}
+
+.qps-made-simple.ux #quote-summary-container .edit-coverage .related-coverage + .content-region-most-popular-disclaimer ul.most-popular-text, .qps-made-simple.ux.lct #quote-summary-container .edit-coverage .related-coverage + .content-region-most-popular-disclaimer ul.most-popular-text {
+  border: 0;
+}
+
+.qps-made-simple.ux #quote-summary-container .is-most-popular.radio:not(.btn) [type="radio"] + label::before, .qps-made-simple.ux.lct #quote-summary-container .is-most-popular.radio:not(.btn) [type="radio"] + label::before {
+  box-shadow: 0 0 0 1px #F7B30A;
+}
+
+.qps-made-simple.ux #quote-summary-container .is-most-popular.radio:not(.btn) [type="radio"]:hover + label:before, .qps-made-simple.ux.lct #quote-summary-container .is-most-popular.radio:not(.btn) [type="radio"]:hover + label:before {
+  border: none;
+  box-shadow: 0 0 0 1px #FFD000;
+}
+
+.qps-made-simple.ux #quote-summary-container .is-most-popular.radio:not(.btn) [type="radio"]:focus + label:before, .qps-made-simple.ux.lct #quote-summary-container .is-most-popular.radio:not(.btn) [type="radio"]:focus + label:before {
+  outline: none;
+  box-shadow: 0 0 0 2px #FFD000;
+}
+
+.qps-made-simple.ux #quote-summary-container .is-most-popular.radio:not(.btn) .most-popular, .qps-made-simple.ux.lct #quote-summary-container .is-most-popular.radio:not(.btn) .most-popular {
+  position: relative;
+  margin: 0;
+  padding: 20px 0 10px 35px;
+  bottom: initial;
+}
+
+@media (min-width: 45em) {
+  .qps-made-simple.ux #quote-summary-container .is-most-popular.radio:not(.btn) .most-popular, .qps-made-simple.ux.lct #quote-summary-container .is-most-popular.radio:not(.btn) .most-popular {
+    position: absolute;
+    right: 0;
+    margin-top: -17px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 57.5em) {
+  .qps-made-simple.ux #quote-summary-container .is-most-popular.radio:not(.btn) .most-popular, .qps-made-simple.ux.lct #quote-summary-container .is-most-popular.radio:not(.btn) .most-popular {
+    right: 130px;
+  }
+}
+
+.qps-made-simple.ux #quote-summary-container .is-most-popular.qps-coverage .most-popular, .qps-made-simple.ux.lct #quote-summary-container .is-most-popular.qps-coverage .most-popular {
+  position: relative;
+  margin: 0;
+  padding: 10px 0 0;
+  bottom: initial;
+}
+
+@media (min-width: 45em) {
+  .qps-made-simple.ux #quote-summary-container .is-most-popular.qps-coverage .most-popular, .qps-made-simple.ux.lct #quote-summary-container .is-most-popular.qps-coverage .most-popular {
+    position: absolute;
+    right: 0;
+    margin-top: -24px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 57.5em) {
+  .qps-made-simple.ux #quote-summary-container .is-most-popular.qps-coverage .most-popular, .qps-made-simple.ux.lct #quote-summary-container .is-most-popular.qps-coverage .most-popular {
+    right: 80px;
+  }
+}
+
+/*# sourceMappingURL=qps-made-simple-edit-coverage.css.map */

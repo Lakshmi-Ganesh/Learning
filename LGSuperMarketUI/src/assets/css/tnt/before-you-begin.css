@@ -1,0 +1,27 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.pre-interview .icon,
+.pre-interview .pg-wayfinder {
+  display: none;
+}
+
+.pre-interview .content-header {
+  padding-left: 0;
+}
+
+.pre-interview p {
+  font-size: 1rem;
+  margin: 6.6666666667px 0 0;
+}
+
+/*# sourceMappingURL=before-you-begin.css.map */

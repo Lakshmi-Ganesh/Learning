@@ -1,0 +1,408 @@
+/*!v.2.42.0*/
+/* Design System colors */
+/* Lippincott */
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
+
+@keyframes populated-pulse {
+  0% {
+    transform: scale(0.6, 0.6) translate(-50%, -50%);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1, 1.1) translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1) translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.ux.visual-select-card-interview .content-body,
+.ux.lct.visual-select-card-interview .content-body {
+  padding: 0;
+}
+
+.ux.visual-select-card-interview .form-wrapper:first-child.pg-mssg,
+.ux.lct.visual-select-card-interview .form-wrapper:first-child.pg-mssg {
+  padding-top: 0;
+}
+
+.ux.visual-select-card-interview .form-group .form-title,
+.ux.lct.visual-select-card-interview .form-group .form-title {
+  text-align: center;
+  margin: 0;
+}
+
+.ux.visual-select-card-interview .form-group .form-title + .form-question.flex-region,
+.ux.lct.visual-select-card-interview .form-group .form-title + .form-question.flex-region {
+  margin-top: 40px;
+}
+
+.ux.visual-select-card-interview .form-group .pg-mssg,
+.ux.lct.visual-select-card-interview .form-group .pg-mssg {
+  text-align: center;
+  margin: 0 auto 0;
+}
+
+.ux.visual-select-card-interview .form-group .pg-mssg + .form-question.flex-region,
+.ux.lct.visual-select-card-interview .form-group .pg-mssg + .form-question.flex-region {
+  margin-top: 40px;
+}
+
+.ux.visual-select-card-interview .form-question.flex-region,
+.ux.lct.visual-select-card-interview .form-question.flex-region {
+  display: flex;
+  border: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ux .visual-select-card,
+.ux.lct .visual-select-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 20px 10px;
+  transition: padding 0.1s ease-in-out;
+  border-radius: 3px;
+  cursor: inherit;
+  width: 100%;
+  position: relative;
+  margin-bottom: 16px;
+  /*!v.{{ VERSION }}*/
+  /* Design System colors */
+  /* Lippincott */
+}
+
+.ux .visual-select-card::before,
+.ux.lct .visual-select-card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  background-color: white;
+}
+
+@media (min-width: 480px) {
+  .ux .visual-select-card,
+  .ux.lct .visual-select-card {
+    padding: 20px 10px 40px 10px;
+    width: 50%;
+  }
+  .ux .visual-select-card:nth-child(odd),
+  .ux.lct .visual-select-card:nth-child(odd) {
+    padding-right: 18px;
+  }
+  .ux .visual-select-card:nth-child(odd)::before,
+  .ux.lct .visual-select-card:nth-child(odd)::before {
+    right: 8px;
+  }
+  .ux .visual-select-card:nth-child(even),
+  .ux.lct .visual-select-card:nth-child(even) {
+    padding-left: 18px;
+  }
+  .ux .visual-select-card:nth-child(even)::before,
+  .ux.lct .visual-select-card:nth-child(even)::before {
+    left: 8px;
+  }
+}
+
+@media (min-width: 725px) {
+  .ux .visual-select-card,
+  .ux.lct .visual-select-card {
+    padding: 30px 10px 50px 10px;
+    width: 33.3333333333%;
+  }
+  .ux .visual-select-card:nth-child(3n+1),
+  .ux.lct .visual-select-card:nth-child(3n+1) {
+    padding-right: 20.6666666667px;
+    padding-left: 10px;
+  }
+  .ux .visual-select-card:nth-child(3n+1)::before,
+  .ux.lct .visual-select-card:nth-child(3n+1)::before {
+    right: 10.6666666667px;
+    left: 0;
+  }
+  .ux .visual-select-card:nth-child(3n+2),
+  .ux.lct .visual-select-card:nth-child(3n+2) {
+    padding-right: 15.3333333333px;
+    padding-left: 15.3333333333px;
+  }
+  .ux .visual-select-card:nth-child(3n+2)::before,
+  .ux.lct .visual-select-card:nth-child(3n+2)::before {
+    right: 5.3333333333px;
+    left: 5.3333333333px;
+  }
+  .ux .visual-select-card:nth-child(3n+3),
+  .ux.lct .visual-select-card:nth-child(3n+3) {
+    padding-right: 10px;
+    padding-left: 20.6666666667px;
+  }
+  .ux .visual-select-card:nth-child(3n+3)::before,
+  .ux.lct .visual-select-card:nth-child(3n+3)::before {
+    left: 10.6666666667px;
+    right: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .ux .visual-select-card,
+  .ux.lct .visual-select-card {
+    padding: 30px 30px 50px 30px;
+    width: 33.3333333333%;
+  }
+  .ux .visual-select-card:nth-child(3n+1),
+  .ux.lct .visual-select-card:nth-child(3n+1) {
+    padding-right: 40.6666666667px;
+    padding-left: 30px;
+  }
+  .ux .visual-select-card:nth-child(3n+1)::before,
+  .ux.lct .visual-select-card:nth-child(3n+1)::before {
+    right: 10.6666666667px;
+    left: 0;
+  }
+  .ux .visual-select-card:nth-child(3n+2),
+  .ux.lct .visual-select-card:nth-child(3n+2) {
+    padding-right: 35.3333333333px;
+    padding-left: 35.3333333333px;
+  }
+  .ux .visual-select-card:nth-child(3n+2)::before,
+  .ux.lct .visual-select-card:nth-child(3n+2)::before {
+    right: 5.3333333333px;
+    left: 5.3333333333px;
+  }
+  .ux .visual-select-card:nth-child(3n+3),
+  .ux.lct .visual-select-card:nth-child(3n+3) {
+    padding-right: 30px;
+    padding-left: 40.6666666667px;
+  }
+  .ux .visual-select-card:nth-child(3n+3)::before,
+  .ux.lct .visual-select-card:nth-child(3n+3)::before {
+    left: 10.6666666667px;
+    right: 0;
+  }
+}
+
+.ux .visual-select-card.is-populated::before,
+.ux.lct .visual-select-card.is-populated::before {
+  background-color: #edfff7;
+  border-color: #03AC63;
+}
+
+.ux .visual-select-card.is-populated .label .label-icon::before,
+.ux.lct .visual-select-card.is-populated .label .label-icon::before {
+  content: " ";
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer%5f1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A1.25%3Bstroke-miterlimit%3A10%3B%7D%0A%3C%2Fstyle%3E%0A%3Ctitle%3ECheckmark%3C%2Ftitle%3E%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M17.5%2C4.7l-10.2%2C10l-4.8-4.6%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-position: center center;
+  background-size: 33px;
+  background-repeat: no-repeat;
+  background-color: #03AC63;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: scale(0.6, 0.6) translate(-50%, -50%);
+  opacity: 0;
+  animation-name: populated-pulse;
+  animation-duration: .2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: .25s;
+  transform-origin: 0 0;
+}
+
+.ux .visual-select-card.is-populated .label .label-icon svg,
+.ux.lct .visual-select-card.is-populated .label .label-icon svg {
+  opacity: 0;
+}
+
+.ux .visual-select-card .label,
+.ux.lct .visual-select-card .label {
+  float: none;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+.ux .visual-select-card .label .label-icon,
+.ux.lct .visual-select-card .label .label-icon {
+  margin: 0 auto;
+  width: 80px;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.ux .visual-select-card .label .label-icon svg,
+.ux.lct .visual-select-card .label .label-icon svg {
+  transition: opacity 0.1s ease-in-out;
+  opacity: 1;
+}
+
+.ux .visual-select-card .label .label-icon svg path,
+.ux.lct .visual-select-card .label .label-icon svg path {
+  fill: #808080;
+}
+
+.ux .visual-select-card .label .label-text,
+.ux.lct .visual-select-card .label .label-text {
+  font-size: 16px;
+  position: relative;
+}
+
+.ux .visual-select-card .label .label-instruct,
+.ux.lct .visual-select-card .label .label-instruct {
+  font-size: 14px;
+  position: relative;
+}
+
+.ux .visual-select-card .graphic-select,
+.ux.lct .visual-select-card .graphic-select {
+  float: none;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20width%3D%2218px%22%20height%3D%2211px%22%20viewBox%3D%220%200%2018%2011%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3Cg%20id%3D%22Formfields%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Drop-Down%22%20transform%3D%22translate%28-395.000000%2C%20-941.000000%29%22%20stroke%3D%22%23828282%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpolyline%20id%3D%22Page-1-Copy%22%20points%3D%22395%20942.163099%20403.921466%20951%20413%20942%22%3E%3C/polyline%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E%0A");
+  background-position: right 18px center;
+  background-repeat: no-repeat;
+  padding-right: 45px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select-dropdown,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown {
+  position: absolute;
+  top: 55px;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+  background: white;
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(179, 179, 179, 0.24);
+  -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(179, 179, 179, 0.24);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(179, 179, 179, 0.24);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+  transform: translateY(3%);
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0;
+  outline: none;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-optgroup,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-optgroup {
+  pointer-events: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 9px 4px 9px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  cursor: none;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-optgroup:hover, .ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-optgroup:focus,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-optgroup:hover,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-optgroup:focus {
+  outline: none;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option {
+  cursor: pointer;
+  list-style: none;
+  background-color: white;
+  display: block;
+  padding: 14px 9px 15px 40px;
+  line-height: 1.25em;
+  width: 100%;
+  position: relative;
+  font-size: inherit;
+  margin: 0;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option .icon-checkmark,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option .icon-checkmark {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 19px;
+  width: 19px;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option .icon-checkmark svg,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option .icon-checkmark svg {
+  transition: opacity 0.1s ease-in-out;
+  opacity: 1;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option .icon-checkmark path,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option .icon-checkmark path {
+  fill: none;
+  stroke: #1A1446;
+  stroke-width: 1.25px;
+  stroke-miterlimit: 10;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option:hover, .ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option:focus,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option:hover,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option:focus {
+  background-color: #f5f5f5;
+  outline: none;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option.is-selected,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option.is-selected {
+  background-color: #E6E6E6;
+  color: #343741;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option.is-selected .icon-checkmark,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option.is-selected .icon-checkmark {
+  display: block;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option.is-selected:focus,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option.is-selected:focus {
+  background-color: #cdcccc;
+}
+
+.ux .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option + .field-graphic-select-value,
+.ux.lct .visual-select-card .graphic-select .field-graphic-select-dropdown .field-graphic-select-option + .field-graphic-select-value {
+  color: #565656;
+  font-size: .9375rem;
+}
+
+.ux .visual-select-card .graphic-select.is-open .field-graphic-select-dropdown,
+.ux.lct .visual-select-card .graphic-select.is-open .field-graphic-select-dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+/*# sourceMappingURL=visual-graphic-select.css.map */

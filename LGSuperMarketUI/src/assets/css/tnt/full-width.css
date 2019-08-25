@@ -1,0 +1,54 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+/* -------------------------
+   Outer Page Containers
+------------------------- */
+.at-a-glance .page {
+  max-width: 100%;
+}
+
+.at-a-glance .page .masthead {
+  max-width: 1020px;
+  margin: 7px auto 4px;
+}
+
+.at-a-glance .page .masthead .icon-help-center {
+  position: relative;
+  float: right;
+  margin-top: -50px;
+}
+
+.at-a-glance .page .masthead-nav,
+.at-a-glance .page .footer {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.at-a-glance .page .content-body {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+@media (min-width: 1020px) {
+  .at-a-glance .page .masthead {
+    padding-left: 84px;
+    padding-right: 80px;
+  }
+  .at-a-glance .page .content-body {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+/*# sourceMappingURL=full-width.css.map */

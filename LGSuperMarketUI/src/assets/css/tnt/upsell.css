@@ -1,0 +1,43 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+@media (min-width: 38.75em) and (max-width: 800px) {
+  .qps-upsell-single .qps-upsell-item {
+    width: 65%;
+    padding-left: 40px;
+  }
+  .qps-upsell-single .qps-upsell-item .icon {
+    position: absolute;
+    background-position: center;
+  }
+  .qps-upsell-single .qps-upsell-item-title {
+    font-size: 0.9375em;
+    display: block;
+    vertical-align: baseline;
+  }
+  .qps-upsell-single p {
+    display: block;
+    vertical-align: baseline;
+    font-size: 0.75em;
+  }
+  .qps-upsell-single p:before {
+    content: "";
+  }
+}
+
+@media (min-width: 800px) {
+  .qps-upsell-single p {
+    margin-left: .3em;
+  }
+}
+
+/*# sourceMappingURL=upsell.css.map */

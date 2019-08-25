@@ -1,0 +1,100 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.quote .quote-summary-total {
+  float: none;
+  max-width: none;
+}
+
+.quote .quote-questions {
+  padding: 20px 0 10px;
+  max-width: none;
+}
+
+.quote .quote-questions .label {
+  width: auto;
+  margin-bottom: 0;
+  margin-top: 3px;
+}
+
+.quote .quote-questions .form-question {
+  background-color: transparent;
+}
+
+.quote .quote-questions .field {
+  width: 100%;
+  max-width: none;
+}
+
+.quote .quote-questions .select {
+  margin: 0;
+}
+
+.quote .quote-questions .label-text {
+  font-weight: normal;
+  font-size: .75em;
+}
+
+.quote .quote-actions {
+  overflow: visible;
+  padding-top: 0;
+  max-width: none;
+}
+
+.quote .quote-actions .qps-opt-due:first-child {
+  line-height: 1.1rem;
+  margin-top: 3px;
+}
+
+@media (min-width: 450px) {
+  .quote {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .qps-cart-single .quote .quote-summary-total {
+    width: 40%;
+  }
+  .quote .quote-questions {
+    width: 60%;
+    padding: 0 0 0 20px;
+  }
+  .quote .quote-actions {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (min-width: 42.75em) {
+  .quote .quote-summary-total {
+    max-width: none;
+  }
+  .qps-cart-single .quote .quote-summary-total {
+    width: 32%;
+  }
+  .quote .quote-questions {
+    width: 40%;
+    padding: 0 20px;
+    max-width: none;
+  }
+  .quote .quote-actions {
+    width: 26%;
+    max-width: none;
+  }
+  .quote .quote-actions a:first-child {
+    margin-top: 25px;
+  }
+}
+
+/*# sourceMappingURL=qps-policy-start.css.map */

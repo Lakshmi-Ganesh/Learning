@@ -1,0 +1,117 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.dialog.dialog-coverage-compare .dialog-header {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.dialog.dialog-coverage-compare .dialog-header p {
+  width: 100%;
+  margin: 6.6666666667px 0 0;
+  padding-right: 80px;
+}
+
+.dialog.dialog-coverage-compare .dialog-header .policy-summary-edit .icon {
+  width: 27px;
+  height: 23px;
+  background-position: left center;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-right: 3px;
+}
+
+.dialog.dialog-coverage-compare .dialog-body {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+
+.dialog.dialog-coverage-compare .resource-header {
+  padding-bottom: 0;
+}
+
+.dialog.dialog-coverage-compare .resource-header img {
+  display: none;
+}
+
+.dialog.dialog-coverage-compare .resource-title {
+  font-size: 0.875rem;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+
+.dialog.dialog-coverage-compare .policy-coverage-summary:not(.policy-detail-grid) {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.dialog.dialog-coverage-compare .policy-coverage-summary:not(.policy-detail-grid) .qps-coverage {
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 6.6666666667px;
+  margin-top: 6.6666666667px;
+  margin-bottom: 0;
+  border-bottom: 1px dotted #d9d9d9;
+}
+
+.dialog.dialog-coverage-compare .policy-coverage-summary:not(.policy-detail-grid) .qps-coverage:last-child {
+  border-bottom: none;
+}
+
+.dialog.dialog-coverage-compare .policy-summary-title.hidden,
+.dialog.dialog-coverage-compare .policy-summary-subtitle.hidden,
+.dialog.dialog-coverage-compare .policy-coverage-summary.hidden {
+  display: none;
+}
+
+.dialog.dialog-coverage-compare .dialog.dialog-coverage-compare .policy-details .qps-cov-amt {
+  float: right;
+  clear: right;
+}
+
+.policy-coverage-summary.policy-details {
+  padding: 0 10px;
+}
+
+.policy-coverage-summary p:first-child {
+  padding-top: .8em;
+}
+
+.dialog-body .policy-coverage-summary .resource-header {
+  padding-top: .8em;
+}
+
+@media (min-width: 25em) {
+  .dialog.dialog-coverage-compare .dialog-body {
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 30em) {
+  .dialog.dialog-coverage-compare .dialog-header .policy-summary-edit {
+    right: 32px;
+    bottom: 10px;
+  }
+  .dialog.dialog-coverage-compare .policy-details .qps-cov-title {
+    width: 55%;
+    max-width: 15em;
+  }
+  .dialog.dialog-coverage-compare .policy-details .qps-cov-amt {
+    width: 45%;
+    float: right;
+    clear: right;
+  }
+}
+
+/*# sourceMappingURL=dialog-coverage-summary.css.map */

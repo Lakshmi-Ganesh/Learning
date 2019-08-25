@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="47" viewBox="0 0 26 47">
+  <defs>
+    <polygon id="coffee-cup-a" points="0 46.514 25.584 46.514 25.584 0 0 0"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#FFF" d="M0.5477,5.3076 L25.0477,5.3076 L22.2337,45.2356 C16.4297,46.3086 10.4017,46.2376 4.1897,45.2356 L0.5477,5.3076 Z"/>
+    <path stroke="#B3B3B3" d="M0.5477,5.3076 L25.0477,5.3076 L22.2337,45.2356 C16.4297,46.3086 10.4017,46.2376 4.1897,45.2356 L0.5477,5.3076 Z"/>
+    <polygon fill="#FFF" points="2.862 5.308 2.866 2.825 22.813 2.825 22.813 5.308"/>
+    <polygon stroke="#B3B3B3" points="2.862 5.308 2.866 2.825 22.813 2.825 22.813 5.308"/>
+    <mask id="coffee-cup-b" fill="#fff">
+      <use xlink:href="#coffee-cup-a"/>
+    </mask>
+    <polygon fill="#FFF" points="8.162 2.5 17.598 2.5 17.598 .5 8.162 .5" mask="url(#coffee-cup-b)"/>
+    <polygon stroke="#B3B3B3" points="8.162 2.5 17.598 2.5 17.598 .5 8.162 .5" mask="url(#coffee-cup-b)"/>
+    <path stroke="#F7B30A" d="M3.6102 19.3784L21.9852 19.1294M3.6102 21.0337L21.9852 20.7857M3.6102 22.689L21.9852 22.441" mask="url(#coffee-cup-b)"/>
+  </g>
+</svg>

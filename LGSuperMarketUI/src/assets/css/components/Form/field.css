@@ -1,0 +1,166 @@
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.lm-FieldGroup-field {
+  position: relative;
+  width: 100%;
+  transition: all 0.1s ease-in-out;
+  padding: 0;
+  margin: 0 0 8px 0;
+  border: none;
+}
+
+.lm-FieldGroup-field--optional {
+  font-size: 0.75rem;
+}
+
+.lm-FieldGroup-field--select, .lm-FieldGroup-field--input {
+  transition: all .25s ease-out;
+}
+
+.lm-FieldGroup-field--select .lm-FieldGroup-fieldLabel, .lm-FieldGroup-field--input .lm-FieldGroup-fieldLabel {
+  padding: 0;
+  transform: translateY(10px);
+  transform-origin: 0;
+  transition: all 0.1s ease-in-out;
+  font-size: 1rem;
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  line-height: normal;
+  right: 11px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.lm-FieldGroup-field--select .lm-FieldGroup-fieldLabel span[aria-hidden="true"], .lm-FieldGroup-field--input .lm-FieldGroup-fieldLabel span[aria-hidden="true"] {
+  text-overflow: ellipsis;
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.is-auto-filled .lm-FieldGroup-field--select, .is-auto-filled .lm-FieldGroup-field--input {
+  background-color: #faffbd;
+}
+
+.is-focused .lm-FieldGroup-field--select .lm-FieldGroup-fieldLabel,
+.is-populated .lm-FieldGroup-field--select .lm-FieldGroup-fieldLabel,
+.is-auto-filled .lm-FieldGroup-field--select .lm-FieldGroup-fieldLabel, .is-focused .lm-FieldGroup-field--input .lm-FieldGroup-fieldLabel,
+.is-populated .lm-FieldGroup-field--input .lm-FieldGroup-fieldLabel,
+.is-auto-filled .lm-FieldGroup-field--input .lm-FieldGroup-fieldLabel {
+  font-size: 0.75rem;
+  height: auto;
+  transform: translateY(0);
+  top: 8px;
+  left: 11px;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+.is-auto-filled .lm-FieldGroup-field--select .lm-FieldGroup-fieldLabel, .is-auto-filled .lm-FieldGroup-field--input .lm-FieldGroup-fieldLabel {
+  color: #737658;
+}
+
+.is-disabled .lm-FieldGroup-field--select, .is-disabled .lm-FieldGroup-field--input {
+  background-color: #F7F7F7;
+}
+
+.is-disabled .lm-FieldGroup-field--select .lm-FieldGroup-inner::after, .is-disabled .lm-FieldGroup-field--input .lm-FieldGroup-inner::after {
+  opacity: .5;
+}
+
+.lm-FieldGroup-field--select .lm-FieldGroup-fieldLabel {
+  right: 48px;
+}
+
+.lm-FieldGroup-field--radioCheck .lm-FieldGroup-fieldLabel {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #404040;
+}
+
+.lm-FieldGroup-fieldLabel {
+  padding: 8px 0 0 0;
+  margin: 0 0 8px 0;
+  font-size: 1rem;
+  color: #767676;
+  white-space: nowrap;
+  line-height: 1;
+  font-weight: 300;
+  pointer-events: none;
+}
+
+.is-disabled .lm-FieldGroup-fieldLabel {
+  cursor: default;
+  color: #C0BFC0;
+}
+
+.is-disabled.is-populated .lm-FieldGroup-fieldLabel {
+  color: #707070;
+}
+
+.is-error .lm-FieldGroup-fieldLabel {
+  color: #757070;
+}
+
+.is-alert .lm-FieldGroup-fieldLabel {
+  color: #736D68;
+}
+
+.is-info .lm-FieldGroup-fieldLabel {
+  color: #686C6E;
+}
+
+.is-positive .lm-FieldGroup-fieldLabel {
+  color: #656C66;
+}
+
+.lm-FieldGroup-inner {
+  display: block;
+  width: 100%;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+}
+
+.lm-FieldGroup-field--select .lm-FieldGroup-inner::after {
+  display: block;
+  position: absolute;
+  content: " ";
+  top: 50%;
+  transform: translateY(-50%);
+  right: 18px;
+  width: 18px;
+  height: 11px;
+  background: url("data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20width%3D%2218px%22%20height%3D%2211px%22%20viewBox%3D%220%200%2018%2011%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3Cg%20id%3D%22Formfields%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Drop-Down%22%20transform%3D%22translate%28-395.000000%2C%20-941.000000%29%22%20stroke%3D%22%23828282%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpolyline%20id%3D%22Page-1-Copy%22%20points%3D%22395%20942.163099%20403.921466%20951%20413%20942%22%3E%3C/polyline%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E%0A") 0 0 transparent no-repeat;
+  pointer-events: none;
+}
+
+.lm-FieldGroup .lm-Icon {
+  display: block;
+}
+
+.lm-FieldGroup-actionButton {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+}
+
+.lm-FieldGroup-actionButton .lm-ButtonClear {
+  display: none;
+}
+
+.lm-FieldGroup-actionButton .lm-ButtonClear:hover, .lm-FieldGroup-actionButton .lm-ButtonClear:focus {
+  display: inline;
+}
+
+/*# sourceMappingURL=field.css.map */

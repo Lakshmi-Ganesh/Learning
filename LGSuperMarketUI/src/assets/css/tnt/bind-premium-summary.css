@@ -1,0 +1,80 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+#dialog-bps-coverage-change-pg-mssg .pg-mssg {
+  margin-bottom: 6.6666666667px;
+}
+
+#dialog-bps-coverage-change-pg-mssg .pg-mssg p {
+  margin-bottom: 0;
+}
+
+#dialog-bps-coverage-change-pg-mssg ul {
+  margin-bottom: 1.2em;
+}
+
+.QPS_SINGLE_PACKAGE.BIND_PREMIUM_SUMMARY .cart.tabs .tabnav,
+.QPS_SINGLE_PACKAGE.BIND_PREMIUM_SUMMARY .quote .quote-summary-mssg {
+  display: none;
+}
+
+.QPS_SINGLE_PACKAGE.BIND_PREMIUM_SUMMARY .quote .quote-summary-total {
+  width: 100%;
+}
+
+.QPS_SINGLE_PACKAGE.BIND_PREMIUM_SUMMARY .coverage-item.hidden {
+  display: none;
+}
+
+@media (min-width: 450px) {
+  .QPS_SINGLE_PACKAGE.BIND_PREMIUM_SUMMARY .quote .quote-summary-total {
+    width: 100%;
+    max-width: 220px;
+  }
+}
+
+@media (min-width: 41.75em) {
+  .QPS_SINGLE_PACKAGE.BIND_PREMIUM_SUMMARY .content {
+    padding-top: 25px;
+  }
+  .QPS_SINGLE_PACKAGE.BIND_PREMIUM_SUMMARY .customer-service {
+    top: -5px;
+    right: 12px;
+  }
+}
+
+/* show all link styles */
+.show-all-link.hidden,
+.additional-coverage-items.hidden {
+  display: none;
+}
+
+.show-all-link {
+  position: relative;
+  border-top: 1px dotted #d9d9d9;
+  border-bottom: 1px solid #bdbdbd;
+  background-image: linear-gradient(to top, #fff, #fbfbfb);
+  /* Chrome 26, Firefox 16+, IE 10+, Opera */
+  padding: 10px 0;
+  margin: -1px 0 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+  z-index: 13;
+}
+
+.show-all-link a {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=bind-premium-summary.css.map */

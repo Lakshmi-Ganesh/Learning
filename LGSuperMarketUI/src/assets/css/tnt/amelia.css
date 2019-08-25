@@ -1,0 +1,24 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+/* -------------------------
+   Outer Page Containers
+------------------------- */
+.AMELIA_VIRTUAL_AGENT .masthead-nav, .ROSIE_VIRTUAL_AGENT .masthead-nav {
+  display: none;
+}
+
+.AMELIA_VIRTUAL_AGENT iframe, .ROSIE_VIRTUAL_AGENT iframe {
+  border: 0;
+}
+
+/*# sourceMappingURL=amelia.css.map */

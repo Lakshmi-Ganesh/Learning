@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../../../../../assets/css/themes/ux/main.scss",
+		"../../../../../assets/css/_mixins.scss",
+		"../../../../../assets/css/_foundations.scss",
+		"../../../../../assets/css/_colors.scss",
+		"../../../../../assets/css/themes/ux/components/_landing.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,oBAAoB;AC8FpB,iDAAiD;AAuDhD,4CAA4C;AAwB7C,uCAAuC;AAiBvC,kEAAkE;AA0ClE,sBAAsB;AAYtB;;;IAGI;AAiCJ,+BAA+B;AAiD/B,2DAA2D;AA3O3D,iDAAiD;AAuDhD,4CAA4C;AAwB7C,uCAAuC;AAiBvC,kEAAkE;AA0ClE,sBAAsB;AAYtB;;;IAGI;AAiCJ,+BAA+B;AAiD/B,2DAA2D;ADlU3D,AAAA,IAAI,CAAC;EACH,SAAS,EAAC,IAAI;CAIf;;AAHC,MAAM,EAAE,SAAS,EAAE,IAAI;EAFzB,AAAA,IAAI,CAAC;IAGD,SAAS,EAAE,IAAI;GAElB;;;AAED,AIXI,GJWD,AIbF,IAAI,CACH,KAAK,AAAA,MAAM,CACT,QAAQ,CAAC;EACP,OAAO,EAAE,IAAI;CACd;;AJSL,AIRI,GJQD,AIbF,IAAI,CACH,KAAK,AAAA,MAAM,CAIT,aAAa,CAAC;EACZ,YAAY,EAAE,GAAG;EACjB,aAAa,EAAE,GAAG;CAKnB;;AAJC,MAAM,EAAE,SAAS,EAAE,MAAM;EJK/B,AIRI,GJQD,AIbF,IAAI,CACH,KAAK,AAAA,MAAM,CAIT,aAAa,CAAC;IAIV,YAAY,EAAE,CAAC;IACf,aAAa,EAAE,CAAC;GAEnB"
+}

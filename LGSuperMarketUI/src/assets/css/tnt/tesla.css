@@ -1,0 +1,44 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.coverage-item p.coverage-cost {
+  color: #404040;
+}
+
+.coverage-cost {
+  position: absolute;
+  top: 11px;
+  right: 0;
+  margin: 0;
+  transition: opacity .3s;
+  z-index: 99;
+}
+
+.coverage-item-title {
+  padding-right: 75px;
+}
+
+.field-mssg {
+  color: #404040;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 600px) {
+  .field-mssg {
+    float: right;
+    padding-top: 10px;
+  }
+}
+
+
+
+/*# sourceMappingURL=tesla.css.map */

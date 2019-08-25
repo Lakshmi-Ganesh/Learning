@@ -1,0 +1,77 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.icon-dollarsign-white {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20width%3D%2212.665px%22%20height%3D%2219.243px%22%20viewBox%3D%220%200%2012.665%2019.243%22%20enable-background%3D%22new%200%200%2012.665%2019.243%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M12.026%2C14.985c-0.41%2C0.62-0.935%2C1.118-1.577%2C1.497c-0.641%2C0.379-1.361%2C0.654-2.162%2C0.824%0A%09c-0.46%2C0.1-0.471%2C0.114-0.931%2C0.157l-0.031%2C1.771l-2.286%2C0.009l0.03-1.679c-1.064-0.026-1.623-0.111-2.493-0.487%0A%09C1.552%2C16.636%2C0.921%2C16.039%2C0%2C15.172l2.294-2.065c0.486%2C0.543%2C1.14%2C0.905%2C1.726%2C1.192c0.594%2C0.292%2C1.331%2C0.445%2C2.149%2C0.442%0A%09c0.28-0.001%2C0.571-0.034%2C0.874-0.098c0.303-0.064%2C0.584-0.171%2C0.845-0.317c0.261-0.148%2C0.474-0.332%2C0.639-0.552%0A%09c0.166-0.222%2C0.251-0.478%2C0.257-0.771c0.009-0.521-0.19-0.909-0.594-1.159c-0.405-0.25-0.917-0.452-1.539-0.605%0A%09c0.991%2C0.246%2C0.428%2C0.022-2.01-0.433c-0.719-0.133-1.388-0.351-2.007-0.651c-0.62-0.301-1.129-0.724-1.528-1.266%0A%09c-0.399-0.543-0.591-1.296-0.573-2.26c0.015-0.837%2C0.205-1.564%2C0.571-2.184C1.47%2C3.827%2C1.948%2C3.317%2C2.536%2C2.917%0A%09s1.427-0.831%2C1.932-0.96c0.414-0.106%2C0.46-0.105%2C0.88-0.154l0.031-1.795L7.674%2C0L7.643%2C1.742c0.919%2C0.03%2C1.375%2C0.189%2C2.267%2C0.503%0A%09c0.91%2C0.32%2C1.732%2C1.012%2C2.423%2C1.764l-2.327%2C2.016C8.858%2C4.988%2C7.971%2C4.749%2C6.701%2C4.753c-0.516%2C0.003-1.025%2C0.13-1.524%2C0.383%0A%09C4.676%2C5.39%2C4.422%2C5.798%2C4.412%2C6.364C4.404%2C6.825%2C4.603%2C7.158%2C5.008%2C7.366c0.405%2C0.208%2C0.919%2C0.384%2C1.54%2C0.528%0A%09C7.17%2C8.038%2C7.84%2C8.188%2C8.559%2C8.341c0.719%2C0.155%2C1.388%2C0.394%2C2.007%2C0.715c0.618%2C0.322%2C1.127%2C0.766%2C1.526%2C1.328%0A%09c0.398%2C0.564%2C0.59%2C1.338%2C0.572%2C2.322C12.646%2C13.606%2C12.436%2C14.366%2C12.026%2C14.985%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+}
+
+.icon-circular {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  background-size: 65%;
+  background-position: center center;
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+  background-size: 60%;
+  background-color: #F7B30A;
+  margin-right: 10px;
+}
+
+.icon-circular-green {
+  background-color: #009015;
+}
+
+.icon-circular.icon-auto-white {
+  background-size: 65%;
+  background-position-x: center;
+  background-position-y: 7px;
+}
+
+.icon-circular.icon-check-white {
+  background-size: 48%;
+}
+
+.icon-circular.icon-dollarsign-white {
+  background-size: 40%;
+}
+
+.confirm-instructions-simple {
+  background: none;
+  border: 0;
+}
+
+.confirm-instructions-simple ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.confirm-instructions-simple .pg-mssg:last-child {
+  padding-top: 20px;
+  border-top: 1px dotted #ccc;
+}
+
+.confirm-instructions-simple li {
+  position: relative;
+  line-height: 28px;
+  margin-bottom: .8em;
+}
+
+.confirm-instructions-simple li .icon-circular {
+  vertical-align: top;
+}
+
+/*# sourceMappingURL=ehp-existing.css.map */

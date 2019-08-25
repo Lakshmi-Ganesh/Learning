@@ -1,0 +1,485 @@
+/*!v.2.42.0*/
+/* Design System colors */
+/* Lippincott */
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 40;
+  }
+}
+
+@keyframes populated-pulse {
+  0% {
+    transform: scale(0.6, 0.6) translate(-50%, -50%);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1, 1.1) translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1) translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.ux.visual-select-card-interview .content-body,
+.ux.lct.visual-select-card-interview .content-body {
+  padding: 0;
+}
+
+.ux.visual-select-card-interview .form-wrapper:first-child.pg-mssg,
+.ux.lct.visual-select-card-interview .form-wrapper:first-child.pg-mssg {
+  padding-top: 0;
+}
+
+.ux.visual-select-card-interview .form-group,
+.ux.lct.visual-select-card-interview .form-group {
+  padding: 40px 0 40px;
+}
+
+.ux.visual-select-card-interview .form-question.flex-region,
+.ux.lct.visual-select-card-interview .form-question.flex-region {
+  display: flex;
+  border: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ux .visual-select-card,
+.ux.lct .visual-select-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 16px 16px 16px;
+  border-radius: 3px;
+  cursor: inherit;
+  width: 100%;
+  position: relative;
+  margin-bottom: 16px;
+  max-width: 336px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ux .visual-select-card::before,
+.ux.lct .visual-select-card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  background-color: white;
+}
+
+@media (min-width: 400px) {
+  .ux .visual-select-card,
+  .ux.lct .visual-select-card {
+    padding: 10px 16px 16px 16px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 799px) {
+  .ux .visual-select-card,
+  .ux.lct .visual-select-card {
+    padding: 16px 16px 16px 16px;
+    width: 50%;
+    margin: 0 0 16px 0;
+  }
+  .ux .visual-select-card:nth-child(odd),
+  .ux.lct .visual-select-card:nth-child(odd) {
+    padding-right: 24px;
+    /*//Make widow card symmetrical
+        &:last-child{
+          padding: 16px $vsmlp 16px $vsmlp;
+          &::before {
+            right: 0;
+          }
+        }*/
+  }
+  .ux .visual-select-card:nth-child(odd)::before,
+  .ux.lct .visual-select-card:nth-child(odd)::before {
+    right: 8px;
+  }
+  .ux .visual-select-card:nth-child(even),
+  .ux.lct .visual-select-card:nth-child(even) {
+    padding-left: 24px;
+  }
+  .ux .visual-select-card:nth-child(even)::before,
+  .ux.lct .visual-select-card:nth-child(even)::before {
+    left: 8px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 959px) {
+  .ux .visual-select-card,
+  .ux.lct .visual-select-card {
+    padding: 16px 16px 16px 16px;
+    width: 33.3333333333%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .ux .visual-select-card:nth-child(3n+1),
+  .ux.lct .visual-select-card:nth-child(3n+1) {
+    padding-right: 26.6666666667px;
+    padding-left: 16px;
+    /*//Make widow card symmetrical
+        &:last-child{
+          padding-right:$vsllp+((($gutter*2)/$vslc)/2);
+          padding-left:$vsllp+((($gutter*2)/$vslc)/2);
+          &::before {
+            right:(($gutter*2)/$vslc)/2;
+            left:(($gutter*2)/$vslc)/2;
+          }
+        }
+        //If second to last in a row of 2
+        &:nth-last-child(2){
+          margin-right:inherit;
+          padding-right:$vsmlp+($gutter/2);
+          &::before{
+            right:$gutter/2;
+          }
+        }*/
+  }
+  .ux .visual-select-card:nth-child(3n+1)::before,
+  .ux.lct .visual-select-card:nth-child(3n+1)::before {
+    right: 10.6666666667px;
+    left: 0;
+  }
+  .ux .visual-select-card:nth-child(3n+2),
+  .ux.lct .visual-select-card:nth-child(3n+2) {
+    padding-right: 21.3333333333px;
+    padding-left: 21.3333333333px;
+    /*//If last in a row of 2
+        &:last-child{
+          margin-left:inherit;
+          padding-left:$vsmlp+($gutter/2);
+          &::before{
+            left:$gutter/2;
+          }
+        }*/
+  }
+  .ux .visual-select-card:nth-child(3n+2)::before,
+  .ux.lct .visual-select-card:nth-child(3n+2)::before {
+    right: 5.3333333333px;
+    left: 5.3333333333px;
+  }
+  .ux .visual-select-card:nth-child(3n+3),
+  .ux.lct .visual-select-card:nth-child(3n+3) {
+    padding-right: 16px;
+    padding-left: 26.6666666667px;
+  }
+  .ux .visual-select-card:nth-child(3n+3)::before,
+  .ux.lct .visual-select-card:nth-child(3n+3)::before {
+    left: 10.6666666667px;
+    right: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .ux .visual-select-card,
+  .ux.lct .visual-select-card {
+    padding: 30px 30px 30px 30px;
+    width: 33.3333333333%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .ux .visual-select-card:nth-child(3n+1),
+  .ux.lct .visual-select-card:nth-child(3n+1) {
+    padding-right: 40.6666666667px;
+    padding-left: 30px;
+    /*//Make widow card symmetrical
+        &:last-child{
+          padding-top: 30px;
+          padding-bottom: 30px;
+          padding-right:$vsxllp+((($gutter*2)/$vslc)/2);
+          padding-left:$vsxllp+((($gutter*2)/$vslc)/2);
+          &::before {
+            right:(($gutter*2)/$vslc)/2;
+            left:(($gutter*2)/$vslc)/2;
+          }
+        }
+        //If second to last in a row of 2
+        &:nth-last-child(2){
+          margin-right:inherit;
+          padding-right:$vsxllp+($gutter/2);
+          &::before{
+            right:$gutter/2;
+          }
+        }*/
+  }
+  .ux .visual-select-card:nth-child(3n+1)::before,
+  .ux.lct .visual-select-card:nth-child(3n+1)::before {
+    right: 10.6666666667px;
+    left: 0;
+  }
+  .ux .visual-select-card:nth-child(3n+2),
+  .ux.lct .visual-select-card:nth-child(3n+2) {
+    /**/
+    padding-right: 35.3333333333px;
+    padding-left: 35.3333333333px;
+  }
+  .ux .visual-select-card:nth-child(3n+2)::before,
+  .ux.lct .visual-select-card:nth-child(3n+2)::before {
+    right: 5.3333333333px;
+    left: 5.3333333333px;
+  }
+  .ux .visual-select-card:nth-child(3n+2):last-child,
+  .ux.lct .visual-select-card:nth-child(3n+2):last-child {
+    margin-left: inherit;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 38px;
+    padding-right: 30px;
+  }
+  .ux .visual-select-card:nth-child(3n+2):last-child::before,
+  .ux.lct .visual-select-card:nth-child(3n+2):last-child::before {
+    left: 8px;
+  }
+  .ux .visual-select-card:nth-child(3n+3),
+  .ux.lct .visual-select-card:nth-child(3n+3) {
+    padding-right: 30px;
+    padding-left: 40.6666666667px;
+  }
+  .ux .visual-select-card:nth-child(3n+3)::before,
+  .ux.lct .visual-select-card:nth-child(3n+3)::before {
+    left: 10.6666666667px;
+    right: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .ux .visual-select-card:first-child:nth-last-child(4),
+  .ux .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card,
+  .ux.lct .visual-select-card:first-child:nth-last-child(4),
+  .ux.lct .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card {
+    width: 50%;
+    padding: 16px 16px 16px 16px;
+    margin: 0 0 16px 0;
+  }
+  .ux .visual-select-card:first-child:nth-last-child(4):nth-child(odd),
+  .ux .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(odd),
+  .ux.lct .visual-select-card:first-child:nth-last-child(4):nth-child(odd),
+  .ux.lct .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(odd) {
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .ux .visual-select-card:first-child:nth-last-child(4):nth-child(odd)::before,
+  .ux .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(odd)::before,
+  .ux.lct .visual-select-card:first-child:nth-last-child(4):nth-child(odd)::before,
+  .ux.lct .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(odd)::before {
+    right: 8px;
+    left: 0;
+  }
+  .ux .visual-select-card:first-child:nth-last-child(4):nth-child(even),
+  .ux .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(even),
+  .ux.lct .visual-select-card:first-child:nth-last-child(4):nth-child(even),
+  .ux.lct .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(even) {
+    padding-left: 24px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .ux .visual-select-card:first-child:nth-last-child(4):nth-child(even)::before,
+  .ux .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(even)::before,
+  .ux.lct .visual-select-card:first-child:nth-last-child(4):nth-child(even)::before,
+  .ux.lct .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(even)::before {
+    left: 8px;
+    right: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .ux .visual-select-card:first-child:nth-last-child(4),
+  .ux .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card,
+  .ux.lct .visual-select-card:first-child:nth-last-child(4),
+  .ux.lct .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card {
+    max-width: 436px;
+  }
+  .ux .visual-select-card:first-child:nth-last-child(4):nth-child(odd),
+  .ux .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(odd),
+  .ux.lct .visual-select-card:first-child:nth-last-child(4):nth-child(odd),
+  .ux.lct .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(odd) {
+    padding-left: 116px;
+  }
+  .ux .visual-select-card:first-child:nth-last-child(4):nth-child(odd)::before,
+  .ux .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(odd)::before,
+  .ux.lct .visual-select-card:first-child:nth-last-child(4):nth-child(odd)::before,
+  .ux.lct .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(odd)::before {
+    left: 100px;
+  }
+  .ux .visual-select-card:first-child:nth-last-child(4):nth-child(even),
+  .ux .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(even),
+  .ux.lct .visual-select-card:first-child:nth-last-child(4):nth-child(even),
+  .ux.lct .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(even) {
+    padding-right: 116px;
+  }
+  .ux .visual-select-card:first-child:nth-last-child(4):nth-child(even)::before,
+  .ux .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(even)::before,
+  .ux.lct .visual-select-card:first-child:nth-last-child(4):nth-child(even)::before,
+  .ux.lct .visual-select-card:first-child:nth-last-child(4) ~ .visual-select-card:nth-child(even)::before {
+    right: 100px;
+  }
+}
+
+.ux .visual-select-card.is-populated::before,
+.ux.lct .visual-select-card.is-populated::before {
+  background-color: #edfff7;
+  border-color: #03AC63;
+}
+
+.ux .visual-select-card.is-populated .label .label-icon::before,
+.ux.lct .visual-select-card.is-populated .label .label-icon::before {
+  content: " ";
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer%5f1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2020%2020%22%20style%3D%22enable-background%3Anew%200%200%2020%2020%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3Anone%3Bstroke%3A%23FFFFFF%3Bstroke-width%3A1.25%3Bstroke-miterlimit%3A10%3B%7D%0A%3C%2Fstyle%3E%0A%3Ctitle%3ECheckmark%3C%2Ftitle%3E%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M17.5%2C4.7l-10.2%2C10l-4.8-4.6%22%2F%3E%0A%3C%2Fsvg%3E");
+  background-position: center center;
+  background-size: 28.05px;
+  background-repeat: no-repeat;
+  background-color: #03AC63;
+  position: absolute;
+  width: 40.8px;
+  height: 40.8px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: scale(0.6, 0.6) translate(-50%, -50%);
+  opacity: 0;
+  animation-name: populated-pulse;
+  animation-duration: .2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: .25s;
+  transform-origin: 0 0;
+}
+
+@media (min-width: 400px) {
+  .ux .visual-select-card.is-populated .label .label-icon::before,
+  .ux.lct .visual-select-card.is-populated .label .label-icon::before {
+    background-size: 33px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.ux .visual-select-card.is-populated .label .label-icon svg,
+.ux.lct .visual-select-card.is-populated .label .label-icon svg {
+  opacity: 0;
+}
+
+.ux .visual-select-card .label,
+.ux.lct .visual-select-card .label {
+  float: none;
+  width: 100%;
+  margin: 0;
+  padding: 20px 0 20px 0;
+  position: relative;
+}
+
+@media (min-width: 400px) {
+  .ux .visual-select-card .label,
+  .ux.lct .visual-select-card .label {
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+}
+
+.ux .visual-select-card .label .label-icon,
+.ux.lct .visual-select-card .label .label-icon {
+  width: 60px;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ux .visual-select-card .label .label-icon svg,
+.ux.lct .visual-select-card .label .label-icon svg {
+  transition: opacity 0.1s ease-in-out;
+  opacity: 1;
+}
+
+.ux .visual-select-card .label .label-icon svg path,
+.ux.lct .visual-select-card .label .label-icon svg path {
+  fill: #808080;
+}
+
+@media (min-width: 400px) {
+  .ux .visual-select-card .label .label-icon,
+  .ux.lct .visual-select-card .label .label-icon {
+    width: 80px;
+    margin: 0 auto;
+    position: relative;
+    top: auto;
+    transform: none;
+  }
+}
+
+.ux .visual-select-card .label .label-text,
+.ux.lct .visual-select-card .label .label-text {
+  font-size: 16px;
+  position: relative;
+  margin-left: 80px;
+}
+
+@media (min-width: 400px) {
+  .ux .visual-select-card .label .label-text,
+  .ux.lct .visual-select-card .label .label-text {
+    margin-left: inherit;
+  }
+}
+
+.ux .visual-select-card .label .label-instruct,
+.ux.lct .visual-select-card .label .label-instruct {
+  font-size: 14px;
+  position: relative;
+  margin-bottom: 0;
+  margin-left: 80px;
+}
+
+.ux .visual-select-card .label .label-instruct a,
+.ux.lct .visual-select-card .label .label-instruct a {
+  cursor: pointer;
+}
+
+@media (min-width: 400px) {
+  .ux .visual-select-card .label .label-instruct,
+  .ux.lct .visual-select-card .label .label-instruct {
+    margin-left: inherit;
+  }
+}
+
+.ux .visual-select-card .field,
+.ux.lct .visual-select-card .field {
+  width: 100%;
+  padding: 0;
+}
+
+.ux .visual-select-card .field::after,
+.ux.lct .visual-select-card .field::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 16px;
+  top: 1px;
+  bottom: 1px;
+  right: 45px;
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, white 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+}
+
+.ux .visual-select-card .field select,
+.ux.lct .visual-select-card .field select {
+  display: block;
+  margin: 0 auto;
+  max-width: 348px;
+}
+
+/*# sourceMappingURL=visual-select.css.map */

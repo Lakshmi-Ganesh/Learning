@@ -1,0 +1,236 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 1em/1.3 "Roboto", Arial, Helvetica, sans-serif;
+  color: #404040;
+  margin: 0 auto;
+}
+
+@media only all {
+  body {
+    max-width: none;
+  }
+}
+
+.page {
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+  margin: 0 auto;
+  border-top: solid 5px white;
+}
+
+.header {
+  margin: 0 auto;
+  position: relative;
+  z-index: 12;
+}
+
+img {
+  border: 0 none;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+.masthead {
+  position: relative;
+  z-index: 12;
+  max-width: 1020px;
+  margin: 7px 15px 4px;
+}
+
+@media (min-width: 30em) {
+  .masthead {
+    margin: 20px 30px;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .masthead {
+    margin: 20px 46px;
+  }
+}
+
+@media (min-width: 72em) {
+  .masthead {
+    margin: 20px auto 30px;
+  }
+}
+
+.masthead .logo {
+  max-width: 230px;
+  min-width: 144px;
+  width: 45%;
+}
+
+.masthead .logo img {
+  width: 100%;
+}
+
+.content {
+  padding: 0 15px;
+  min-height: 420px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #d9d9d9;
+  z-index: 3;
+  position: relative;
+}
+
+.content:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  opacity: .5;
+  background-image: -webkit-radial-gradient(ellipse closest-side, #ddd, #ddd, #ddd, rgba(255, 255, 255, 0));
+  /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: radial-gradient(ellipse closest-side, #ddd, #ddd, #ddd, rgba(255, 255, 255, 0));
+  /* Chrome 26, Firefox 16+, IE 10+, Opera */
+  background-size: 100% 250%;
+  background-position: center;
+}
+
+@media (min-width: 30em) {
+  .content {
+    padding: 20px 30px;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .content {
+    padding: 20px 50px;
+  }
+}
+
+@keyframes placeholder-shimmer {
+  0% {
+    background-position: -350px 0;
+  }
+  100% {
+    background-position: 350px 0;
+  }
+}
+
+@-webkit-keyframes placeholder-shimmer {
+  0% {
+    background-position: -350px 0;
+  }
+  100% {
+    background-position: 350px 0;
+  }
+}
+
+.placeholder {
+  position: relative;
+  display: block;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.ph-item {
+  background: #eeeeee;
+  background-repeat: no-repeat;
+  background-size: 700px 300px;
+  background-image: linear-gradient(110deg, #eeeeee 10%, #f4f4f4 25%, #eeeeee 40%, #eeeeee 100%);
+  -webkit-animation: placeholder-shimmer 1.3s infinite ease-in;
+  animation: placeholder-shimmer 1.3s infinite ease-in;
+  vertical-align: top;
+  border-radius: 3px;
+}
+
+.placeholder-content-header {
+  margin-bottom: 90px;
+}
+
+@media (min-width: 37.5em) {
+  .placeholder-content-header {
+    margin-top: 10px;
+  }
+}
+
+.placeholder-content-header .ph-b {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.placeholder-content-header .ph-b1 {
+  display: block;
+  margin: 10px 0 0;
+  height: 16px;
+}
+
+.ph-wayfinder {
+  display: inline-block;
+  width: 50px;
+  height: 8px;
+  margin: 0 10px 0 0;
+}
+
+.ph-h1 {
+  position: relative;
+  top: 35px;
+  width: 140px;
+  height: 47px;
+}
+
+.placeholder-text-input {
+  width: 100%;
+  min-height: 75px;
+  padding-bottom: 20px;
+}
+
+.placeholder-text-input .ph-a {
+  display: block;
+  margin: 0 0 5px;
+}
+
+.placeholder-text-input .ph-b {
+  display: block;
+}
+
+.ph-label {
+  width: 120px;
+  height: 16px;
+  margin-bottom: 10px;
+}
+
+.ph-input {
+  width: 100%;
+  height: 50px;
+}
+
+@media (min-width: 600px) {
+  .placeholder-text-input .ph-a {
+    width: 40%;
+    padding-right: 1em;
+    margin-bottom: 0;
+    float: left;
+  }
+  .placeholder-text-input .ph-b {
+    width: 60%;
+    max-width: none;
+    float: left;
+  }
+}
+
+/*# sourceMappingURL=~minimal-ux.css.map */

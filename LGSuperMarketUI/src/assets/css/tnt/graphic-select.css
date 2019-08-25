@@ -1,0 +1,121 @@
+/*!v.2.42.0*/
+/* Design System colors */
+/* Lippincott */
+.graphic-select {
+  float: none;
+  width: 100%;
+  position: relative;
+  padding: 0;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.graphic-select .field-graphic-select {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20width%3D%2218px%22%20height%3D%2211px%22%20viewBox%3D%220%200%2018%2011%22%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%3E%0A%20%20%20%20%3Cg%20id%3D%22Formfields%22%20stroke%3D%22none%22%20stroke-width%3D%221%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%0A%20%20%20%20%20%20%20%20%3Cg%20id%3D%22Drop-Down%22%20transform%3D%22translate%28-395.000000%2C%20-941.000000%29%22%20stroke%3D%22%23828282%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cpolyline%20id%3D%22Page-1-Copy%22%20points%3D%22395%20942.163099%20403.921466%20951%20413%20942%22%3E%3C/polyline%3E%0A%20%20%20%20%20%20%20%20%3C/g%3E%0A%20%20%20%20%3C/g%3E%0A%3C/svg%3E%0A");
+  background-position: right 18px center;
+  background-repeat: no-repeat;
+  padding-right: 45px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.graphic-select .field-graphic-select-dropdown {
+  position: absolute;
+  top: 55px;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+  background: white;
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(179, 179, 179, 0.24);
+  -moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(179, 179, 179, 0.24);
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(179, 179, 179, 0.24);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.1s ease-in-out;
+  transform: translateY(3%);
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0;
+  outline: none;
+}
+
+.graphic-select .field-graphic-select-dropdown .field-graphic-select-optgroup {
+  pointer-events: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 9px 4px 9px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  cursor: none;
+}
+
+.graphic-select .field-graphic-select-dropdown .field-graphic-select-optgroup:hover, .graphic-select .field-graphic-select-dropdown .field-graphic-select-optgroup:focus {
+  outline: none;
+}
+
+.graphic-select .field-graphic-select-dropdown .field-graphic-select-option {
+  cursor: pointer;
+  list-style: none;
+  background-color: white;
+  display: block;
+  padding: 14px 9px 15px 40px;
+  line-height: 1.25em;
+  width: 100%;
+  position: relative;
+  font-size: inherit;
+  margin: 0;
+}
+
+.graphic-select .field-graphic-select-dropdown .field-graphic-select-option .icon-checkmark {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 19px;
+  width: 19px;
+}
+
+.graphic-select .field-graphic-select-dropdown .field-graphic-select-option .icon-checkmark svg {
+  transition: opacity 0.1s ease-in-out;
+  opacity: 1;
+}
+
+.graphic-select .field-graphic-select-dropdown .field-graphic-select-option .icon-checkmark path {
+  fill: none;
+  stroke: #1A1446;
+  stroke-width: 1.25px;
+  stroke-miterlimit: 10;
+}
+
+.graphic-select .field-graphic-select-dropdown .field-graphic-select-option:hover, .graphic-select .field-graphic-select-dropdown .field-graphic-select-option:focus {
+  background-color: #f5f5f5;
+  outline: none;
+}
+
+.graphic-select .field-graphic-select-dropdown .field-graphic-select-option.is-selected {
+  background-color: #E6E6E6;
+  color: #343741;
+}
+
+.graphic-select .field-graphic-select-dropdown .field-graphic-select-option.is-selected .icon-checkmark {
+  display: block;
+}
+
+.graphic-select .field-graphic-select-dropdown .field-graphic-select-option.is-selected:focus {
+  background-color: #cdcccc;
+}
+
+.graphic-select .field-graphic-select-dropdown .field-graphic-select-option + .field-graphic-select-value {
+  color: #565656;
+  font-size: .9375rem;
+}
+
+.graphic-select.is-open .field-graphic-select-dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+/*# sourceMappingURL=graphic-select.css.map */

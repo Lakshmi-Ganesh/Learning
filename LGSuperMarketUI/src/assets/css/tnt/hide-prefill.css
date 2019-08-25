@@ -1,0 +1,76 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+.hide-prefill .collapsible-header:before, .hide-prefill .collapsible-content:before, .hide-prefill .collapsible-header:after, .hide-prefill .collapsible-content:after {
+  content: " ";
+  display: table;
+}
+
+.hide-prefill .collapsible-header:after, .hide-prefill .collapsible-content:after {
+  clear: both;
+}
+
+/* Shared collapsible styles */
+.hide-prefill .collapsible-header,
+.hide-prefill .collapsible-content {
+  padding: 0 10px 0 20px;
+}
+
+.hide-prefill .collapsible-header {
+  display: block;
+  font-weight: bold;
+  letter-spacing: normal;
+  font-size: 1rem;
+  color: #1b75bb;
+  position: relative;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+
+.hide-prefill .collapsible-content {
+  display: block;
+  clear: both;
+  outline: none;
+}
+
+/* for collapsibles auto-expanded at larger breakpoints: */
+.pg-mssg .smlprint {
+  font-size: 0.75rem;
+  margin-top: -10px;
+}
+
+/* Edit QPS */
+.hide-prefill .collapsible:last-child {
+  margin-bottom: 20px;
+}
+
+.hide-prefill .collapsible-header {
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.hide-prefill .collapsible-content p {
+  margin: .5em 0 1em;
+}
+
+.hide-prefill .collapsible-content > .form-question:first-child {
+  padding-top: 15px;
+}
+
+@media (min-width: 37.5em) {
+  .hide-prefill .collapsible {
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=hide-prefill.css.map */

@@ -1,0 +1,1269 @@
+/*!v.2.42.0*/
+.img-picker-set p {
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: .8em;
+}
+
+.img-picker-set .thumbnails img {
+  border: 1px solid #ccc;
+}
+
+.img-picker-set .thumbnails p {
+  min-height: 85px;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 0;
+}
+
+.img-picker-set .thumbnails .opt {
+  padding: 3px 0 10px 45px;
+}
+
+@media (min-width: 29em) {
+  .img-picker-set .thumbnails .opt {
+    padding-left: 85px;
+  }
+}
+
+.img-picker-set .thumbnails .opt-desc:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.ext-wall .adobe {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -80px 0;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .adobe {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .adobe {
+    /*2. RETINA, MOBILE*/
+    background-position: -40px 0;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .adobe {
+    /*4. RETINA, DESKTOP*/
+    background-position: -80px 0;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .block-painted {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: 0 -70px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .block-painted {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .block-painted {
+    /*2. RETINA, MOBILE*/
+    background-position: 0 -35px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .block-painted {
+    /*4. RETINA, DESKTOP*/
+    background-position: 0 -70px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .block-painted-decorative {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -240px 0;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .block-painted-decorative {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .block-painted-decorative {
+    /*2. RETINA, MOBILE*/
+    background-position: -120px 0;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .block-painted-decorative {
+    /*4. RETINA, DESKTOP*/
+    background-position: -240px 0;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .block-slump {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -80px -70px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .block-slump {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .block-slump {
+    /*2. RETINA, MOBILE*/
+    background-position: -40px -35px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .block-slump {
+    /*4. RETINA, DESKTOP*/
+    background-position: -80px -70px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .brick-block {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -160px 0;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .brick-block {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .brick-block {
+    /*2. RETINA, MOBILE*/
+    background-position: -80px 0;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .brick-block {
+    /*4. RETINA, DESKTOP*/
+    background-position: -160px 0;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .brick-solid {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -160px -70px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .brick-solid {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .brick-solid {
+    /*2. RETINA, MOBILE*/
+    background-position: -80px -35px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .brick-solid {
+    /*4. RETINA, DESKTOP*/
+    background-position: -160px -70px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .brick-veneer {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: 0 -140px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .brick-veneer {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .brick-veneer {
+    /*2. RETINA, MOBILE*/
+    background-position: 0 -70px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .brick-veneer {
+    /*4. RETINA, DESKTOP*/
+    background-position: 0 -140px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .brownstone-solid {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -80px -140px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .brownstone-solid {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .brownstone-solid {
+    /*2. RETINA, MOBILE*/
+    background-position: -40px -70px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .brownstone-solid {
+    /*4. RETINA, DESKTOP*/
+    background-position: -80px -140px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .logs {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -160px -140px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .logs {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .logs {
+    /*2. RETINA, MOBILE*/
+    background-position: -80px -70px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .logs {
+    /*4. RETINA, DESKTOP*/
+    background-position: -160px -140px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .placeholder {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .placeholder {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .placeholder {
+    /*2. RETINA, MOBILE*/
+    background-position: 0 0;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .placeholder {
+    /*4. RETINA, DESKTOP*/
+    background-position: 0 0;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .poured-concrete {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -240px -70px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .poured-concrete {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .poured-concrete {
+    /*2. RETINA, MOBILE*/
+    background-position: -120px -35px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .poured-concrete {
+    /*4. RETINA, DESKTOP*/
+    background-position: -240px -70px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .siding-aluminum-plastic {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -240px -140px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .siding-aluminum-plastic {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .siding-aluminum-plastic {
+    /*2. RETINA, MOBILE*/
+    background-position: -120px -70px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .siding-aluminum-plastic {
+    /*4. RETINA, DESKTOP*/
+    background-position: -240px -140px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .siding-cement-fiber {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: 0 -210px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .siding-cement-fiber {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .siding-cement-fiber {
+    /*2. RETINA, MOBILE*/
+    background-position: 0 -105px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .siding-cement-fiber {
+    /*4. RETINA, DESKTOP*/
+    background-position: 0 -210px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .stone-block {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -80px -210px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .stone-block {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .stone-block {
+    /*2. RETINA, MOBILE*/
+    background-position: -40px -105px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .stone-block {
+    /*4. RETINA, DESKTOP*/
+    background-position: -80px -210px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .stone-solid {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -160px -210px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .stone-solid {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .stone-solid {
+    /*2. RETINA, MOBILE*/
+    background-position: -80px -105px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .stone-solid {
+    /*4. RETINA, DESKTOP*/
+    background-position: -160px -210px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .stone-veneer {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -240px -210px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .stone-veneer {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .stone-veneer {
+    /*2. RETINA, MOBILE*/
+    background-position: -120px -105px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .stone-veneer {
+    /*4. RETINA, DESKTOP*/
+    background-position: -240px -210px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .stucco-block {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -320px 0;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .stucco-block {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .stucco-block {
+    /*2. RETINA, MOBILE*/
+    background-position: -160px 0;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .stucco-block {
+    /*4. RETINA, DESKTOP*/
+    background-position: -320px 0;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .stucco-synthetic {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -320px -70px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .stucco-synthetic {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .stucco-synthetic {
+    /*2. RETINA, MOBILE*/
+    background-position: -160px -35px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .stucco-synthetic {
+    /*4. RETINA, DESKTOP*/
+    background-position: -320px -70px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall .wood {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/wall_ext.png");
+  /*sprite coordinates: */
+  background-position: -320px -140px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .ext-wall .wood {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .ext-wall .wood {
+    /*2. RETINA, MOBILE*/
+    background-position: -160px -70px;
+    background-size: 200px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/wall_ext@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .ext-wall .wood {
+    /*4. RETINA, DESKTOP*/
+    background-position: -320px -140px;
+    background-size: 400px 280px;
+  }
+}
+
+.ext-wall img {
+  width: 80px;
+  height: 70px;
+}
+
+.ext-wall .mini-thumbnail img {
+  width: 20px;
+  height: 16px;
+}
+
+.roof-material .placeholder {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: 0 -70px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .placeholder {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .placeholder {
+    /*2. RETINA, MOBILE*/
+    background-position: 0 -35px;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .placeholder {
+    /*4. RETINA, DESKTOP*/
+    background-position: 0 -70px;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material .built-up-tar-and-gravel {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: -80px 0;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .built-up-tar-and-gravel {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .built-up-tar-and-gravel {
+    /*2. RETINA, MOBILE*/
+    background-position: -40px 0;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .built-up-tar-and-gravel {
+    /*4. RETINA, DESKTOP*/
+    background-position: -80px 0;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material .hail-proof-impact-resistant {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: 0 -140px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .hail-proof-impact-resistant {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .hail-proof-impact-resistant {
+    /*2. RETINA, MOBILE*/
+    background-position: 0 -70px;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .hail-proof-impact-resistant {
+    /*4. RETINA, DESKTOP*/
+    background-position: 0 -140px;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material .rubber {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: -80px -70px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .rubber {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .rubber {
+    /*2. RETINA, MOBILE*/
+    background-position: -40px -35px;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .rubber {
+    /*4. RETINA, DESKTOP*/
+    background-position: -80px -70px;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material .shingles-architectural {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: -160px 0;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .shingles-architectural {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .shingles-architectural {
+    /*2. RETINA, MOBILE*/
+    background-position: -80px 0;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .shingles-architectural {
+    /*4. RETINA, DESKTOP*/
+    background-position: -160px 0;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material .shingles-asphalt-fiberglass {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: -160px -70px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .shingles-asphalt-fiberglass {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .shingles-asphalt-fiberglass {
+    /*2. RETINA, MOBILE*/
+    background-position: -80px -35px;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .shingles-asphalt-fiberglass {
+    /*4. RETINA, DESKTOP*/
+    background-position: -160px -70px;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material .shingles-wood-shakes {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .shingles-wood-shakes {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .shingles-wood-shakes {
+    /*2. RETINA, MOBILE*/
+    background-position: 0 0;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .shingles-wood-shakes {
+    /*4. RETINA, DESKTOP*/
+    background-position: 0 0;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material .slate {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: -80px -140px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .slate {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .slate {
+    /*2. RETINA, MOBILE*/
+    background-position: -40px -70px;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .slate {
+    /*4. RETINA, DESKTOP*/
+    background-position: -80px -140px;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material .steel {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: -160px -140px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .steel {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .steel {
+    /*2. RETINA, MOBILE*/
+    background-position: -80px -70px;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .steel {
+    /*4. RETINA, DESKTOP*/
+    background-position: -160px -140px;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material .tile-clay {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: -240px 0;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .tile-clay {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .tile-clay {
+    /*2. RETINA, MOBILE*/
+    background-position: -120px 0;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .tile-clay {
+    /*4. RETINA, DESKTOP*/
+    background-position: -240px 0;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material .tile-concrete {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: -240px -70px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .tile-concrete {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .tile-concrete {
+    /*2. RETINA, MOBILE*/
+    background-position: -120px -35px;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .tile-concrete {
+    /*4. RETINA, DESKTOP*/
+    background-position: -240px -70px;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material .tile-mission {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: -240px -140px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .tile-mission {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .tile-mission {
+    /*2. RETINA, MOBILE*/
+    background-position: -120px -70px;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .tile-mission {
+    /*4. RETINA, DESKTOP*/
+    background-position: -240px -140px;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material .tin {
+  /*1. NON-RETINA, MOBILE*/
+  /*path to image: */
+  background-image: url("../img/sprite/roof.png");
+  /*sprite coordinates: */
+  background-position: 0 -210px;
+  background-repeat: no-repeat;
+  /* 1a. Mobile, use SMALLER size*/
+  width: 40px;
+  height: 35px;
+}
+
+@media (min-width: 29em) {
+  .roof-material .tin {
+    /*3. NON-RETINA, DESKTOP*/
+    width: 80px;
+    height: 70px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .roof-material .tin {
+    /*2. RETINA, MOBILE*/
+    background-position: 0 -105px;
+    background-size: 160px 140px;
+    /* 2a. Mobile, use SMALLER size */
+    background-image: url("../img/sprite/roof@2x.png");
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-device-pixel-ratio: 2) and (min-width: 29em), only screen and (min-resolution: 192dpi) and (min-width: 29em), only screen and (min-resolution: 2dppx) and (min-width: 29em) {
+  .roof-material .tin {
+    /*4. RETINA, DESKTOP*/
+    background-position: 0 -210px;
+    background-size: 320px 280px;
+  }
+}
+
+.roof-material img {
+  width: 80px;
+  height: 70px;
+}
+
+.roof-material .mini-thumbnail img {
+  width: 20px;
+  height: 16px;
+}
+
+/*# sourceMappingURL=image-pickers.css.map */

@@ -1,0 +1,19 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.global-sml-print {
+  max-width: none;
+  color: #6A6A6A;
+  font-size: 0.75em;
+}
+
+/*# sourceMappingURL=edit-with-plm.css.map */

@@ -1,0 +1,176 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.rate-change-compare {
+  top: -5px;
+  margin-bottom: 20px;
+}
+
+.rate-review-summary .rate-change {
+  margin: 0 0 -1px;
+}
+
+@media (min-width: 25em) {
+  .rate-review-summary .rate-change-title {
+    max-width: 50%;
+  }
+}
+
+.rate-review-summary .rate-change-compare {
+  display: block;
+  position: relative;
+  top: auto;
+  left: auto;
+  margin: 0;
+}
+
+@media (min-width: 25em) {
+  .rate-review-summary .rate-change-compare {
+    position: absolute;
+    top: 10px;
+    left: 51%;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .rate-review-summary .rate-change-compare {
+    left: 51%;
+  }
+}
+
+.rate-summary {
+  position: relative;
+  margin: 0 0 10px;
+  padding: 15px;
+  border: 1px solid #e6e7e8;
+  background-color: #fff;
+}
+
+.rate-summary .form-question {
+  background: none;
+}
+
+.rate-summary + .rate-summary {
+  margin-top: -1px;
+}
+
+.rate-summary + .form-question {
+  border: 0;
+}
+
+.rate-summary .show-all-link {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: normal;
+  border: 0;
+  background: none;
+}
+
+.rate-summary .smlprint {
+  margin: 0;
+}
+
+.rate-summary .coverages {
+  border: 0;
+}
+
+.rate-summary .coverage-item {
+  margin: 0 0 13.3333333333px;
+  display: none;
+}
+
+.rate-summary .coverage-item:nth-child(1) {
+  display: block;
+}
+
+@media (min-width: 32em) {
+  .rate-summary .coverage-item {
+    display: block;
+  }
+}
+
+.rate-summary .coverage-item:last-child {
+  margin: 0;
+}
+
+.rate-summary .coverage-item-header {
+  padding: 0 0 6.6666666667px;
+  background: none;
+}
+
+.rate-summary .coverage-item-header .qps-coverage {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 25em) {
+  .rate-summary .coverage-item-header .qps-coverage {
+    display: inline-block;
+    width: 49%;
+    float: right;
+  }
+}
+
+.rate-summary .coverage-item-title {
+  display: block;
+  position: relative;
+  padding: 0 0 10px;
+  font-weight: normal;
+  letter-spacing: normal;
+  font-size: 1rem;
+  color: #404040;
+  vertical-align: top;
+  cursor: default;
+}
+
+.rate-summary .coverage-item-title h2, .rate-summary .coverage-item-title h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.rate-summary .coverage-item-title h4 .qps-cov-amt span {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@media (min-width: 25em) {
+  .rate-summary .coverage-item-title h4 .qps-cov-amt span {
+    position: static !important;
+    height: auto;
+    width: auto;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+@media (min-width: 25em) {
+  .rate-summary .coverage-item-title h4 .qps-cov-amt {
+    display: block;
+  }
+}
+
+@media (min-width: 25em) {
+  .rate-summary .coverage-item-title {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=rate-review.css.map */

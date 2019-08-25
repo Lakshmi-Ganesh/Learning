@@ -1,0 +1,114 @@
+{
+'functions': true
+}
+
+$sprite: (
+{{#items}}
+	{{name}}: (
+	offset-x: {{px.offset_x}},
+	offset-y: {{px.offset_y}},
+	width: {{px.width}},
+	height: {{px.height}},
+	total-width: {{px.total_width}},
+	total-height: {{px.total_height}},
+	image: '{{{escaped_image}}}'
+	),
+{{/items}}
+);
+
+{{#options.functions}}
+
+	@mixin sprite-size($image) {
+	background-size: map-get(map-get($sprite, $image), 'total-width') map-get(map-get($sprite, $image), 'total-height');
+	}
+
+	@mixin sprite-width($image) {
+	width: map-get(map-get($sprite, $image), 'width');
+	}
+
+	@mixin sprite-height($image) {
+	height: map-get(map-get($sprite, $image), 'height');
+	}
+
+	@mixin sprite-position($image) {
+	background-position: map-get(map-get($sprite, $image), 'offset-x') map-get(map-get($sprite, $image), 'offset-y');
+	}
+
+	@mixin sprite-image($image) {
+	background-image: url(map-get(map-get($sprite, $image), 'image'));
+	}
+
+	@mixin sprite-image-retina($image) {
+	$image-path: map-get(map-get($sprite, $image), 'image');
+	$image-path-retina: str-slice($image-path, 1, str-index($image-path, '.png') - 1) + '@2x.png';
+
+	background-image: url($image-path-retina);
+	}
+
+	@mixin home-sprite($image, $size: true) {
+	@include sprite-image($image);
+	@include sprite-position($image);
+	background-repeat: no-repeat;
+
+	@if $size {
+	@include sprite-width($image);
+	@include sprite-height($image);
+	}
+
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) {
+
+	@include sprite-size($image);
+	@include sprite-image-retina($image);
+
+	}
+	}
+
+
+	.home-style {
+	.placeholder { @include home-sprite(placeholder); }
+	.story-1 { @include home-sprite(story-1); }
+	.story-1_5 { @include home-sprite(story-1_5); }
+	.story-2 { @include home-sprite(story-2); }
+	.story-2_5 { @include home-sprite(story-2_5); }
+	.story-3 { @include home-sprite(story-3); }
+	.raised-ranch { @include home-sprite(raised-ranch); }
+	.rambler { @include home-sprite(rambler); }
+	.ranch { @include home-sprite(ranch); }
+	.cape-cod { @include home-sprite(cape-cod); }
+	.colonial { @include home-sprite(colonial); }
+	.federal-colonial { @include home-sprite(federal-colonial); }
+	.contemporary { @include home-sprite(contemporary); }
+	.bi-level { @include home-sprite(bi-level); }
+	.tri-level { @include home-sprite(tri-level); }
+	.mediterranean { @include home-sprite(mediterranean); }
+	.queen-anne { @include home-sprite(queen-anne); }
+	.victorian { @include home-sprite(victorian); }
+	.victorian-ornate { @include home-sprite(victorian-ornate); }
+	.southwest-adobe { @include home-sprite(southwest-adobe); }
+	.cottage { @include home-sprite(cottage); }
+	.bungalow { @include home-sprite(bungalow); }
+	.townhouse-center { @include home-sprite(townhouse-center); }
+	.townhouse-end { @include home-sprite(townhouse-end); }
+	.row-house-center { @include home-sprite(row-house-center); }
+	.row-house-end { @include home-sprite(row-house-end); }
+	.below-grade-home { @include home-sprite(below-grade-home); }
+	.mobile-home { @include home-sprite(mobile-home); }
+	img {
+	width: 40px;
+	height: 34px;
+	}
+
+	.mini-thumbnail img {
+	width: 20px;
+	height: 16px;
+	}
+	}
+
+
+{{/options.functions}}

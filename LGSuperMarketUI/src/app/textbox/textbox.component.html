@@ -1,0 +1,41 @@
+<span class="field">
+   <ng-container *ngIf="!labelhidden">
+
+    {{label}} <span class="required" *ngIf="required">*</span>
+    <br>
+  </ng-container>
+  <ng-container *ngIf="type!='textarea'">
+
+    <ng-container *ngIf="!isautocomplete">
+
+      <input type='{{type}}' id='{{label}}' readonly='{{readonly}}' [(ngModel)]='value' [maxLength]='(maxLength!=0 && maxLength!=undefined) ? maxLength:20'
+        (blur)='onBlurMethod(true)' />
+    </ng-container>
+
+    <!-- <ng-container *ngIf="isautocomplete">
+
+
+        <div class="autocomplete">
+            <div class=autocompleteleft>
+                <input type='{{type}}' id='{{label}}' readonly='{{readonly}}' [(ngModel)]='value' [maxLength]='(maxLength!=0 && maxLength!=undefined) ? maxLength:20'
+                (blur)='onBlurMethod(true)' />
+            </div>
+            <div class="autocompleteright">
+
+            </div>
+            <ul class="autocompletecontainer">
+              <app-lookup-parent metaDataName="JobStatus"></app-lookup-parent>
+            </ul>
+          </div>
+
+    </ng-container> -->
+  </ng-container>
+  <ng-container *ngIf="type=='textarea'">
+          <textarea id='{{label}}' readonly='{{readonly}}' [(ngModel)]='value'
+            [ngClass]='' (blur)='onBlurMethod(true)'></textarea>
+
+  </ng-container>
+  <span class="field-mssg-invalid" *ngIf="validationMessage">
+    {{validationMessage}}
+  </span>
+</span>

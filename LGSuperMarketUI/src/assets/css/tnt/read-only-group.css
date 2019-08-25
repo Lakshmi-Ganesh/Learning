@@ -1,0 +1,47 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.mask-value .group-2g {
+  position: relative;
+}
+
+.mask-value .group-2g p {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.mask-value .group-2g > .group-section-a {
+  padding-right: 60px;
+}
+
+.mask-value .group-2g > .group-section-a p:first-of-type {
+  margin-top: 0;
+}
+
+.mask-value .group-2g .btn.mask-edit {
+  top: 0;
+}
+
+@media (min-width: 37.5em) {
+  .mask-value .group-2g > .group-section-a {
+    padding-right: 5px;
+  }
+  .mask-value .group-2g > .group-section-b {
+    padding-right: 60px;
+  }
+}
+
+.mask-value .read-only-group p {
+  margin: 0 0 .5em;
+}
+
+/*# sourceMappingURL=read-only-group.css.map */

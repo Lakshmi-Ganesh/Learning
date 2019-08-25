@@ -1,0 +1,301 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+@keyframes dropIn {
+  0% {
+    top: -110%;
+  }
+  20% {
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes cycleInOut {
+  0% {
+    top: -110%;
+  }
+  20% {
+    opacity: 1;
+    top: 0;
+  }
+  80% {
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    top: -110%;
+  }
+}
+
+.content {
+  min-height: 460px;
+}
+
+.loading-mssg-title {
+  z-index: 11;
+  background-color: #fff;
+}
+
+.loading-mssg-text.loading-mssg-rotate div {
+  position: relative;
+  height: 1.2em;
+}
+
+.loading-mssg-text.loading-mssg-rotate p {
+  position: absolute;
+  z-index: 9;
+  top: -110%;
+  white-space: nowrap;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-name: dropIn;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(1):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 0s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(2) {
+  animation-delay: 3.1s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(2):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 3.1s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(3) {
+  animation-delay: 6.2s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(3):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 6.2s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(4) {
+  animation-delay: 9.3s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(4):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 9.3s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(5) {
+  animation-delay: 12.4s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(5):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 12.4s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(6) {
+  animation-delay: 15.5s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(6):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 15.5s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(7) {
+  animation-delay: 18.6s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(7):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 18.6s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(8) {
+  animation-delay: 21.7s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(8):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 21.7s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(9) {
+  animation-delay: 24.8s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(9):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 24.8s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(10) {
+  animation-delay: 27.9s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(10):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 27.9s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(11) {
+  animation-delay: 31s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(11):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 31s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(12) {
+  animation-delay: 34.1s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(12):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 34.1s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(13) {
+  animation-delay: 37.2s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(13):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 37.2s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(14) {
+  animation-delay: 40.3s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(14):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 40.3s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(15) {
+  animation-delay: 43.4s;
+}
+
+.loading-mssg-text.loading-mssg-rotate p:nth-child(15):not(:last-child) {
+  animation-name: cycleInOut;
+  animation-delay: 43.4s;
+}
+
+@keyframes bump {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(1px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleDown {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 0.7);
+  }
+}
+
+@keyframes moveDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(24px);
+  }
+}
+
+.loading-container .animation-wrapper + .loading-mssg-text {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.loading-container .loading-mssg.loading-mssg-transparent {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  width: 320px;
+}
+
+.loading-container .loading-mssg.loading-mssg-transparent .loading-mssg-title {
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.loading-container .loading-mssg.loading-mssg-transparent p {
+  text-align: center;
+  width: 100%;
+}
+
+.animation-wrapper {
+  display: block;
+  width: 320px;
+  height: 81px;
+  position: relative;
+}
+
+.animation-wrapper .road {
+  position: absolute;
+  background-size: contain;
+  width: 196px;
+  height: 81px;
+  bottom: 0;
+  left: 20%;
+  background-position: bottom right;
+}
+
+.animation-wrapper .road-group {
+  animation: moveDown 23s linear forwards;
+}
+
+.animation-wrapper #road {
+  animation: scaleDown 23s linear forwards;
+}
+
+.animation-wrapper .car {
+  position: absolute;
+  width: 80px;
+  height: 57px;
+  left: 36%;
+  bottom: 3px;
+}
+
+.animation-wrapper #car {
+  animation: bump 0.5s linear infinite;
+}
+
+/*# sourceMappingURL=animation-car-on-road.css.map */

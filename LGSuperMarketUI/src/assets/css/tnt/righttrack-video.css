@@ -1,0 +1,23 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+video {
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail-link img {
+  border: solid 1px #d9d9d9;
+  width: 87px;
+}
+
+/*# sourceMappingURL=righttrack-video.css.map */

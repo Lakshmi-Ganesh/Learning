@@ -1,0 +1,289 @@
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.donut-chart {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.donut-chart .quad {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.donut-chart .chart-center {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.donut-chart .chart-center span {
+  display: block;
+  text-align: center;
+}
+
+@keyframes chart94 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(338.4deg);
+  }
+}
+
+@keyframes chartRotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes chartRotate3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes chartRotate4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes chartRotate5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes chartCover {
+  0%, 90% {
+    opacity: 1;
+  }
+  91%, 100% {
+    opacity: 0;
+  }
+}
+
+.donut-chart.chart94 {
+  width: 130px;
+  height: 130px;
+  background: #bdbdbd;
+}
+
+.donut-chart.chart94 .quad {
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  border-radius: 100% 0 0 0;
+  display: none;
+}
+
+.donut-chart.chart94 .quad.one {
+  transform: rotate(338.4deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chart94 1s linear;
+  display: block;
+}
+
+.donut-chart.chart94 .quad.two {
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chartRotate2 1s linear;
+  display: block;
+  animation: chartRotate5 0.5s linear;
+}
+
+.donut-chart.chart94 .quad.three {
+  transform: rotate(180deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chartRotate3 1s linear;
+  display: block;
+}
+
+.donut-chart.chart94 .quad.four {
+  transform: rotate(270deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chartRotate4 1s linear;
+  display: block;
+}
+
+.donut-chart.chart94 .quad.top {
+  display: block;
+  background: #bdbdbd;
+  opacity: 0;
+  animation: chartCover 0.01s linear 0.8333333333s both;
+}
+
+.donut-chart.chart94 .chart-center {
+  top: 10px;
+  left: 10px;
+  width: 110px;
+  height: 110px;
+  background: #fff;
+}
+
+.donut-chart.chart94 .chart-center:after {
+  display: inline-block;
+  width: 100%;
+  font-size: 43.3333333333px;
+  color: #002663;
+  text-align: center;
+  line-height: 110px;
+  content: "94%";
+}
+
+@keyframes chart93 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(334.8deg);
+  }
+}
+
+@keyframes chartRotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes chartRotate3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes chartRotate4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes chartRotate5 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes chartCover {
+  0%, 90% {
+    opacity: 1;
+  }
+  91%, 100% {
+    opacity: 0;
+  }
+}
+
+.donut-chart.chart93 {
+  width: 130px;
+  height: 130px;
+  background: #bdbdbd;
+}
+
+.donut-chart.chart93 .quad {
+  width: 65px;
+  height: 65px;
+  top: 0;
+  left: 0;
+  border-radius: 100% 0 0 0;
+  display: none;
+}
+
+.donut-chart.chart93 .quad.one {
+  transform: rotate(334.8deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chart93 1s linear;
+  display: block;
+}
+
+.donut-chart.chart93 .quad.two {
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chartRotate2 1s linear;
+  display: block;
+  animation: chartRotate5 0.5s linear;
+}
+
+.donut-chart.chart93 .quad.three {
+  transform: rotate(180deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chartRotate3 1s linear;
+  display: block;
+}
+
+.donut-chart.chart93 .quad.four {
+  transform: rotate(270deg);
+  transform-origin: bottom right;
+  background: #F7B30A;
+  animation: chartRotate4 1s linear;
+  display: block;
+}
+
+.donut-chart.chart93 .quad.top {
+  display: block;
+  background: #bdbdbd;
+  opacity: 0;
+  animation: chartCover 0.01s linear 0.8333333333s both;
+}
+
+.donut-chart.chart93 .chart-center {
+  top: 10px;
+  left: 10px;
+  width: 110px;
+  height: 110px;
+  background: #fff;
+}
+
+.donut-chart.chart93 .chart-center:after {
+  display: inline-block;
+  width: 100%;
+  font-size: 43.3333333333px;
+  color: #002663;
+  text-align: center;
+  line-height: 110px;
+  content: "93%";
+}
+
+/*# sourceMappingURL=animated-charts.css.map */

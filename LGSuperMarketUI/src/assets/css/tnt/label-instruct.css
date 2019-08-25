@@ -1,0 +1,24 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.label-instruct {
+  margin: .5em 0;
+  font-size: 0.75em;
+}
+
+@media (min-width: 37.5em) {
+  .label-instruct {
+    margin: 0 0 2px;
+  }
+}
+
+/*# sourceMappingURL=label-instruct.css.map */

@@ -1,0 +1,89 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.ux.friendly-tone .content-header .pg-title,
+.friendly-tone .content-header .pg-title {
+  font-size: 1.9rem;
+}
+
+@media (min-width: 500px) {
+  .ux.friendly-tone .content-header .pg-title,
+  .friendly-tone .content-header .pg-title {
+    font-size: 2.5rem;
+  }
+}
+
+.ux.friendly-tone .quote,
+.friendly-tone .quote {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.ux.friendly-tone .quote-summary-total,
+.friendly-tone .quote-summary-total {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  max-width: none;
+}
+
+.ux.friendly-tone .quote-summary-mssg,
+.friendly-tone .quote-summary-mssg {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  max-width: none;
+  min-width: 210px;
+  padding-left: 0;
+  padding-top: 10px;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .ux.friendly-tone .quote-summary-mssg,
+  .friendly-tone .quote-summary-mssg {
+    flex-basis: 50%;
+    padding-top: 0;
+  }
+}
+
+.ux.friendly-tone .quote-actions,
+.friendly-tone .quote-actions {
+  width: 100%;
+  max-width: none;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+@media (min-width: 450px) {
+  .ux.friendly-tone .quote-actions,
+  .friendly-tone .quote-actions {
+    flex-basis: 210px;
+    width: 210px;
+  }
+}
+
+.ux.friendly-tone .quote-actions p.qps-opt-due,
+.ux.friendly-tone .quote-actions .qps-opt-btn.btn-primary,
+.friendly-tone .quote-actions p.qps-opt-due,
+.friendly-tone .quote-actions .qps-opt-btn.btn-primary {
+  text-align: center;
+  float: none;
+  width: 100%;
+  margin: 0;
+}
+
+/*# sourceMappingURL=friendly-tone.css.map */

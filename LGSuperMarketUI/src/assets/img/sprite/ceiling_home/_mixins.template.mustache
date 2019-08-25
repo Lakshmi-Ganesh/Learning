@@ -1,0 +1,108 @@
+{
+'functions': true
+}
+
+$sprite: (
+{{#items}}
+	{{name}}: (
+	offset-x: {{px.offset_x}},
+	offset-y: {{px.offset_y}},
+	width: {{px.width}},
+	height: {{px.height}},
+	total-width: {{px.total_width}},
+	total-height: {{px.total_height}},
+	image: '{{{escaped_image}}}'
+	),
+{{/items}}
+);
+
+{{#options.functions}}
+
+	@mixin sprite-size($image) {
+	background-size: map-get(map-get($sprite, $image), 'total-width') map-get(map-get($sprite, $image), 'total-height');
+	}
+
+	@mixin sprite-width($image) {
+	width: map-get(map-get($sprite, $image), 'width');
+	}
+
+	@mixin sprite-height($image) {
+	height: map-get(map-get($sprite, $image), 'height');
+	}
+
+	@mixin sprite-position($image) {
+	background-position: map-get(map-get($sprite, $image), 'offset-x') map-get(map-get($sprite, $image), 'offset-y');
+	}
+
+	@mixin sprite-image($image) {
+	background-image: url(map-get(map-get($sprite, $image), 'image'));
+	}
+
+	@mixin sprite-image-retina($image) {
+	$image-path: map-get(map-get($sprite, $image), 'image');
+	$image-path-retina: str-slice($image-path, 1, str-index($image-path, '.png') - 1) + '@2x.png';
+
+	background-image: url($image-path-retina);
+	}
+
+	@mixin ceiling-home-sprite($image, $size: true) {
+	@include sprite-image($image);
+	@include sprite-position($image);
+	background-repeat: no-repeat;
+
+	@if $size {
+	@include sprite-width($image);
+	@include sprite-height($image);
+	}
+
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) {
+
+	@include sprite-size($image);
+	@include sprite-image-retina($image);
+
+	}
+	}
+
+
+	.ceiling-home {
+	.placeholder { @include ceiling-home-sprite(placeholder); }
+	.carpet { @include ceiling-home-sprite(carpet); }
+	.decorative-wood-beams { @include ceiling-home-sprite(decorative-wood-beams); }
+	.drywall { @include ceiling-home-sprite(drywall); }
+	.drywall-ornate-textured { @include ceiling-home-sprite(drywall-ornate-textured); }
+	.drywall-textured { @include ceiling-home-sprite(drywall-textured); }
+	.marble { @include ceiling-home-sprite(marble); }
+	.metal { @include ceiling-home-sprite(metal); }
+	.millwork { @include ceiling-home-sprite(millwork); }
+	.mirrors { @include ceiling-home-sprite(mirrors); }
+	.plank { @include ceiling-home-sprite(plank); }
+	.plaster { @include ceiling-home-sprite(plaster); }
+	.plaster-horsehair { @include ceiling-home-sprite(plaster-horsehair); }
+	.plaster-textured { @include ceiling-home-sprite(plaster-textured); }
+	.plywood-only { @include ceiling-home-sprite(plywood-only); }
+	.recessed-lighting { @include ceiling-home-sprite(recessed-lighting); }
+	.spray-acoustical-texture { @include ceiling-home-sprite(spray-acoustical-texture); }
+	.stucco-finish { @include ceiling-home-sprite(stucco-finish); }
+	.tile-acoustical { @include ceiling-home-sprite(tile-acoustical); }
+	.tin { @include ceiling-home-sprite(tin); }
+	.tongue-and-groove-hardwood { @include ceiling-home-sprite(tongue-and-groove-hardwood); }
+	.wood { @include ceiling-home-sprite(wood); }
+	img {
+	width: 40px;
+	height: 34px;
+	}
+
+	.mini-thumbnail img {
+	width: 20px;
+	height: 16px;
+	}
+	}
+
+
+{{/options.functions}}

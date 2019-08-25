@@ -1,0 +1,77 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.pane-at-a-glance .billboard-wrapper .select {
+  width: auto;
+  margin: 15px 10px 0;
+}
+
+.pane-at-a-glance .billboard-wrapper .select .label {
+  display: block;
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  color: #808080;
+  font-size: inherit;
+}
+
+.pane-at-a-glance .billboard-wrapper .select .label-text {
+  font-weight: normal;
+}
+
+.pane-at-a-glance .billboard-wrapper .select .field {
+  display: block;
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  color: #808080;
+}
+
+.pane-at-a-glance .billboard-wrapper .select .field:after {
+  display: none;
+}
+
+.pane-at-a-glance .billboard-wrapper .select .btn {
+  position: relative;
+  display: inline-block;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  line-height: initial;
+  color: #1b75bb;
+  font: 0.875rem Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: initial;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  transition: color .5s;
+}
+
+.pane-at-a-glance .billboard-wrapper .select .btn:hover, .pane-at-a-glance .billboard-wrapper .select .btn:focus {
+  color: #2a94db;
+}
+
+.pane-at-a-glance .billboard-wrapper .select .btn.mask-edit {
+  top: -1px;
+}
+
+/*# sourceMappingURL=at-a-glance-psd.css.map */

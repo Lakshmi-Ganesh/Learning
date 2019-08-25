@@ -1,0 +1,110 @@
+{
+'functions': true
+}
+
+$sprite: (
+{{#items}}
+	{{name}}: (
+	offset-x: {{px.offset_x}},
+	offset-y: {{px.offset_y}},
+	width: {{px.width}},
+	height: {{px.height}},
+	total-width: {{px.total_width}},
+	total-height: {{px.total_height}},
+	image: '{{{escaped_image}}}'
+	),
+{{/items}}
+);
+
+{{#options.functions}}
+
+	@mixin sprite-size($image) {
+	background-size: map-get(map-get($sprite, $image), 'total-width') map-get(map-get($sprite, $image), 'total-height');
+	}
+
+	@mixin sprite-width($image) {
+	width: map-get(map-get($sprite, $image), 'width');
+	}
+
+	@mixin sprite-height($image) {
+	height: map-get(map-get($sprite, $image), 'height');
+	}
+
+	@mixin sprite-position($image) {
+	background-position: map-get(map-get($sprite, $image), 'offset-x') map-get(map-get($sprite, $image), 'offset-y');
+	}
+
+	@mixin sprite-image($image) {
+	background-image: url(map-get(map-get($sprite, $image), 'image'));
+	}
+
+	@mixin sprite-image-retina($image) {
+	$image-path: map-get(map-get($sprite, $image), 'image');
+	$image-path-retina: str-slice($image-path, 1, str-index($image-path, '.png') - 1) + '@2x.png';
+
+	background-image: url($image-path-retina);
+	}
+
+	@mixin home-wall-int-sprite($image, $size: true) {
+	@include sprite-image($image);
+	@include sprite-position($image);
+	background-repeat: no-repeat;
+
+	@if $size {
+	@include sprite-width($image);
+	@include sprite-height($image);
+	}
+
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) {
+
+	@include sprite-size($image);
+	@include sprite-image-retina($image);
+
+	}
+	}
+
+
+	.home-wall-int {
+		.placeholder { @include home-wall-int-sprite(placeholder); }
+		.bookcase-walls { @include home-wall-int-sprite(bookcase-walls); }
+		.brick-facing { @include home-wall-int-sprite(brick-facing); }
+		.carpet { @include home-wall-int-sprite(carpet); }
+		.ceramic-tile { @include home-wall-int-sprite(ceramic-tile); }
+		.corkboard { @include home-wall-int-sprite(corkboard); }
+		.foil-wallpaper { @include home-wall-int-sprite(foil-wallpaper); }
+		.grass-cloth-wallpaper { @include home-wall-int-sprite(grass-cloth-wallpaper); }
+		.imported-ceramic-tile { @include home-wall-int-sprite(imported-ceramic-tile); }
+		.knotty-pine-paneling { @include home-wall-int-sprite(knotty-pine-paneling); }
+		.marble-paint { @include home-wall-int-sprite(marble-paint); }
+		.marble-tile { @include home-wall-int-sprite(marble-tile); }
+		.millwork-hardwood { @include home-wall-int-sprite(millwork-hardwood); }
+		.mirrors { @include home-wall-int-sprite(mirrors); }
+		.paint { @include home-wall-int-sprite(paint); }
+		.pegboard { @include home-wall-int-sprite(pegboard); }
+		.solid-wood-paneling { @include home-wall-int-sprite(solid-wood-paneling); }
+		.sponge-coat { @include home-wall-int-sprite(sponge-coat); }
+		.stone-facing { @include home-wall-int-sprite(stone-facing); }
+		.terrazzo { @include home-wall-int-sprite(terrazzo); }
+		.tongue-and-groove-paneling-wood { @include home-wall-int-sprite(tongue-and-groove-paneling-wood); }
+		.vinyl-wallpaper { @include home-wall-int-sprite(vinyl-wallpaper); }
+		.wood-sheet-paneling { @include home-wall-int-sprite(wood-sheet-paneling); }
+
+		img {
+			width: 40px;
+			height: 34px;
+		}
+
+		.mini-thumbnail img {
+			width: 20px;
+			height: 16px;
+		}
+	}
+
+
+{{/options.functions}}

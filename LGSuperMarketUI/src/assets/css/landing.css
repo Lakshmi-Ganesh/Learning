@@ -1,0 +1,190 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+.process-step:before, .process-step:after {
+  content: " ";
+  display: table;
+}
+
+.process-step:after {
+  clear: both;
+}
+
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.SDA01 .masthead .help,
+.SDA01 .masthead-nav {
+  display: none;
+}
+
+.SDA01 .process-step .check-radio {
+  margin-bottom: 0;
+}
+
+.SDA01 .landing .form-question {
+  padding: 0;
+}
+
+.SDA01 .landing .textinput {
+  margin: 0 0 15px;
+}
+
+@media (min-width: 1140px) {
+  .SDA01 .landing > img {
+    margin-left: calc( 0.5 * 100vw - 560px);
+  }
+}
+
+.landing.content {
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.landing.content .content-body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.landing.content .pg-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.process-step {
+  padding: 15px;
+  border: 1px solid #ccc;
+  transition: all .25s ease-in-out;
+}
+
+.process-step p {
+  font-size: 1em;
+}
+
+.process-step.process-step-initial {
+  border-top: 8px solid #ECAC00;
+}
+
+.process-step-body p {
+  margin-top: 1em;
+}
+
+.process-step-body .form-question {
+  padding-top: 1em;
+}
+
+.process-step.process-step-complete {
+  border-top: 8px solid #6C953C;
+}
+
+.process-step-complete .process-step-title:before {
+  background: #6C953C;
+}
+
+.group-section-a .process-step-title:before {
+  content: "1";
+}
+
+.group-section-b .process-step-title:before {
+  content: "2";
+}
+
+.process-step.group-section-c {
+  border-top: 8px solid #ECAC00;
+}
+
+.group-section-c .process-step-title:before {
+  content: "3";
+}
+
+.landing .form-submit,
+.landing .form-question:not(.disclosure) + .form-submit {
+  border-top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.landing .form-question {
+  overflow: visible;
+  margin-right: 7px;
+}
+
+.process-step-disabled {
+  opacity: .2;
+}
+
+.process-step-title {
+  position: relative;
+  font-weight: bold;
+  margin: 0 0 6px 2em;
+  padding-left: 4px;
+  font-size: 1.25em;
+}
+
+.process-step-title:before {
+  position: absolute;
+  top: -4px;
+  left: -2em;
+  box-sizing: border-box;
+  width: 1.7em;
+  height: 1.7em;
+  padding: 4px;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  background: #ECAC00;
+  transition: all .25s ease-in-out;
+}
+
+.partner-logo {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -20px;
+}
+
+.partner-logo img {
+  max-height: 40px;
+  max-width: 120px;
+}
+
+@media (min-width: 37.5em) {
+  .process-step-title {
+    display: inline-block;
+    width: 40%;
+  }
+  .process-step-body {
+    display: inline-block;
+    float: right;
+    width: 50%;
+  }
+  .process-step-body .form-question {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .process-step-body p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 50em) {
+  .process-step-title {
+    width: 100%;
+  }
+  .process-step-body {
+    padding-top: 10px;
+    float: none;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=landing.css.map */

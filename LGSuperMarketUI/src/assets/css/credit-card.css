@@ -1,0 +1,2875 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+.responsive .form-faqs .collapsible-header:before, .responsive .form-faqs .collapsible-content:before, .responsive .textinput:before,
+.responsive .textvalue:before,
+.responsive .select:before,
+.responsive .check-radio:before,
+.responsive .radio:before,
+.responsive .checkbox:before,
+.responsive .paymentAccountSection .field:before, .responsive .mini-thumbnail:before, .responsive .picker-header:before,
+.responsive .img-picker-header:before, .responsive .picker-details-value:before, .responsive .picker-details-total:before, .responsive .form-group:before,
+.responsive .form-question:before,
+.responsive .form-feedback:before,
+.responsive .form-submit:before, .responsive .form-faqs .collapsible-header:after, .responsive .form-faqs .collapsible-content:after, .responsive .textinput:after,
+.responsive .textvalue:after,
+.responsive .select:after,
+.responsive .check-radio:after,
+.responsive .radio:after,
+.responsive .checkbox:after,
+.responsive .paymentAccountSection .field:after, .responsive .mini-thumbnail:after, .responsive .picker-header:after,
+.responsive .img-picker-header:after, .responsive .picker-details-value:after, .responsive .picker-details-total:after, .responsive .form-group:after,
+.responsive .form-question:after,
+.responsive .form-feedback:after,
+.responsive .form-submit:after {
+  content: " ";
+  display: table;
+}
+
+.responsive .form-faqs .collapsible-header:after, .responsive .form-faqs .collapsible-content:after, .responsive .textinput:after,
+.responsive .textvalue:after,
+.responsive .select:after,
+.responsive .check-radio:after,
+.responsive .radio:after,
+.responsive .checkbox:after,
+.responsive .paymentAccountSection .field:after, .responsive .mini-thumbnail:after, .responsive .picker-header:after,
+.responsive .img-picker-header:after, .responsive .picker-details-value:after, .responsive .picker-details-total:after, .responsive .form-group:after,
+.responsive .form-question:after,
+.responsive .form-feedback:after,
+.responsive .form-submit:after {
+  clear: both;
+}
+
+/* Shared collapsible styles */
+.responsive .form-faqs .collapsible-header,
+.responsive .form-faqs .collapsible-content {
+  padding: 0 10px 0 20px;
+}
+
+.responsive .form-faqs .collapsible-header {
+  display: block;
+  font-weight: bold;
+  letter-spacing: normal;
+  font-size: 1rem;
+  color: #1b75bb;
+  position: relative;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+
+.responsive .form-faqs .collapsible-content {
+  display: block;
+  clear: both;
+  outline: none;
+}
+
+/* for collapsibles auto-expanded at larger breakpoints: */
+.responsive {
+  /* Note: When using media queries inside one of these forms css,
+  be sure to deduct the left and right margin space of the parent container */
+  /* Width & spacing variables normalize margins */
+  /* Use custom bold on text 14px or larger */
+  /* Hide content in an accessible way */
+  /* Animations - apply as sass includes to classes in the markup */
+  /* page transitions */
+  /* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+  /* Shared collapsible styles */
+  /* for collapsibles auto-expanded at larger breakpoints: */
+  /* -------------------------
+   Forms
+------------------------- */
+  /* see Forms, Text Inputs, Masked: Change a group of values */
+  /* exceptions for check & radio inputs */
+  /* margin should be consistent across all of these elements: */
+  /* .button applies the tabbed radio set behavior */
+  /* Prefix/Suffix - like currency and units of measure */
+  /* Field icons, like security badges and helper images */
+  /*
+.char-2 + .field-unit   {
+  left: 4.5em;
+}
+
+.char-3 + .field-unit,
+.char-4 + .field-unit {
+  left: 7em;
+}
+
+.char-5 + .field-unit,
+.char-6 + .field-unit,
+.char-7 + .field-unit {
+  left: 9.333em;
+}
+
+.char-8 + .field-unit,
+.char-9 + .field-unit {
+  left: 10.9997em;
+}
+
+.char-10 + .field-unit {
+  left: 11.6667em;
+}
+
+.char-11 + .field-unit,
+.char-12 + .field-unit {
+  left: 13.333em;
+}
+
+.char-13 + .field-unit,
+.char-14 + .field-unit,
+.char-15 + .field-unit,
+.char-16 + .field-unit {
+  left: 17.333em;
+}
+*/
+  /* read only */
+  /* with thumbnail / thumbnail-icons */
+  /* when descriptions are hidden */
+  /* Thumbnail icons */
+  /* Picker. (Formerly Image picker, deprecated) */
+  /* Picker % calculator */
+  /* FAQs grouped with form elements */
+  /* Mini Form */
+  /* Grouping elements */
+  /* allow for special instances in app where we show disclosure visual without disclosure classes */
+  /* Masked inputs */
+  /* prefill lookup */
+  /* submit btns */
+  /* Message for Multi-Quote Abandon */
+  /* Recalc loading mssg */
+  /* ----- Max width queries */
+  /* ----- Min width queries */
+  /* -------------------------
+   Forms - Credit Card
+------------------------- */
+  /*
+.dijitReset.dijitInputField{
+  padding: 0 !important;
+}*/
+  /* limit widths: */
+  /*
+@media (max-width: 25em) { //400px
+  .pmtAcctMiniApp .cardNumberInput{
+    width: 100%;
+  }
+}
+*/
+}
+
+.responsive * {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+@media (min-width: 48em) {
+  .responsive p, .responsive li {
+    font-size: 0.9375em;
+  }
+}
+
+.responsive b, .responsive strong {
+  font-weight: bold;
+}
+
+.responsive img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  border: 0;
+}
+
+.responsive .form-faqs .collapsible-header:before, .responsive .form-faqs .collapsible-content:before, .responsive .textinput:before,
+.responsive .textvalue:before,
+.responsive .select:before,
+.responsive .check-radio:before,
+.responsive .radio:before,
+.responsive .checkbox:before,
+.responsive .paymentAccountSection .field:before, .responsive .mini-thumbnail:before, .responsive .picker-header:before,
+.responsive .img-picker-header:before, .responsive .picker-details-value:before, .responsive .picker-details-total:before, .responsive .form-group:before,
+.responsive .form-question:before,
+.responsive .form-feedback:before,
+.responsive .form-submit:before, .responsive .form-faqs .collapsible-header:after, .responsive .form-faqs .collapsible-content:after, .responsive .textinput:after,
+.responsive .textvalue:after,
+.responsive .select:after,
+.responsive .check-radio:after,
+.responsive .radio:after,
+.responsive .checkbox:after,
+.responsive .paymentAccountSection .field:after, .responsive .mini-thumbnail:after, .responsive .picker-header:after,
+.responsive .img-picker-header:after, .responsive .picker-details-value:after, .responsive .picker-details-total:after, .responsive .form-group:after,
+.responsive .form-question:after,
+.responsive .form-feedback:after,
+.responsive .form-submit:after {
+  content: " ";
+  display: table;
+}
+
+.responsive .form-faqs .collapsible-header:after, .responsive .form-faqs .collapsible-content:after, .responsive .textinput:after,
+.responsive .textvalue:after,
+.responsive .select:after,
+.responsive .check-radio:after,
+.responsive .radio:after,
+.responsive .checkbox:after,
+.responsive .paymentAccountSection .field:after, .responsive .mini-thumbnail:after, .responsive .picker-header:after,
+.responsive .img-picker-header:after, .responsive .picker-details-value:after, .responsive .picker-details-total:after, .responsive .form-group:after,
+.responsive .form-question:after,
+.responsive .form-feedback:after,
+.responsive .form-submit:after {
+  clear: both;
+}
+
+.responsive .form-faqs .collapsible-header,
+.responsive .form-faqs .collapsible-content {
+  padding: 0 10px 0 20px;
+}
+
+.responsive .form-faqs .collapsible-header {
+  display: block;
+  font-weight: bold;
+  letter-spacing: normal;
+  font-size: 1rem;
+  color: #1b75bb;
+  position: relative;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+
+.responsive .form-faqs .collapsible-content {
+  display: block;
+  clear: both;
+  outline: none;
+}
+
+.responsive input:not([type="radio"]),
+.responsive select,
+.responsive textarea,
+.responsive .read-only {
+  font: 16px/1.3 "Roboto", Arial, Helvetica, sans-serif;
+  /* 16px = magic font size number to prevent iOS text zoom */
+  display: inline-block;
+  padding: .8em .5em;
+  vertical-align: top;
+  margin-top: 2px;
+  border-radius: 3px;
+  border: 1px solid #d8d8d8;
+  height: 50px;
+  max-width: 330px;
+}
+
+.responsive input:not([type="radio"])::-webkit-input-placeholder,
+.responsive select::-webkit-input-placeholder,
+.responsive textarea::-webkit-input-placeholder,
+.responsive .read-only::-webkit-input-placeholder {
+  font-weight: normal;
+  color: #808080;
+}
+
+.responsive input:not([type="radio"]):-ms-input-placeholder,
+.responsive select:-ms-input-placeholder,
+.responsive textarea:-ms-input-placeholder,
+.responsive .read-only:-ms-input-placeholder {
+  font-weight: normal;
+  color: #808080;
+}
+
+.responsive input:not([type="radio"]):not([type="checkbox"]),
+.responsive select {
+  transition: border-color .6s;
+  background-color: #fff;
+}
+
+.responsive input:focus,
+.responsive select:focus {
+  transition: none;
+}
+
+.responsive input:focus,
+.responsive select:focus,
+.responsive textarea:focus {
+  outline: 3px auto #3b99fc;
+  border-color: #bfbfbf;
+}
+
+.responsive .read-only {
+  padding: 1em;
+  height: auto;
+  min-height: 40px;
+}
+
+.responsive select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.responsive optgroup:before {
+  content: attr(label);
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  color: #6A6A6A;
+}
+
+.responsive input[type="radio"] {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.responsive .read-only,
+.responsive .group .read-only {
+  border-color: transparent;
+}
+
+.responsive .read-only-group {
+  display: inline-block;
+  padding-left: 8px;
+}
+
+.responsive .read-only-group .read-only {
+  display: inline;
+  padding-left: 0;
+}
+
+.responsive .pay-frequency .read-only-group .read-only {
+  display: block;
+}
+
+.responsive .applicant-info p {
+  margin-top: 0;
+  margin-bottom: 6.6666666667px;
+  font-size: 1rem;
+}
+
+.responsive input:focus,
+.responsive select:focus,
+.responsive textarea:focus {
+  outline: 3px auto #3b99fc;
+  border-color: #0E66A8;
+}
+
+.responsive input,
+.responsive select,
+.responsive textarea {
+  width: 100%;
+}
+
+.responsive .politespace {
+  display: block;
+}
+
+.responsive .opt-other .politespace,
+.responsive .opt + .politespace {
+  display: inline-block;
+}
+
+.responsive .politespace .btn {
+  vertical-align: bottom;
+  margin: 5px 8px;
+}
+
+.responsive .field .politespace-proxy {
+  max-width: 100%;
+}
+
+.responsive .field,
+.responsive .fieldInput {
+  position: relative;
+  padding: 3px;
+}
+
+.responsive .label + .field,
+.responsive .fieldLabel + .fieldInput {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.responsive .check-radio .label + .field {
+  max-width: none;
+}
+
+.responsive input[type="checkbox"], .responsive input[type="radio"] {
+  display: inline;
+  padding: 0;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-bottom: 2px;
+}
+
+.responsive div.checkbox input[type="checkbox"] {
+  margin-right: .6em;
+}
+
+.responsive input[type="checkbox"] {
+  margin-left: .1em;
+}
+
+.responsive input[type="radio"] {
+  margin-right: .9em;
+}
+
+.responsive input[type="radio"]:focus {
+  border-radius: 100%;
+}
+
+.responsive input[type=number]::-webkit-inner-spin-button, .responsive input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.responsive input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.responsive .textinput,
+.responsive .textvalue,
+.responsive .select,
+.responsive .check-radio,
+.responsive .radio,
+.responsive .checkbox,
+.responsive .paymentAccountSection .field {
+  width: 100%;
+  display: block;
+}
+
+.responsive .textinput,
+.responsive .textvalue,
+.responsive .select,
+.responsive .check-radio,
+.responsive .stacked input,
+.responsive .stacked select,
+.responsive .stacked textarea,
+.responsive .stacked .read-only,
+.responsive .paymentAccountSection .field {
+  margin: 0 0 15px;
+}
+
+.responsive .check-radio:not(.hidden) + .check-radio {
+  margin-top: 35px;
+}
+
+.responsive .radio:last-child,
+.responsive .checkbox:last-child {
+  margin-bottom: 0;
+}
+
+.responsive .radio,
+.responsive .checkbox,
+.responsive .group .radio:last-child,
+.responsive .group .checkbox:last-child {
+  margin: 0 0 10px;
+}
+
+.responsive .inline .radio,
+.responsive .inline .checkbox {
+  display: inline-block;
+  width: auto;
+  margin-right: 2em;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.responsive .inline .radio .opt,
+.responsive .inline .checkbox .opt {
+  max-width: none;
+}
+
+.responsive .check-radio-set.inline {
+  margin-bottom: -10px;
+}
+
+.responsive .inline.button {
+  overflow: hidden;
+}
+
+.responsive .inline.button .radio {
+  margin-right: 0;
+  white-space: nowrap;
+  float: left;
+}
+
+.responsive .inline.button .radio .opt {
+  vertical-align: baseline;
+}
+
+.responsive .inline.button .radio input {
+  opacity: 0.0001;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.responsive .inline.button .btn {
+  padding: .5625rem 0;
+  font-size: 14px;
+  min-height: 30px;
+  line-height: 1.14;
+  border-radius: 4px;
+  border: solid 1px #0E66A8;
+  z-index: 1;
+}
+
+.responsive .inline.button .btn.btn-action {
+  border-color: #0E66A8;
+}
+
+.responsive .inline.button .btn:not(.foo) {
+  border-radius: 4px;
+}
+
+.responsive .inline.button .btn:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: -1px;
+}
+
+.responsive .inline.button .btn:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.responsive .inline.button .btn-action {
+  z-index: 2;
+}
+
+.responsive .inline.button label {
+  padding: .4em 1em;
+}
+
+.responsive .field-currency,
+.responsive .field-unit {
+  height: 50px;
+  line-height: 50px;
+}
+
+.responsive .field-currency {
+  font-size: 1em;
+  float: left;
+  margin-right: 0.5em;
+}
+
+.responsive .field-icons {
+  display: block;
+  margin: 1em 0 0;
+}
+
+.responsive .char-2 {
+  width: 2.75em;
+}
+
+.responsive .char-3, .responsive .char-4 {
+  width: 4.5em;
+}
+
+.responsive select.char-3, .responsive select.char-4 {
+  width: 5em;
+}
+
+.responsive .char-5 {
+  width: 5em;
+}
+
+.responsive .char-6,
+.responsive .char-7 {
+  width: 6.25em;
+}
+
+.responsive .char-8,
+.responsive .char-9 {
+  width: 7.25em;
+}
+
+.responsive .char-10 {
+  width: 8em;
+}
+
+.responsive .char-11,
+.responsive .char-12 {
+  width: 9.25em;
+}
+
+.responsive .char-13,
+.responsive .char-14,
+.responsive .char-15,
+.responsive .char-16 {
+  width: 12.25em;
+}
+
+.responsive .char-17 {
+  width: 12.75em;
+}
+
+.responsive .field-unit {
+  position: relative;
+  font-size: 12px;
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.responsive .mask-value .read-only {
+  display: inline-block;
+  padding-top: 4px;
+  margin-right: 65px;
+}
+
+.responsive .mask-value .picker-details-value .read-only {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.responsive .label.a11y-only + .field {
+  width: 100%;
+}
+
+.responsive .label,
+.responsive .fieldLabel {
+  display: block;
+  margin: 0 0 2px;
+  padding-left: 3px;
+  /* align with input/select/textarea */
+  line-height: 1.1;
+}
+
+.responsive .label-text,
+.responsive .fieldLabelText,
+.responsive span.fieldLabelText {
+  font-weight: bold;
+  letter-spacing: normal;
+  display: inline-block;
+  position: relative;
+  padding-right: 1.7em;
+  min-height: 1.3em;
+  /* prop open for help icon, just in case */
+}
+
+.responsive .label-text {
+  padding-right: 0;
+  min-height: 0;
+  margin-bottom: .75em;
+}
+
+.responsive .label-text .icon-help {
+  width: 1.2em;
+  height: 1.3em;
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.responsive .label-instruct,
+.responsive .fieldLabelHelp {
+  display: block;
+  margin: 0 0 .4em;
+  color: #404040;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.responsive .label-instruct ul {
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+.responsive .payment-schedule-link {
+  font-size: .75rem;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+.responsive .label-optional {
+  color: #404040;
+  font-size: 12px;
+}
+
+@media (min-width: 40em) {
+  .responsive .label-optional {
+    font-size: 0.75rem;
+  }
+}
+
+.responsive .label-optional:before {
+  content: " (";
+}
+
+.responsive .label-optional:after {
+  content: ")";
+}
+
+.responsive .check-radio .label {
+  margin-bottom: .5em;
+}
+
+.responsive .label-text,
+.responsive .radio .opt,
+.responsive .checkbox .opt,
+.responsive .fieldLabelText,
+.responsive span.fieldLabelText {
+  font-size: 1rem;
+}
+
+.responsive .radio .opt-desc,
+.responsive .checkbox .opt-desc,
+.responsive .dialog .opt-desc {
+  font-size: 12px;
+  color: #6A6A6A;
+}
+
+.responsive .radio .opt-desc:before,
+.responsive .checkbox .opt-desc:before,
+.responsive .dialog .opt-desc:before {
+  content: " - ";
+}
+
+@media (min-width: 40em) {
+  .responsive .radio .opt-desc,
+  .responsive .checkbox .opt-desc,
+  .responsive .dialog .opt-desc {
+    font-size: 0.75rem;
+  }
+}
+
+.responsive .radio .opt-desc.mssg-positive {
+  font-size: 0.8125rem;
+}
+
+.responsive .radio .opt,
+.responsive .checkbox .opt,
+.responsive .dialog .opt {
+  display: inline-block;
+  font: 16px/1.3 "Roboto", Arial, Helvetica, sans-serif;
+  max-width: 80%;
+  margin: 0;
+  vertical-align: top;
+  line-height: 1.2;
+}
+
+.responsive .opt-desc-extended {
+  display: block;
+  font-size: .9rem;
+  color: #6e6e6e;
+}
+
+.responsive [for$=other] span.opt {
+  margin-bottom: 5px;
+}
+
+.responsive .dialog .opt {
+  line-height: 1.1;
+  margin-left: .5em;
+  font-size: 1em;
+  max-width: 100%;
+}
+
+.responsive .dialog .opt-desc {
+  font-size: 0.75rem;
+}
+
+.responsive .dialog .thumbnails p {
+  position: relative;
+  min-height: 39px;
+}
+
+.responsive .dialog .thumbnails img {
+  position: absolute;
+}
+
+.responsive .dialog .thumbnails .opt {
+  padding-left: 45px;
+}
+
+.responsive .radio .opt .val,
+.responsive .checkbox .opt .val {
+  white-space: nowrap;
+  font-size: .857142em;
+  /* 12/14 */
+  color: #6A6A6A;
+  display: block;
+  margin: 0 0 .2em;
+}
+
+.responsive .opt .val b {
+  color: #222;
+  font-size: 1.333333em;
+  /* 16/12 */
+}
+
+.responsive .opt-other .field-unit {
+  position: static;
+  height: auto;
+  line-height: 0;
+}
+
+.responsive .opt-other:not([type="radio"]) {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  margin: -.3em 0;
+  padding: .3em .5em;
+  max-width: 50%;
+  vertical-align: top;
+  line-height: .3em;
+}
+
+.responsive .opt-other:not([type="radio"]) input {
+  padding: 0 8px;
+}
+
+.responsive .opt-other .field-currency,
+.responsive .opt-other .field-unit {
+  height: 40px;
+  line-height: 1.4em;
+}
+
+.responsive input.opt-other:not([type="radio"]) {
+  margin: -.3em 0 -.3em 8px;
+}
+
+.responsive .field-currency + .politespace-proxy .opt-other:not([type="radio"]) {
+  margin-left: .5em;
+}
+
+.responsive .radio span.opt-other {
+  max-width: 100%;
+  padding-left: 0;
+}
+
+.responsive .radio span.opt-other .opt-other,
+.responsive .politespace-proxy .opt-other {
+  max-width: 100%;
+}
+
+.responsive .opt-other .field-currency {
+  margin-left: 8px;
+  margin-right: 0;
+  line-height: 1.4em;
+  width: auto;
+}
+
+.responsive .opt-other .politespace-proxy.active > :first-child {
+  margin-top: -.6em;
+  margin-left: .5em;
+}
+
+.responsive .politespace-proxy > :first-child {
+  height: 50px;
+  line-height: 50px !important;
+  margin-top: 2px;
+}
+
+.responsive .checkbox.check-read-only .icon,
+.responsive .radio.check-read-only .icon {
+  width: 16px;
+  height: 16px;
+  background-size: 100%;
+  margin: .1em .2em 0 .1em;
+  vertical-align: top;
+}
+
+.responsive div.checkbox.check-read-only .icon,
+.responsive div.radio.check-read-only .icon {
+  margin-right: .5em;
+}
+
+.responsive .opt-included {
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #0E751D;
+}
+
+.responsive .thumbnails {
+  /* checked image has border */
+}
+
+.responsive .thumbnails input[type="checkbox"],
+.responsive .thumbnails input[type="radio"],
+.responsive .thumbnails img,
+.responsive .thumbnails img + .opt {
+  vertical-align: top;
+}
+
+.responsive .thumbnails input[type="checkbox"], .responsive .thumbnails input[type="radio"] {
+  margin-top: .55em;
+}
+
+.responsive .thumbnails .radio,
+.responsive .thumbnails .checkbox {
+  margin: 0 0 15px;
+}
+
+.responsive .thumbnails .radio .opt,
+.responsive .thumbnails .checkbox .opt {
+  line-height: 1.1;
+  max-width: 60%;
+  margin-left: .5em;
+}
+
+.responsive .thumbnails img {
+  border: 2px solid #d9d9d9;
+  box-sizing: content-box;
+}
+
+.responsive .thumbnails input:checked + img {
+  border: 3px solid #2a94db;
+  margin: -1px;
+  /* offset additional 1px border so thumbnails don't "jump" */
+}
+
+.responsive .hide-desc .opt-desc {
+  display: none;
+}
+
+.responsive .hide-desc .thumbnails img,
+.responsive .hide-desc .thumbnails img + .opt {
+  vertical-align: middle;
+}
+
+.responsive .thumbnail-icons input[type="checkbox"],
+.responsive .thumbnail-icons input[type="radio"],
+.responsive .thumbnail-icons .icon,
+.responsive .thumbnail-icons .radio .opt,
+.responsive .thumbnail-icons .checkbox .opt {
+  vertical-align: middle;
+}
+
+.responsive .thumbnail-icons .icon {
+  display: inline-block;
+  background-color: #1b75bb;
+  width: 40px;
+  height: 35px;
+  background-size: 65%;
+  background-position: center center;
+}
+
+.responsive .thumbnail-icons input[type="checkbox"], .responsive .thumbnail-icons input[type="radio"] {
+  margin-top: 0;
+  margin-right: .3em;
+}
+
+.responsive .thumbnail-icons .radio .opt,
+.responsive .thumbnail-icons .checkbox .opt {
+  max-width: 63%;
+}
+
+.responsive .field .thumbnail-icons .icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  background-size: 65%;
+  background-position: center center;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-size: 60%;
+}
+
+.responsive .field .thumbnail-icons [class*="icon-motorcycle"] {
+  background-size: 75%;
+}
+
+.responsive .field .thumbnail-icons input:checked + .icon {
+  background-color: #0E66A8;
+  border-color: #0E66A8;
+}
+
+.responsive .field .thumbnail-icons .opt-desc {
+  color: #404040;
+  font-size: 0.75rem;
+  display: block;
+  margin-top: .2em;
+}
+
+.responsive .field .thumbnail-icons .opt-desc:before {
+  display: none;
+}
+
+.responsive .picker-feedback,
+.responsive .img-picker-feedback {
+  position: relative;
+}
+
+.responsive .picker-feedback .resource-edit,
+.responsive .img-picker-feedback .resource-edit {
+  position: absolute;
+  top: 15px;
+  /* match form-question top padding */
+  right: 0;
+  min-height: 0;
+  line-height: 1.2;
+}
+
+.responsive .mini-thumbnail {
+  display: block;
+  margin: .3em 0 .4em;
+  max-width: 15em;
+}
+
+.responsive .picker-feedback .mini-thumbnail,
+.responsive .img-picker-feedback .mini-thumbnail {
+  font-size: 0.8125em;
+}
+
+.responsive .mini-thumbnail:last-child {
+  margin-bottom: 0;
+}
+
+.responsive .mini-thumbnail img {
+  margin-right: .3em;
+  vertical-align: top;
+  width: 20px;
+  height: 16px;
+  background-color: #E6E6E6;
+}
+
+.responsive .mini-thumbnail .thumbnail-label {
+  display: inline-block;
+  width: 10em;
+}
+
+.responsive .mini-thumbnail .thumbnail-pct {
+  float: right;
+}
+
+.responsive .picker-header,
+.responsive .img-picker-header {
+  padding: 0 0 .5em;
+}
+
+.responsive .picker-instruct,
+.responsive .img-picker-instruct {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  padding-left: 3px;
+}
+
+.responsive .picker-toggle,
+.responsive .img-picker-toggle {
+  float: right;
+  margin: .5em 0 0;
+  font-size: 0.75em;
+  padding-left: 23px;
+}
+
+.responsive .picker-tally,
+.responsive .picker-footer,
+.responsive .img-picker-footer {
+  color: #6A6A6A;
+}
+
+.responsive .picker-tally {
+  font-size: .9em;
+  white-space: nowrap;
+}
+
+.responsive .picker-count:empty,
+.responsive .picker-total:empty {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.responsive .picker-header .picker-count:before,
+.responsive .img-picker-header .picker-count:before {
+  content: "(";
+}
+
+.responsive .picker-header .picker-count:after,
+.responsive .img-picker-header .picker-count:after {
+  content: " of ";
+}
+
+.responsive .picker-header .picker-total:after,
+.responsive .img-picker-header .picker-total:after {
+  content: " selected)";
+}
+
+.responsive .picker-footer,
+.responsive .img-picker-footer {
+  padding: .7em 0;
+  border-top: 1px solid #e8e8e8;
+}
+
+.responsive .picker-footer .picker-count:after .img-picker-footer .picker-count:after {
+  content: " Selected,";
+}
+
+.responsive .picker-details,
+.responsive .img-picker-calc {
+  max-width: 400px;
+}
+
+.responsive .img-picker-calc {
+  clear: left;
+}
+
+.responsive .picker-details-value {
+  position: relative;
+  padding: 0;
+  padding-right: 25px;
+  overflow: hidden;
+}
+
+.responsive .picker-details-value label.select,
+.responsive .img-picker-calc-pct select {
+  width: 70%;
+}
+
+.responsive .picker-details-value label.select {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.responsive .picker-details-value .textinput,
+.responsive .picker-details-value .textinput .field,
+.responsive .picker-details-value span.label + .field {
+  width: auto;
+  margin-bottom: 0;
+  float: none;
+}
+
+.responsive .picker-details-value .resource-actions,
+.responsive .img-picker-calc-pct .resource-actions {
+  position: absolute;
+  top: initial;
+  bottom: 8px;
+  right: 0;
+  line-height: 25px;
+  margin: -.3em 0 0;
+}
+
+.responsive .picker-details-value .resource-actions a {
+  position: relative;
+  top: -4px;
+}
+
+@media (min-width: 352px) {
+  .responsive .picker-details-value .resource-actions a {
+    top: initial;
+  }
+}
+
+.responsive .picker-details-value .resource-delete span,
+.responsive .img-picker-calc-pct .resource-delete span {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.responsive .picker-details-value .thumbnail,
+.responsive .picker-details-value .thumbnail-label,
+.responsive .picker-details-value .thumbnail img {
+  float: left;
+}
+
+.responsive .picker-details-value .thumbnail {
+  width: 70%;
+  margin-top: .2em;
+}
+
+.responsive .picker-details-value .thumbnail-label {
+  font-size: 0.875em;
+  max-width: 65%;
+  margin: .3em 0 0 .5em;
+}
+
+.responsive .picker-details-value .calcinput {
+  position: relative;
+  display: inline-block;
+}
+
+.responsive .picker-details-value .calcinput .field-unit {
+  display: inline;
+  vertical-align: top;
+  margin-left: 4px;
+}
+
+@media (min-width: 24em) {
+  .responsive .picker-details-value .calcinput .field-unit {
+    margin-left: 8px;
+  }
+}
+
+.responsive .picker-details-footer {
+  padding: 10px 25px 0 0;
+  overflow: auto;
+}
+
+.responsive .picker-details-total {
+  padding-bottom: 10px;
+  margin-left: 5px;
+}
+
+.responsive .picker-details-total {
+  width: 100%;
+}
+
+.responsive .picker-details-total-title {
+  font-size: 0.875em;
+  float: left;
+  margin: 0;
+  width: 70%;
+  text-transform: uppercase;
+}
+
+.responsive .picker-details-total-value {
+  font-size: 1em;
+  float: left;
+  max-width: 25%;
+  color: #808080;
+  margin-left: 6px;
+}
+
+.responsive .picker-details-total-value.calc-complete {
+  color: #0E751D;
+}
+
+.responsive .picker-details-total-value.calc-incomplete {
+  color: #D32F2F;
+}
+
+.responsive .mask-value .picker-details {
+  max-width: 250px;
+}
+
+.responsive .btn.mask-edit {
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.responsive .picker-editable .picker-details {
+  margin-left: 0;
+}
+
+.responsive .picker-editable .mask-value .picker-details-value {
+  color: #6A6A6A;
+  padding: 3px;
+  font-size: 12px;
+}
+
+@media (min-width: 40em) {
+  .responsive .picker-editable .mask-value .picker-details-value {
+    font-size: 0.75rem;
+  }
+}
+
+.responsive .picker-details-value .read-only {
+  display: inline-block;
+  width: 12em;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+@media (min-width: 40em) {
+  .responsive .picker-details-value .read-only {
+    font-size: 0.75rem;
+  }
+}
+
+.responsive .picker-details-value .read-only:only-child {
+  min-width: 12em;
+  width: auto;
+}
+
+.responsive .picker-editor {
+  clear: left;
+}
+
+.responsive .picker-editor .resources {
+  padding-left: 3px;
+}
+
+.responsive .picker-editor .resource-title {
+  font-size: 0.875em;
+  padding-left: 3px;
+}
+
+.responsive .picker-editable .label + .field {
+  max-width: 100%;
+}
+
+.responsive .show-all-link {
+  cursor: pointer;
+}
+
+.responsive .picker-set .radio,
+.responsive .img-picker-set .radio {
+  opacity: 1;
+  overflow: hidden;
+  visibility: visible;
+  max-height: 500em;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform .2s ease-out, opacity .2s, max-height .1s;
+  transition: transform .2s ease-out, opacity .2s, max-height .1s;
+  -webkit-transition-delay: 0s, .15s, 0s;
+  transition-delay: 0s, .15s, 0s;
+  margin-bottom: 15px;
+}
+
+.responsive .picker-set.collapsed .radio,
+.responsive .img-picker-set.collapsed .radio {
+  padding-top: 0;
+  padding-bottom: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform .2s ease-out, opacity .2s, max-height .1s;
+  transition: transform .2s ease-out, opacity .2s, max-height .1s;
+  -webkit-transition-delay: .15s, 0s, .15s;
+  transition-delay: .15s, 0s, .15s;
+  margin-bottom: 0;
+}
+
+.responsive .picker-set.collapsed .radio.prominent-item,
+.responsive .img-picker-set.collapsed .radio.prominent-item {
+  opacity: 1;
+  overflow: hidden;
+  visibility: visible;
+  max-height: 500em;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform .2s ease-out, opacity .2s, max-height .1s;
+  transition: transform .2s ease-out, opacity .2s, max-height .1s;
+  -webkit-transition-delay: 0s, .15s, 0s;
+  transition-delay: 0s, .15s, 0s;
+  margin-bottom: 15px;
+}
+
+.responsive .picker-set .show-all-link,
+.responsive .img-picker-set .show-all-link {
+  display: inline-block;
+}
+
+.responsive .field-mssg {
+  display: block;
+  color: #6A6A6A;
+  padding: .6em 0 0;
+  min-height: 30px;
+  /* prop open for icon */
+}
+
+.responsive .group .field-mssg {
+  clear: both;
+}
+
+.responsive .checkbox + .field-mssg {
+  position: relative;
+  top: -1em;
+}
+
+.responsive .check-radio-set + .field-mssg {
+  margin-top: .5em;
+}
+
+.responsive .field-mssg p,
+.responsive .invalid .field-mssg p {
+  margin: 0;
+  font-size: 12px;
+}
+
+@media (min-width: 40em) {
+  .responsive .field-mssg p,
+  .responsive .invalid .field-mssg p {
+    font-size: 0.75rem;
+  }
+}
+
+.responsive .edit-coverage .check-radio-set .field-mssg p {
+  font-size: .75rem;
+}
+
+.responsive .label-mssg {
+  margin-left: 30px;
+}
+
+.responsive .field-mssg[class*="icon-"] {
+  background-position: left .6em;
+  background-size: 18px;
+  padding-left: 26px;
+}
+
+.responsive .field-mssg .plm-percent {
+  color: #009015;
+}
+
+.responsive .field-mssg b {
+  font-size: 1.18em;
+  /* 13/11 */
+}
+
+.responsive .field-mssg-invalid {
+  display: block;
+  font-size: 12px;
+  margin: 0 0 .5em;
+  color: #E00720;
+  font-weight: bold;
+}
+
+@media (min-width: 40em) {
+  .responsive .field-mssg-invalid {
+    font-size: 0.75rem;
+  }
+}
+
+.responsive .check-radio .field-mssg-invalid {
+  margin: 0 0 1em;
+  /* removed -1em from top margin, caused error to be clipped on qps-renter-edit-pp-invalid.html */
+}
+
+.responsive .invalid input:not([type="radio"]),
+.responsive .invalid select,
+.responsive .invalid textarea,
+.responsive .invalid .check-radio-set,
+.responsive .invalid .checkbox {
+  border-left: 4px solid #E00720;
+}
+
+.responsive .invalid .check-radio-set .checkbox {
+  border-left: 0;
+}
+
+.responsive .invalid .checkbox.form-mask-toggle {
+  border-left: none;
+  padding-left: 0;
+}
+
+.responsive .warning input,
+.responsive .warning select,
+.responsive .warning textarea,
+.responsive .warning .check-radio-set,
+.responsive .warning .checkbox {
+  border-left: 4px solid #F7B30A;
+}
+
+.responsive .invalid .check-radio-set,
+.responsive .invalid .checkbox,
+.responsive .warning .check-radio-set,
+.responsive .warning .checkbox {
+  padding-left: 10px;
+}
+
+.responsive .invalid .check-radio-set .checkbox,
+.responsive .warning .check-radio-set .checkbox {
+  border: 0;
+  padding-left: 0;
+}
+
+.responsive input:invalid {
+  box-shadow: none;
+}
+
+.responsive .invalid p {
+  font-size: .75em;
+  margin: .5em 0;
+}
+
+.responsive .disabled.textinput,
+.responsive .disabled.select,
+.responsive .disabled.check-radio,
+.responsive .disabled.checkbox,
+.responsive .disabled.customer-service {
+  opacity: .4;
+}
+
+.responsive .show-fields-link {
+  margin-right: 5px;
+  display: inline-block;
+  float: right;
+}
+
+.responsive .show-fields-link.hidden {
+  display: none;
+}
+
+.responsive .show-fields-link > p > a {
+  font-size: 0.875rem;
+}
+
+.responsive .form-faqs .collapsible-header {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.responsive .form-faqs .collapsible-content p {
+  margin: .5em 0 1em;
+}
+
+.responsive .mini-form {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.responsive .mini-form .form-question {
+  padding-top: 5px;
+}
+
+.responsive .mini-form .textinput {
+  margin-bottom: 5px;
+}
+
+.responsive .mini-form .label-text {
+  padding-right: 0;
+}
+
+.responsive .mini-form .label-instruct {
+  display: inline-block;
+}
+
+.responsive .mini-form .form-submit {
+  border-top: none;
+  padding: 0;
+}
+
+.responsive .form-wrapper {
+  margin-top: 0;
+}
+
+.responsive .form-wrapper,
+.responsive .form-question,
+.responsive .form-group {
+  background-color: #f7f7f7;
+  position: relative;
+  overflow: visible;
+  clear: both;
+}
+
+.responsive form .form-submit {
+  border-top: 1px solid #d9d9d9;
+}
+
+.responsive .form-mssg {
+  margin: 0;
+  max-width: none;
+  padding: 15px 0;
+}
+
+.responsive .form-mssg-alt p > b,
+.responsive .form-mssg-alt p > strong {
+  display: block;
+}
+
+.responsive .resource-header + .form-group {
+  margin-top: -1em;
+}
+
+.responsive .resource-header + .pg-mssg {
+  border-top: 1px solid #e8e8e8;
+  padding-top: 15px;
+  margin-top: 0;
+}
+
+.responsive .resource-header + .pg-mssg[class*="icon-"] {
+  background-position: left 15px;
+}
+
+.responsive .form-title {
+  border-top: 1px solid #d9d9d9;
+  margin: 15px 0 1em;
+  padding-top: .8em;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.responsive .form-title.form-title-loading {
+  margin-left: 10px;
+}
+
+.responsive .form-title.form-title-loading:before {
+  position: relative;
+  display: inline-block;
+  top: 4px;
+  left: -10px;
+  content: " ";
+  overflow: visible;
+  width: 20px;
+  height: 20px;
+  background: url("../img/ajax-loader.gif") no-repeat 0 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-animation: spin-keyframes-clockwise 1.26s infinite linear;
+  animation: spin-keyframes-clockwise 1.26s infinite linear;
+}
+
+.responsive .form-subtitle {
+  color: #6A6A6A;
+}
+
+.responsive .form-title + .form-subtitle,
+.responsive .form-title + p {
+  margin-top: -1em;
+}
+
+.responsive .form-question,
+.responsive .form-feedback {
+  margin: 0;
+  padding: 24px 0;
+  border-top: 1px solid #e8e8e8;
+}
+
+@media (min-width: 600px) {
+  .responsive .form-question,
+  .responsive .form-feedback {
+    padding: 35px 0;
+  }
+}
+
+.responsive .form-question .textinput,
+.responsive .form-question .textvalue,
+.responsive .form-question .select,
+.responsive .form-question .check-radio,
+.responsive .form-question .stacked input,
+.responsive .form-question .stacked select,
+.responsive .form-question .stacked textarea,
+.responsive .form-question .stacked .read-only,
+.responsive .form-question .paymentAccountSection .field,
+.responsive .form-feedback .textinput,
+.responsive .form-feedback .textvalue,
+.responsive .form-feedback .select,
+.responsive .form-feedback .check-radio,
+.responsive .form-feedback .stacked input,
+.responsive .form-feedback .stacked select,
+.responsive .form-feedback .stacked textarea,
+.responsive .form-feedback .stacked .read-only,
+.responsive .form-feedback .paymentAccountSection .field {
+  margin: 0;
+  padding: 0 0 15px;
+}
+
+.responsive .form-question .textinput:last-child,
+.responsive .form-question .textvalue:last-child,
+.responsive .form-question .select:last-child,
+.responsive .form-question .check-radio:last-child,
+.responsive .form-question .stacked input:last-child,
+.responsive .form-question .stacked select:last-child,
+.responsive .form-question .stacked textarea:last-child,
+.responsive .form-question .stacked .read-only:last-child,
+.responsive .form-question .paymentAccountSection .field:last-child,
+.responsive .form-feedback .textinput:last-child,
+.responsive .form-feedback .textvalue:last-child,
+.responsive .form-feedback .select:last-child,
+.responsive .form-feedback .check-radio:last-child,
+.responsive .form-feedback .stacked input:last-child,
+.responsive .form-feedback .stacked select:last-child,
+.responsive .form-feedback .stacked textarea:last-child,
+.responsive .form-feedback .stacked .read-only:last-child,
+.responsive .form-feedback .paymentAccountSection .field:last-child {
+  padding: 0;
+}
+
+.responsive .form-question .textinput + .check-radio,
+.responsive .form-question .textvalue + .check-radio,
+.responsive .form-question .select + .check-radio,
+.responsive .form-question .check-radio + .check-radio,
+.responsive .form-question .stacked input + .check-radio,
+.responsive .form-question .stacked select + .check-radio,
+.responsive .form-question .stacked textarea + .check-radio,
+.responsive .form-question .stacked .read-only + .check-radio,
+.responsive .form-question .paymentAccountSection .field + .check-radio,
+.responsive .form-feedback .textinput + .check-radio,
+.responsive .form-feedback .textvalue + .check-radio,
+.responsive .form-feedback .select + .check-radio,
+.responsive .form-feedback .check-radio + .check-radio,
+.responsive .form-feedback .stacked input + .check-radio,
+.responsive .form-feedback .stacked select + .check-radio,
+.responsive .form-feedback .stacked textarea + .check-radio,
+.responsive .form-feedback .stacked .read-only + .check-radio,
+.responsive .form-feedback .paymentAccountSection .field + .check-radio {
+  padding-top: 19.5px;
+}
+
+@media (min-width: 600px) {
+  .responsive .form-question .textinput + .check-radio,
+  .responsive .form-question .textvalue + .check-radio,
+  .responsive .form-question .select + .check-radio,
+  .responsive .form-question .check-radio + .check-radio,
+  .responsive .form-question .stacked input + .check-radio,
+  .responsive .form-question .stacked select + .check-radio,
+  .responsive .form-question .stacked textarea + .check-radio,
+  .responsive .form-question .stacked .read-only + .check-radio,
+  .responsive .form-question .paymentAccountSection .field + .check-radio,
+  .responsive .form-feedback .textinput + .check-radio,
+  .responsive .form-feedback .textvalue + .check-radio,
+  .responsive .form-feedback .select + .check-radio,
+  .responsive .form-feedback .check-radio + .check-radio,
+  .responsive .form-feedback .stacked input + .check-radio,
+  .responsive .form-feedback .stacked select + .check-radio,
+  .responsive .form-feedback .stacked textarea + .check-radio,
+  .responsive .form-feedback .stacked .read-only + .check-radio,
+  .responsive .form-feedback .paymentAccountSection .field + .check-radio {
+    padding-top: 32.5px;
+  }
+}
+
+.responsive .form-question .label,
+.responsive .form-feedback .label {
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .responsive .form-question .label,
+  .responsive .form-feedback .label {
+    padding-right: 2em;
+  }
+}
+
+@media (min-width: 600px) {
+  .responsive .form-question .label-text,
+  .responsive .form-feedback .label-text {
+    margin: 0;
+  }
+}
+
+.responsive .form-question .label-instruct,
+.responsive .form-feedback .label-instruct {
+  margin-bottom: .75em;
+}
+
+@media (min-width: 600px) {
+  .responsive .form-question .label-instruct,
+  .responsive .form-feedback .label-instruct {
+    margin: .75em 0 0 0;
+  }
+}
+
+.responsive .form-question .form-title:first-child,
+.responsive .form-feedback .form-title:first-child {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.responsive .form-question .form-submit:last-child,
+.responsive .form-feedback .form-submit:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.responsive .form-group:first-child,
+.responsive .form-title:first-child,
+.responsive .form-question:first-child,
+.responsive .form-feedback:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.responsive .hidden:first-child + .form-question,
+.responsive .hidden:first-child + .hidden + .form-question,
+.responsive .hidden:first-child + .hidden + .hidden + .form-question,
+.responsive .hidden:first-child + .hidden + .hidden + .hidden + .form-question,
+.responsive .hidden:first-child + .hidden + .hidden + .hidden + .hidden + .form-question,
+.responsive .hidden:first-child + .hidden + .hidden + .hidden + .hidden + .hidden + .form-question,
+.responsive .hidden:first-child + .hidden + .hidden + .hidden + .hidden + .hidden + .hidden + .form-question,
+.responsive .hidden:first-child + .hidden + .hidden + .hidden + .hidden + .hidden + .hidden + .hidden + .form-question {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.responsive .form-title + .form-question,
+.responsive .form-title + .form-feedback {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.responsive .form-group {
+  position: relative;
+  padding: 17.5px 0 17.5px;
+  margin: 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  overflow: visible;
+  z-index: 3;
+  position: relative;
+}
+
+.responsive .form-group:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  opacity: .5;
+  background-image: -webkit-radial-gradient(ellipse closest-side, #ddd, #ddd, #ddd, rgba(255, 255, 255, 0));
+  /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: radial-gradient(ellipse closest-side, #ddd, #ddd, #ddd, rgba(255, 255, 255, 0));
+  /* Chrome 26, Firefox 16+, IE 10+, Opera */
+  background-size: 100% 250%;
+  background-position: center;
+}
+
+.responsive .form-group:after {
+  bottom: 0;
+}
+
+.responsive .form-group .form-group.disclosure:last-child,
+.responsive .form-group .form-question.disclosure:last-child {
+  border-bottom: 0;
+}
+
+.responsive .disclosure,
+.responsive .form-group.disclosure,
+.responsive .form-question.disclosure {
+  position: relative;
+  padding-top: 20px;
+  border-top: none;
+  border-bottom: 1px solid #d9d9d9;
+  z-index: 3;
+  opacity: 1;
+  overflow: hidden;
+  visibility: visible;
+  max-height: 500em;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform .2s ease-out, opacity .2s, max-height .1s;
+  transition: transform .2s ease-out, opacity .2s, max-height .1s;
+  -webkit-transition-delay: 0s, .15s, 0s;
+  transition-delay: 0s, .15s, 0s;
+  overflow: visible;
+  position: relative;
+}
+
+.responsive .disclosure:after,
+.responsive .form-group.disclosure:after,
+.responsive .form-question.disclosure:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 3px;
+  opacity: .5;
+  background-image: -webkit-radial-gradient(ellipse closest-side, #ddd, #ddd, #ddd, rgba(255, 255, 255, 0));
+  /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: radial-gradient(ellipse closest-side, #ddd, #ddd, #ddd, rgba(255, 255, 255, 0));
+  /* Chrome 26, Firefox 16+, IE 10+, Opera */
+  background-size: 100% 250%;
+  background-position: center;
+}
+
+.responsive .disclosure:before,
+.responsive .form-group.disclosure:before,
+.responsive .form-question.disclosure:before {
+  content: " ";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  z-index: 5;
+  display: block;
+  width: 100%;
+  height: 15px;
+  background: url("../img/bg-disclosure-wide.png") no-repeat center top;
+}
+
+.responsive .disclosure:after,
+.responsive .form-group.disclosure:after,
+.responsive .form-question.disclosure:after {
+  bottom: 0;
+  z-index: auto;
+}
+
+.responsive .disclosure:not(.hidden) + .form-question,
+.responsive .form-group.disclosure:not(.hidden) + .form-question,
+.responsive .form-question.disclosure:not(.hidden) + .form-question {
+  border-top: 0;
+}
+
+.responsive .disclosure > .textinput:first-child,
+.responsive .disclosure > .textvalue:first-child,
+.responsive .disclosure > .select:first-child,
+.responsive .disclosure > .check-radio:first-child,
+.responsive .form-group.disclosure > .textinput:first-child,
+.responsive .form-group.disclosure > .textvalue:first-child,
+.responsive .form-group.disclosure > .select:first-child,
+.responsive .form-group.disclosure > .check-radio:first-child,
+.responsive .form-question.disclosure > .textinput:first-child,
+.responsive .form-question.disclosure > .textvalue:first-child,
+.responsive .form-question.disclosure > .select:first-child,
+.responsive .form-question.disclosure > .check-radio:first-child {
+  padding-top: 5px;
+}
+
+.responsive .disclosure .resource:first-child .resource-header,
+.responsive .form-group.disclosure .resource:first-child .resource-header,
+.responsive .form-question.disclosure .resource:first-child .resource-header {
+  border-top: 0;
+}
+
+.responsive .disclosure .form-group:first-child,
+.responsive .form-group.disclosure .form-group:first-child,
+.responsive .form-question.disclosure .form-group:first-child {
+  padding-top: 15px;
+  border-top: 0;
+}
+
+.resource .responsive .disclosure, .resource
+.responsive .form-group.disclosure, .resource
+.responsive .form-question.disclosure {
+  padding-top: 0;
+  border-bottom: 0;
+}
+
+.resource .responsive .disclosure:before, .resource .responsive .disclosure:after, .resource
+.responsive .form-group.disclosure:before, .resource
+.responsive .form-group.disclosure:after, .resource
+.responsive .form-question.disclosure:before, .resource
+.responsive .form-question.disclosure:after {
+  height: 0;
+  background: none;
+}
+
+.responsive .disclosure .form-group:after,
+.form-group .responsive .disclosure:after,
+.responsive .form-group.disclosure .form-group:after,
+.form-group
+.responsive .form-group.disclosure:after,
+.responsive .form-question.disclosure .form-group:after,
+.form-group
+.responsive .form-question.disclosure:after {
+  height: 0;
+  background: none;
+}
+
+.responsive .disclosure .disclosure,
+.responsive .form-group.disclosure .disclosure,
+.responsive .form-question.disclosure .disclosure {
+  margin-bottom: 4px;
+  border-top-width: 1px;
+  border-bottom: 0;
+}
+
+.responsive .disclosure .disclosure:after,
+.responsive .form-group.disclosure .disclosure:after,
+.responsive .form-question.disclosure .disclosure:after {
+  height: 0;
+  background: none;
+}
+
+.responsive .disclosure .disclosure > .textinput:first-child,
+.responsive .disclosure .disclosure > .textvalue:first-child,
+.responsive .disclosure .disclosure > .select:first-child,
+.responsive .disclosure .disclosure > .check-radio:first-child,
+.responsive .form-group.disclosure .disclosure > .textinput:first-child,
+.responsive .form-group.disclosure .disclosure > .textvalue:first-child,
+.responsive .form-group.disclosure .disclosure > .select:first-child,
+.responsive .form-group.disclosure .disclosure > .check-radio:first-child,
+.responsive .form-question.disclosure .disclosure > .textinput:first-child,
+.responsive .form-question.disclosure .disclosure > .textvalue:first-child,
+.responsive .form-question.disclosure .disclosure > .select:first-child,
+.responsive .form-question.disclosure .disclosure > .check-radio:first-child {
+  padding-top: 0;
+}
+
+.responsive .related-coverage.disclosure:before, .responsive .related-coverage.disclosure:after {
+  content: none;
+}
+
+.responsive .form-question:not(.disclosure):not(.hidden) + .form-question:not(.disclosure) {
+  border-top: 1px solid #e8e8e8;
+}
+
+.responsive .disclosure .hidden + .form-question:not(.hidden),
+.responsive .disclosure .hidden + .form-group:not(.hidden) {
+  border-top: 0;
+}
+
+.responsive .disclosure .form-question:not(.hidden) + .form-question.hidden ~ .form-question:not(.hidden) {
+  padding-top: 15px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.responsive .disclosure:not(.hidden) + .hidden + .form-group,
+.responsive .disclosure:not(.hidden) + .hidden + .form-question,
+.responsive .disclosure:not(.hidden) + .form-group,
+.responsive .form-group:not(.hidden) + .form-question,
+.responsive .rate-change + .form-question {
+  border-top: 0;
+}
+
+.responsive .resource-form .form-question {
+  border-top: 0 !important;
+  padding-top: 0;
+}
+
+.responsive .disclosure:not(.hidden) ~ .form-submit,
+.responsive .form-group:not(.hidden) ~ .form-submit {
+  border-top: 0;
+}
+
+.responsive .form-group:not(.disclosure) + .form-submit,
+.responsive .form-question:not(.disclosure) + .form-submit,
+.responsive .form-group:not(.disclosure) + .hidden + .form-submit,
+.responsive .form-question:not(.disclosure) + .hidden + .form-submit {
+  border-top: 1px solid #d9d9d9;
+}
+
+.responsive .form-group:not(.disclosure).hidden + .form-submit {
+  border-top: 0;
+}
+
+.responsive .related-coverage.disclosure:not(.hidden) + .form-submit {
+  border-top: 0;
+}
+
+.responsive .disclosure:not(.hidden) .disclosure:not(.hidden) .form-group:last-child {
+  border-bottom: 0;
+}
+
+.responsive .disclosure.hidden,
+.responsive .form-group.disclosure.hidden,
+.responsive .form-question.disclosure.hidden {
+  display: block;
+  position: absolute;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform .2s ease-out, opacity .2s, max-height .1s;
+  transition: transform .2s ease-out, opacity .2s, max-height .1s;
+  -webkit-transition-delay: .15s, 0s, .15s;
+  transition-delay: .15s, 0s, .15s;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.responsive .disclosure:not(.related-coverage),
+.responsive .form-group.disclosure,
+.responsive .form-question.disclosure,
+.responsive .disclosure-faux:not(.hidden) + .disclosure-faux-child:not(.hidden) {
+  border-top: 0;
+}
+
+.responsive .disclosure:not(.related-coverage):before,
+.responsive .form-group.disclosure:before,
+.responsive .form-question.disclosure:before,
+.responsive .disclosure-faux:not(.hidden) + .disclosure-faux-child:not(.hidden):before {
+  background-image: url("../img/bg-disclosure-wide.png");
+}
+
+.responsive .form-question .form-title:first-child,
+.responsive .form-feedback .form-title:first-child,
+.responsive .disclosure > .form-title:first-child {
+  padding-top: 0;
+}
+
+.responsive .disclosure-faux:not(.hidden) {
+  border-bottom: 0;
+}
+
+.responsive .disclosure-faux:not(.hidden) + .disclosure-faux-child:not(.hidden) {
+  padding-top: 20px;
+  margin-top: -4px;
+}
+
+.responsive .disclosure-faux:not(.hidden) + .disclosure-faux-child:not(.hidden):before {
+  content: " ";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  z-index: 5;
+  display: block;
+  width: 100%;
+  height: 15px;
+  background: url("../img/bg-disclosure-wide.png") no-repeat center top;
+}
+
+.responsive .form-mask-toggle {
+  color: #6A6A6A;
+  padding-top: 5px;
+}
+
+.responsive .form-mask-toggle.inline {
+  margin-left: 0;
+  padding: 10px 0 15px;
+}
+
+.responsive .form-mask-toggle.inline input[type="checkbox"] {
+  margin-left: 0;
+}
+
+.responsive .form-question.autocomplete {
+  overflow: visible;
+  min-height: 5.35em;
+  margin-top: 1px;
+  z-index: 4;
+}
+
+.responsive .autocomplete + .autocomplete {
+  z-index: 0;
+}
+
+.responsive .autocomplete select {
+  display: none;
+}
+
+.responsive .autocomplete + .form-question .btn.mask-edit {
+  top: 0;
+}
+
+.responsive [id^="group-hasMortgage"] .form-group.disclosure:last-child {
+  margin-bottom: 3px;
+}
+
+.responsive [id^="group-mortgage"] .resource, .responsive [id^="group-mortgage"] .resource-form {
+  overflow: visible;
+}
+
+.responsive [id^="group-mortgage"] .resource:nth-child(1) {
+  z-index: 3;
+}
+
+.responsive [id^="group-mortgage"] .resource:nth-child(2) {
+  z-index: 2;
+}
+
+.responsive [id^="group-mortgage"] .resource:nth-child(3) {
+  z-index: 1;
+}
+
+.responsive .vin-lookup .field,
+.responsive .prefill-lookup .field {
+  max-width: 100%;
+}
+
+.responsive .vin-lookup input,
+.responsive .prefill-lookup input {
+  margin-right: 5px;
+}
+
+.responsive .vin-lookup .btn-action-b,
+.responsive .prefill-lookup .btn-action-b {
+  margin-top: .5em;
+}
+
+.responsive .form-submit {
+  margin: 0 0 1em;
+  padding: 20px 0 0;
+  text-align: right;
+  border-top: 1px solid #d9d9d9;
+}
+
+.responsive .form-submit .btn:last-child {
+  float: left;
+}
+
+.responsive .form-submit .btn-primary:first-child {
+  float: right;
+}
+
+.responsive .form-submit p + .btn:last-child {
+  float: none;
+}
+
+.responsive .form-submit + .form-submit {
+  margin-top: -1em;
+  padding-top: 25px;
+}
+
+.responsive .form-submit > p {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+.responsive .form-submit p + .btn {
+  margin-left: .5em;
+}
+
+.responsive .form-submit-alt {
+  text-align: center;
+  padding: 8px 0 0 0;
+  width: 100%;
+  clear: both;
+}
+
+.responsive .form-submit-alt * {
+  font-weight: bold;
+  letter-spacing: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.responsive .mq-abandon {
+  border-top: 1px solid #e8e8e8;
+  margin: 20px 0;
+}
+
+.responsive .recalc-mssg {
+  display: inline-block;
+  font-size: 0.75em;
+  color: #6A6A6A;
+}
+
+.responsive .recalc-mssg:before {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-right: 7px;
+  background: url("../img/ajax-loader.gif") no-repeat 0 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-animation: spin-keyframes-clockwise 1.26s infinite linear;
+  animation: spin-keyframes-clockwise 1.26s infinite linear;
+}
+
+.feature-item-desc .responsive .recalc-mssg {
+  margin: -2px 0 0;
+  font-size: 1em;
+}
+
+.responsive .map {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+@media (max-width: 400px) {
+  .responsive .form-submit > p {
+    text-align: left;
+  }
+  .responsive .form-submit .btn,
+  .responsive .form-submit p + .btn {
+    width: 100%;
+    margin: 0 0 .5em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 25em) {
+  .responsive .form-submit .btn-lrg {
+    font-size: 1.0625em;
+    min-height: 40px;
+  }
+  .responsive .picker-details-value .thumbnail-label,
+  .responsive .img-picker-calc-pct .thumbnail-label {
+    font-size: 0.8125em;
+  }
+}
+
+@media (max-width: 50em) {
+  .responsive .btn-group-1a .btn {
+    width: 100%;
+    margin: 0 0 .5em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 22.5em) {
+  .responsive [for$=other] .opt {
+    margin-bottom: 0;
+  }
+  .responsive .radio .opt .val,
+  .responsive .checkbox .opt .val {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .responsive .thumbnails .radio .opt,
+  .responsive .thumbnails .checkbox .opt {
+    max-width: 70%;
+  }
+  .responsive .picker-instruct,
+  .responsive .img-picker-instruct {
+    float: left;
+    width: 55%;
+  }
+  .responsive .picker-toggle,
+  .responsive .img-picker-toggle {
+    margin-top: .3em;
+  }
+}
+
+@media (min-width: 401px) {
+  .responsive .form-submit-alt {
+    text-align: left;
+    padding: 0 0 1em 0;
+    width: 50%;
+    display: inline-block;
+    float: left;
+    margin: 0 -10px 0 0;
+    clear: none;
+  }
+  .responsive .form-submit-alt * {
+    margin: 0 10px 0 0;
+  }
+}
+
+@media (min-width: 29em) {
+  .responsive .form-submit > p,
+  .responsive .form-submit p + .btn {
+    width: auto;
+  }
+  .responsive .picker-instruct,
+  .responsive .img-picker-instruct {
+    width: 68%;
+  }
+  .responsive .form-submit-alt {
+    width: 52%;
+  }
+  .responsive .picker-details-value {
+    padding-right: 0;
+  }
+  .responsive .picker-details-total-value {
+    margin-left: 24px;
+  }
+}
+
+@media (min-width: 32em) {
+  .responsive .form-faqs .collapsible-header {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 35em) {
+  .responsive .form-submit-alt {
+    width: 59%;
+  }
+}
+
+@media (min-width: 600px) {
+  .responsive .label,
+  .responsive .label + .field {
+    float: left;
+  }
+  .responsive .label {
+    width: 40%;
+    padding-right: 1em;
+    margin-bottom: 0;
+  }
+  .responsive .label + .field {
+    width: 60%;
+    max-width: none;
+  }
+  .responsive .picker-editor .resources {
+    margin-top: 30px;
+  }
+  .responsive .picker-details-value {
+    padding-right: 25px;
+  }
+  .responsive .picker-details-total-value {
+    margin-left: 7px;
+  }
+  .responsive .check-radio .label,
+  .responsive .check-radio .label-instruct:last-child {
+    margin-bottom: 0;
+  }
+  .responsive .field-currency {
+    margin-right: -.25em;
+    margin-left: 0;
+    width: 1.5em;
+  }
+  .responsive .form-submit > p {
+    font-size: 1.125em;
+  }
+  .responsive .form-submit-alt > p {
+    font-size: 1.0625em;
+  }
+  .responsive .check-radio .field-mssg-invalid {
+    margin-top: 0;
+  }
+  .responsive .mask-value .read-only {
+    margin-top: -4px;
+    padding-top: 0;
+  }
+  .responsive .mask-value .picker-details-value .read-only {
+    margin-top: 0;
+  }
+  .responsive .btn.mask-edit {
+    top: -5px;
+  }
+}
+
+@media (min-width: 680px) {
+  .responsive .form-mask-toggle,
+  .responsive .picker-details {
+    margin-left: 40%;
+  }
+}
+
+@media (min-width: 50em) {
+  .responsive .label,
+  .responsive .radio .opt,
+  .responsive .checkbox .opt {
+    font-size: 1em;
+  }
+  .responsive .radio .opt .val,
+  .responsive .checkbox .opt .val {
+    font-size: 0.75em;
+  }
+  .responsive .radio .opt,
+  .responsive .checkbox .opt {
+    max-width: 85%;
+  }
+  .responsive .radio .opt-desc .positive,
+  .responsive .checkbox .opt-desc .positive,
+  .responsive .radio .opt-desc .pg-mssg-positive,
+  .responsive .checkbox .opt-desc .pg-mssg-positive {
+    font-size: 0.8125rem;
+  }
+  .responsive .label-instruct,
+  .responsive .fieldLabelHelp {
+    display: block;
+    font-size: 0.75em;
+  }
+  .responsive .form-submit-alt {
+    width: 68%;
+  }
+  .responsive .picker-details-value {
+    padding-right: 0;
+  }
+  .responsive .picker-details-total-value {
+    margin-left: 24px;
+  }
+}
+
+.responsive html, .responsive body {
+  margin: 0 auto;
+}
+
+.responsive input:not([type="radio"]).dijitInputInner,
+.responsive .dijitSelect {
+  font: 16px/1.3 "Roboto", Arial, Helvetica, sans-serif;
+  /* 16px = magic font size number to prevent iOS text zoom */
+  display: inline-block;
+  padding: .5em !important;
+  vertical-align: top;
+  margin-top: 2px;
+  border-radius: 3px;
+  border: 1px solid #d8d8d8;
+  height: 40px;
+}
+
+.responsive input:not([type="radio"]).dijitInputInner::-webkit-input-placeholder,
+.responsive .dijitSelect::-webkit-input-placeholder {
+  font-weight: normal;
+  color: #808080;
+}
+
+.responsive input:not([type="radio"]).dijitInputInner:-ms-input-placeholder,
+.responsive .dijitSelect:-ms-input-placeholder {
+  font-weight: normal;
+  color: #808080;
+}
+
+.responsive .dijitTextBox,
+.responsive .dijitTextBox .dijitButtonNode,
+.responsive .dijitSelect .dijitButtonContents {
+  border: 0;
+}
+
+.responsive .pmtAcctMiniApp,
+.responsive .pmtAcctMiniApp .input,
+.responsive .dijitSelect,
+.responsive .dijitTooltip {
+  font: 1em/1.3 "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.responsive .dijitTextBox {
+  border: 0;
+}
+
+.responsive .dijitInputInner {
+  border: solid 1px #d8d8d8 !important;
+}
+
+.responsive .dijitInputInner:focus {
+  border: solid 1px #0E66A8 !important;
+}
+
+.responsive .pmtAcctMiniApp .dijitPlaceHolder {
+  display: none;
+}
+
+.responsive .pmtAcctMiniApp .input {
+  margin-right: 0;
+}
+
+.responsive .pmtAcctMiniApp .dijitArrowButtonContainer,
+.responsive .pmtAcctMiniApp .cardNumberInput,
+.responsive .pmtAcctMiniApp .securityCodeInput,
+.responsive .pmtAcctMiniApp .expirationYearInput,
+.responsive .pmtAcctMiniApp .expirationMonthInput {
+  width: auto;
+}
+
+.responsive .pmtAcctMiniApp #widget_cardNumber {
+  display: block;
+}
+
+.responsive .pmtAcctMiniApp .fieldInputError {
+  height: auto;
+}
+
+.responsive .pmtAcctMiniApp .fieldLabelText {
+  margin-top: 0;
+}
+
+.responsive .pmtAcctMiniApp .errorAboveInput .fieldLabel {
+  margin-top: 0;
+}
+
+.responsive .pmtAcctMiniApp .bankRoutingNumberInput {
+  width: 108px;
+}
+
+.responsive .pmtAcctMiniApp .checkSample img {
+  display: none;
+}
+
+.responsive .pmtAcctMiniApp .checkSample:after {
+  margin-top: -10px 0 0 3px;
+  width: 15em;
+  height: 3em;
+  background: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%22-192%20375.8%20226.7%2042.2%22%20enable-background%3D%22new%20-192%20375.8%20226.7%2042.2%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20d%3D%22M18%2C385.1c-3.6%2C0-4.5-1.4-2.7-4.7c0.5-0.9%2C0.4-1.8%2C0.3-2.7c-0.2-2.2%2C1.3-1.8%2C2.5-1.8c1.2%2C0%2C3-0.5%2C2.5%2C1.7%0D%0A%09%09c-0.4%2C1.9%2C1.1%2C3.2%2C1.1%2C4.9c0%2C2-0.5%2C2.9-2.5%2C2.5C18.8%2C385.1%2C18.4%2C385.2%2C18%2C385.1z%20M18.1%2C377c-1.1-0.2-1.7%2C0.3-1.6%2C1.5%0D%0A%09%09c0%2C1.1%2C0.3%2C1.7%2C1.5%2C1.6c1.1%2C0%2C1.7-0.3%2C1.6-1.5C19.6%2C377.5%2C19.4%2C376.8%2C18.1%2C377z%20M18.1%2C381.1c-1.2-0.2-1.5%2C0.4-1.6%2C1.6%0D%0A%09%09c0%2C1.2%2C0.5%2C1.5%2C1.6%2C1.6c1.2%2C0%2C1.5-0.5%2C1.5-1.6C19.7%2C381.4%2C19.2%2C380.9%2C18.1%2C381.1z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-23.8%2C380.1c0-1.2%2C0-1.8%2C0-2.4c0-0.7-0.2-1.6%2C1-1.7c1.4%2C0%2C1%2C1%2C1.1%2C1.8c0%2C0.8%2C0%2C1.7%2C0%2C2.5c0%2C1.6%2C0.4%2C2.5%2C2.1%2C1.2%0D%0A%09%09c0.7-0.5%2C1.6-0.8%2C1.8%2C0.1c0.3%2C1.1%2C0.7%2C2.5-0.4%2C3.3c-0.5%2C0.4-1.4%2C0.2-1.4-0.8c0-0.7-0.4-1.2-1.1-1.1%0D%0A%09%09C-23.9%2C383.6-24.3%2C382-23.8%2C380.1z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-132.9%2C380.7c0%2C0.8%2C0%2C1.7%2C0%2C2.5c-0.1%2C1.1-0.7%2C1.9-1.8%2C2c-1.1%2C0.1-2.4%2C0.3-3.4%2C0c-3.4-1.1-1.5-4.1-1.9-6.2%0D%0A%09%09c-0.3-1.5%2C0.4-2.7%2C2.2-2.8c0.8%2C0%2C1.5%2C0%2C2.3%2C0c1.8-0.1%2C2.7%2C0.8%2C2.7%2C2.6C-132.9%2C379.3-132.9%2C380-132.9%2C380.7%0D%0A%09%09C-132.9%2C380.7-132.9%2C380.7-132.9%2C380.7z%20M-133.8%2C380.6c-0.3-1.1%2C0.6-2.6-0.6-3.3c-1.1-0.7-2.5-0.4-3.8-0.1%0D%0A%09%09c-1.2%2C0.3-0.8%2C1.5-0.8%2C2.3c0%2C0.6%2C0%2C1.2%2C0%2C1.8c0%2C2.9%2C0.1%2C2.8%2C2.9%2C2.9C-133%2C384.4-134%2C382.2-133.8%2C380.6z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-123%2C380.7c0%2C0.8%2C0%2C1.5%2C0%2C2.3c-0.1%2C1.3-0.8%2C2.1-2.1%2C2.2c-1%2C0-2%2C0-2.9%2C0c-1%2C0-1.9-0.6-1.9-1.6c-0.1-2-0.1-3.9%2C0-5.9%0D%0A%09%09c0.1-1%2C0.9-1.6%2C1.9-1.6c0.9%2C0%2C1.8%2C0%2C2.7%2C0c1.6%2C0%2C2.4%2C0.8%2C2.4%2C2.4C-123%2C379.2-123%2C379.9-123%2C380.7z%20M-129.2%2C380.6%0D%0A%09%09c0.3%2C1-0.8%2C2.7%2C0.9%2C3.5c2.5%2C1.1%2C4.3-0.1%2C4.3-2.9c0-0.9%2C0-1.8%2C0-2.7c0-1-0.5-1.4-1.5-1.5C-128.9%2C376.7-129.2%2C376.9-129.2%2C380.6z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-164.3%2C385.2c-2%2C0-3-1.8-1.8-3.8c0.9-1.4%2C1.1-2.7%2C0-4.1c-0.4-0.5-0.4-1%2C0.3-1.2c0.6-0.2%2C1.3-0.1%2C1.3%2C0.7%0D%0A%09%09c0.1%2C0.9%2C0%2C1.8%2C0.1%2C2.7c0%2C0.7-0.1%2C1.4%2C0.9%2C1.6c2%2C0.4%2C1%2C2%2C1%2C3.1C-162.4%2C385.6-163.6%2C385-164.3%2C385.2z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-0.5%2C378.4c-0.7-0.6-1-2.1-2.2-1.3c-1%2C0.7-0.5%2C2-0.4%2C3c0%2C1.3%2C1.2%2C0.8%2C1.9%2C1c1.1%2C0.3%2C2.7-0.9%2C3.1%2C1.1%0D%0A%09%09c0.4%2C2.4%2C0%2C2.9-2.5%2C2.9c-0.5%2C0-1.1-0.1-1.6%2C0c-1.6%2C0.2-2.1-0.5-2-2.1c0.1-1.8%2C0-3.6%2C0-5.4c0-0.6-0.2-1.4%2C0.6-1.5%0D%0A%09%09c1-0.2%2C2.2-0.4%2C3.1%2C0.2C0.3%2C376.8%2C0.1%2C377.6-0.5%2C378.4z%20M-1%2C384.2c0.8-0.2%2C2%2C0.4%2C2-1.1c0-1.5-1.3-1-2.1-1c-0.8%2C0-2-0.4-2%2C1.1%0D%0A%09%09C-3%2C384.7-1.8%2C384-1%2C384.2z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-172.2%2C380.6c0%2C0.8%2C0%2C1.5%2C0%2C2.3c-0.1%2C1.4-0.8%2C2.3-2.2%2C2.3c-0.9%2C0-1.8%2C0.1-2.7%2C0c-3.4-0.6-1.8-3.4-2.1-5.3%0D%0A%09%09c-0.2-1.6-0.4-3.5%2C2.1-3.7c0.6-0.1%2C1.2%2C0%2C1.8%2C0c2.7%2C0%2C3.1%2C0.5%2C3.2%2C3.2C-172.2%2C379.7-172.2%2C380.1-172.2%2C380.6z%20M-178.3%2C380.5%0D%0A%09%09c0%2C0.7%2C0%2C1.4%2C0%2C2c0%2C1.1%2C0.4%2C1.6%2C1.6%2C1.7c3.2%2C0.3%2C3.5%2C0%2C3.6-3.1c0-0.4%2C0-0.8%2C0-1.1c0-2.9%2C0-2.8-2.8-3%0D%0A%09%09C-179.1%2C376.8-178.2%2C378.9-178.3%2C380.5z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-109.4%2C380.1c0-1.1%2C0-1.8%2C0-2.5c0-0.6-0.2-1.5%2C0.9-1.5c1.2%2C0%2C1%2C0.9%2C1%2C1.6c0%2C1%2C0%2C2%2C0%2C2.9c0%2C1.6%2C0.8%2C1.9%2C2%2C1.1%0D%0A%09%09c0.7-0.5%2C1.5-1%2C1.9-0.2c0.5%2C1%2C0.6%2C2.4-0.2%2C3.4c-0.4%2C0.5-1.4%2C0.4-1.5-0.6c-0.1-0.8-0.5-1.3-1.3-1.2%0D%0A%09%09C-109.7%2C383.7-109.6%2C381.7-109.4%2C380.1z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-51.2%2C383.1c0.1-0.7%2C0-1.3%2C0.5-2c0.9-1.1%2C0.8-2.4%2C0.1-3.5c-0.2-0.4-0.7-0.7-0.4-1.2c0.2-0.2%2C0.7-0.3%2C1-0.3%0D%0A%09%09c0.8%2C0%2C0.7%2C0.6%2C0.7%2C1.2c0%2C0.8%2C0%2C1.7%2C0%2C2.5c0%2C0.6%2C0%2C1.2%2C0.8%2C1.4c2.3%2C0.4%2C1.3%2C2.2%2C1.1%2C3.2c-0.2%2C1.5-1.7%2C0.7-2.7%2C0.8%0D%0A%09%09C-51.7%2C385.2-51%2C383.9-51.2%2C383.1z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-152.5%2C383.1c-0.2%2C0.7%2C0.3%2C1.7-0.6%2C2c-1%2C0.3-2.3%2C0.6-3-0.2c-0.8-0.8-0.7-2.3-0.2-3.2c0.9-1.6%2C1.3-2.9%2C0-4.5%0D%0A%09%09c-0.3-0.4-0.2-0.9%2C0.3-1.1c0.6-0.2%2C1.3-0.2%2C1.3%2C0.7c0.1%2C0.8%2C0%2C1.5%2C0%2C2.3c0%2C1-0.2%2C2%2C1.3%2C2.1C-152.2%2C381.3-152.6%2C382.4-152.5%2C383.1z%22%0D%0A%09%09%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-32.6%2C376.4c3.7-0.8%2C3.8-0.7%2C4%2C2.7c0.1%2C1.4%2C1.2%2C2.4%2C1.1%2C4c-0.1%2C1.7-0.5%2C2.4-2.2%2C2.1c-0.9-0.1-1.8-0.1-3.2-0.2%0D%0A%09%09c1.2-1.3%2C3.6%2C0%2C3.4-2.6c-0.2-2.2-2.2-0.7-3-1.8c0.8-1%2C3.4%2C0.3%2C3-2.4C-29.8%2C376.1-31.8%2C377.7-32.6%2C376.4z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-147.8%2C376.4c3.7-0.9%2C4-0.7%2C4%2C2.4c0%2C1.5%2C1.3%2C2.4%2C1.1%2C4c-0.2%2C1.6-0.4%2C2.6-2.3%2C2.3c-0.9-0.2-1.8%2C0.3-2.7-0.4%0D%0A%09%09c0.8-1.1%2C3.3%2C0.3%2C3.1-2.3c-0.2-2.3-2.4-0.7-3-2c0.8-0.9%2C3.1%2C0.5%2C3-2C-144.7%2C376.1-146.8%2C377.6-147.8%2C376.4z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-113.2%2C383.2c-0.1%2C0.7%2C0.3%2C1.7-0.8%2C1.8c-0.9%2C0.2-2.1%2C0.5-2.8-0.2c-0.8-0.8-0.6-2.2-0.3-3c0.8-1.7%2C1.5-3.2%2C0-4.9%0D%0A%09%09c-0.3-0.3%2C0-0.9%2C0.6-0.9c0.6-0.1%2C1.1%2C0%2C1.2%2C0.7c0.1%2C0.7%2C0%2C1.3%2C0.1%2C2c0%2C1.1-0.4%2C2.3%2C1.4%2C2.5C-112.9%2C381.4-113.3%2C382.5-113.2%2C383.2z%22%0D%0A%09%09%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-8.1%2C376.1c-0.7%2C1.2-1.4%2C1-2.2%2C0.9c-1.2-0.1-1.8%2C0.4-1.8%2C1.7c0%2C1.3%2C0.7%2C1.5%2C1.7%2C1.5c0.8%2C0%2C1.9-0.5%2C2.2%2C0.5%0D%0A%09%09c0.4%2C1.3%2C0.3%2C2.7%2C0%2C4c-0.1%2C0.7-0.9%2C0.5-1.3%2C0.5c-1.1-0.1-2.2%2C0.3-3.5-0.3c0.8-1.1%2C1.8-0.6%2C2.7-0.6c1.2%2C0%2C1.4-0.6%2C1.4-1.6%0D%0A%09%09c0-1-0.2-1.6-1.4-1.6c-0.9%2C0-2.1%2C0.5-2.5-0.4c-0.6-1.1-0.2-2.5-0.2-3.8c0-0.5%2C0.4-0.8%2C0.9-0.8C-10.7%2C376.1-9.4%2C376.1-8.1%2C376.1z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-41.1%2C376.8c0-1%2C2.7-1.2%2C3.5-0.3c0.8%2C1%2C0.3%2C2.6%2C0.2%2C3.9c-0.1%2C0.6-0.5%2C0.7-1%2C0.6c-1.2-0.1-2%2C0.1-2%2C1.7%0D%0A%09%09c0%2C1.7%2C1.2%2C1.4%2C2.2%2C1.5c0.3%2C0%2C0.6%2C0%2C0.7%2C0.7c-1.2%2C0.3-2.7%2C0.7-3.4-0.1c-0.9-1-0.4-2.7-0.3-4.1c0.1-0.5%2C0.7-0.6%2C1.1-0.5%0D%0A%09%09c1.3%2C0.1%2C1.9-0.3%2C1.9-1.7c0-1.6-1-1.4-2-1.4C-40.6%2C377-40.9%2C376.8-41.1%2C376.8z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-93.7%2C384.4c-1.2%2C0.8-2.8%2C1.2-3.5%2C0.4c-0.9-1.1-0.3-2.7-0.2-4.1c0-0.4%2C0.5-0.5%2C0.9-0.5c1.3%2C0.1%2C2.2-0.1%2C2.1-1.8%0D%0A%09%09c-0.1-1.8-1.3-1.3-2.2-1.4c-0.3%2C0-0.6-0.1-0.7-0.7c1.2-0.4%2C2.8-0.8%2C3.6%2C0.2c0.8%2C1%2C0.3%2C2.6%2C0.2%2C3.9c0%2C0.5-0.6%2C0.7-1%2C0.6%0D%0A%09%09c-1.4-0.1-2.1%2C0.2-2%2C1.8c0.1%2C1.6%2C1.2%2C1.2%2C2.1%2C1.3C-94.3%2C384.2-94%2C384.3-93.7%2C384.4z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M7%2C378.9c-0.3-1-0.8-2.3%2C0.3-2.7c1.3-0.4%2C3.1-0.7%2C4.1%2C0.2c0.9%2C0.8%2C0.9%2C3%2C0%2C3.5c-2.1%2C1.1-1.7%2C2.7-1.8%2C4.4%0D%0A%09%09c0%2C0.3%2C0%2C0.6-0.4%2C0.7c-1-2.3-0.7-3.9%2C0.9-5.3c0.7-0.6%2C0.6-1.3%2C0.5-2.1c-0.1-0.7-0.8-0.6-1.3-0.6c-0.7%2C0-1.6-0.2-1.6%2C1%0D%0A%09%09C7.7%2C378.4%2C7.6%2C378.8%2C7%2C378.9z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-79.8%2C381c-0.4%2C0.7%2C0.8%2C2.5-0.9%2C2.6c-1.8%2C0.1-0.8-1.7-1-2.7c-0.2-0.6%2C0-1.3%2C0-2c0-0.6%2C0-1.2%2C0.9-1.3c0.8%2C0%2C1%2C0.5%2C1%2C1.2%0D%0A%09%09C-79.8%2C379.4-79.8%2C380.1-79.8%2C381z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-189.3%2C383.7c0.2%2C1.2-0.4%2C1.5-1.6%2C1.5c-1%2C0-1.5-0.3-1.5-1.4c0-1.1%2C0.2-1.7%2C1.5-1.7C-189.7%2C382.1-189.1%2C382.4-189.3%2C383.7z%0D%0A%09%09%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-190.7%2C379.1c-1.1%2C0.1-1.6-0.3-1.6-1.5c0-1%2C0.2-1.5%2C1.4-1.5c1%2C0%2C1.8%2C0%2C1.7%2C1.4C-189.3%2C378.5-189.5%2C379.2-190.7%2C379.1z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M34.3%2C383.7c0.2%2C1.2-0.4%2C1.5-1.6%2C1.5c-1%2C0-1.5-0.3-1.5-1.4c0-1.1%2C0.2-1.7%2C1.5-1.7C33.9%2C382.1%2C34.5%2C382.4%2C34.3%2C383.7z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M32.9%2C379.1c-1.1%2C0.1-1.6-0.3-1.6-1.5c0-1%2C0.2-1.5%2C1.4-1.5c1%2C0%2C1.8%2C0%2C1.7%2C1.4C34.3%2C378.5%2C34.1%2C379.2%2C32.9%2C379.1z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-74.6%2C383.6c0.1%2C1-0.2%2C1.6-1.3%2C1.6c-1.1%2C0-1.7-0.3-1.6-1.5c0-1.2%2C0.4-1.6%2C1.6-1.6C-74.9%2C382.1-74.5%2C382.6-74.6%2C383.6z%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-76.2%2C376.1c1-0.1%2C1.6%2C0.1%2C1.6%2C1.3c0%2C1-0.1%2C1.8-1.4%2C1.8c-1.2%2C0-1.6-0.4-1.6-1.6C-77.6%2C376.5-77.3%2C375.9-76.2%2C376.1z%22%2F%3E%0D%0A%09%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23ECAC00%22%20stroke-width%3D%221.2023%22%20stroke-miterlimit%3D%2210%22%20points%3D%22-181.3%2C391.5%20-181.3%2C398.2%0D%0A%09%09-89.8%2C398.2%20-89.8%2C391.5%20%09%22%2F%3E%0D%0A%09%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23ECAC00%22%20stroke-width%3D%221.2023%22%20stroke-miterlimit%3D%2210%22%20points%3D%22-62.3%2C391.5%20-62.3%2C398.2%2022.3%2C398.2%0D%0A%09%0922.3%2C391.5%20%09%22%2F%3E%0D%0A%09%3Cpath%20d%3D%22M-56.5%2C380.6c0%2C0.8%2C0%2C1.5%2C0%2C2.3c-0.1%2C1.3-0.8%2C2.1-2.1%2C2.2c-1%2C0-2%2C0-2.9%2C0c-1%2C0-1.9-0.6-1.9-1.6c-0.1-2-0.1-3.9%2C0-5.9%0D%0A%09%09c0.1-1%2C0.9-1.6%2C1.9-1.6c0.9%2C0%2C1.8%2C0%2C2.7%2C0c1.6%2C0%2C2.4%2C0.8%2C2.4%2C2.4C-56.5%2C379.1-56.5%2C379.9-56.5%2C380.6z%20M-62.7%2C380.6%0D%0A%09%09c0.3%2C1-0.8%2C2.7%2C0.9%2C3.5c2.5%2C1.1%2C4.3-0.1%2C4.3-2.9c0-0.9%2C0-1.8%2C0-2.7c0-1-0.5-1.4-1.5-1.5C-62.4%2C376.6-62.7%2C376.9-62.7%2C380.6z%22%2F%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpath%20d%3D%22M-177.8%2C415.7V408h3.3c0.8%2C0%2C1.4%2C0.1%2C1.8%2C0.2c0.4%2C0.1%2C0.7%2C0.4%2C0.9%2C0.7s0.3%2C0.8%2C0.3%2C1.2c0%2C0.6-0.2%2C1.1-0.5%2C1.4%0D%0A%09%09%09c-0.3%2C0.4-0.9%2C0.6-1.5%2C0.7c0.3%2C0.2%2C0.6%2C0.4%2C0.8%2C0.7s0.5%2C0.7%2C0.9%2C1.3l0.9%2C1.5h-1.9l-1.1-1.7c-0.4-0.6-0.7-1-0.8-1.1%0D%0A%09%09%09c-0.1-0.2-0.3-0.3-0.5-0.3c-0.2-0.1-0.4-0.1-0.8-0.1h-0.3v3.2H-177.8z%20M-176.3%2C411.2h1.2c0.8%2C0%2C1.2%2C0%2C1.4-0.1%0D%0A%09%09%09c0.2-0.1%2C0.3-0.2%2C0.4-0.3c0.1-0.2%2C0.2-0.3%2C0.2-0.6c0-0.3-0.1-0.5-0.2-0.6c-0.1-0.2-0.3-0.3-0.6-0.3c-0.1%2C0-0.5%2C0-1.1%2C0h-1.2V411.2%0D%0A%09%09%09z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-170.7%2C412.8c0-0.5%2C0.1-1%2C0.4-1.4s0.6-0.8%2C1-1.1c0.4-0.2%2C0.9-0.4%2C1.5-0.4c0.9%2C0%2C1.5%2C0.3%2C2.1%2C0.8c0.5%2C0.6%2C0.8%2C1.2%2C0.8%2C2.1%0D%0A%09%09%09c0%2C0.8-0.3%2C1.6-0.8%2C2.1c-0.5%2C0.6-1.2%2C0.8-2.1%2C0.8c-0.5%2C0-1-0.1-1.5-0.3c-0.5-0.2-0.8-0.6-1.1-1%0D%0A%09%09%09C-170.5%2C414-170.7%2C413.5-170.7%2C412.8z%20M-169.1%2C412.9c0%2C0.6%2C0.1%2C1%2C0.4%2C1.3c0.3%2C0.3%2C0.6%2C0.4%2C1%2C0.4c0.4%2C0%2C0.7-0.1%2C1-0.4%0D%0A%09%09%09c0.3-0.3%2C0.4-0.7%2C0.4-1.3c0-0.5-0.1-1-0.4-1.3c-0.3-0.3-0.6-0.4-1-0.4c-0.4%2C0-0.7%2C0.1-1%2C0.4C-169%2C411.9-169.1%2C412.4-169.1%2C412.9z%22%0D%0A%09%09%09%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-160.3%2C415.7v-0.8c-0.2%2C0.3-0.5%2C0.5-0.8%2C0.7c-0.3%2C0.2-0.7%2C0.3-1.1%2C0.3c-0.4%2C0-0.7-0.1-1-0.2c-0.3-0.2-0.5-0.4-0.7-0.7%0D%0A%09%09%09c-0.1-0.3-0.2-0.7-0.2-1.2v-3.6h1.5v2.6c0%2C0.8%2C0%2C1.3%2C0.1%2C1.5c0.1%2C0.2%2C0.2%2C0.3%2C0.3%2C0.4c0.1%2C0.1%2C0.3%2C0.2%2C0.5%2C0.2%0D%0A%09%09%09c0.3%2C0%2C0.5-0.1%2C0.7-0.2c0.2-0.1%2C0.3-0.3%2C0.4-0.5c0.1-0.2%2C0.1-0.7%2C0.1-1.5v-2.4h1.5v5.6H-160.3z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-155%2C410.1v1.2h-1v2.3c0%2C0.5%2C0%2C0.7%2C0%2C0.8c0%2C0.1%2C0.1%2C0.1%2C0.1%2C0.2c0.1%2C0%2C0.2%2C0.1%2C0.3%2C0.1c0.1%2C0%2C0.3%2C0%2C0.6-0.1l0.1%2C1.2%0D%0A%09%09%09c-0.3%2C0.1-0.7%2C0.2-1.2%2C0.2c-0.3%2C0-0.5%2C0-0.7-0.1s-0.4-0.2-0.5-0.3c-0.1-0.1-0.2-0.3-0.2-0.6c0-0.2%2C0-0.5%2C0-1v-2.4h-0.7v-1.2h0.7%0D%0A%09%09%09V409l1.5-0.9v2H-155z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-154.3%2C409.3V408h1.5v1.4H-154.3z%20M-154.3%2C415.7v-5.6h1.5v5.6H-154.3z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-146.4%2C415.7h-1.5v-2.9c0-0.6%2C0-1-0.1-1.2c-0.1-0.2-0.2-0.3-0.3-0.4s-0.3-0.1-0.5-0.1c-0.3%2C0-0.5%2C0.1-0.7%2C0.2%0D%0A%09%09%09c-0.2%2C0.1-0.3%2C0.3-0.4%2C0.6c-0.1%2C0.2-0.1%2C0.7-0.1%2C1.3v2.5h-1.5v-5.6h1.4v0.8c0.5-0.6%2C1.1-1%2C1.9-1c0.3%2C0%2C0.6%2C0.1%2C0.9%2C0.2%0D%0A%09%09%09s0.5%2C0.3%2C0.6%2C0.5c0.1%2C0.2%2C0.2%2C0.4%2C0.3%2C0.6c0.1%2C0.2%2C0.1%2C0.6%2C0.1%2C1V415.7z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-145.3%2C416.1l1.7%2C0.2c0%2C0.2%2C0.1%2C0.3%2C0.2%2C0.4c0.1%2C0.1%2C0.4%2C0.2%2C0.7%2C0.2c0.4%2C0%2C0.7-0.1%2C0.9-0.2c0.1-0.1%2C0.2-0.2%2C0.3-0.4%0D%0A%09%09%09c0-0.1%2C0.1-0.4%2C0.1-0.7v-0.8c-0.4%2C0.6-1%2C0.9-1.7%2C0.9c-0.8%2C0-1.4-0.3-1.8-1c-0.3-0.5-0.5-1.1-0.5-1.9c0-0.9%2C0.2-1.7%2C0.7-2.2%0D%0A%09%09%09c0.5-0.5%2C1-0.7%2C1.7-0.7c0.7%2C0%2C1.3%2C0.3%2C1.7%2C0.9v-0.8h1.4v5c0%2C0.7-0.1%2C1.2-0.2%2C1.5s-0.3%2C0.6-0.5%2C0.8c-0.2%2C0.2-0.5%2C0.3-0.8%2C0.4%0D%0A%09%09%09c-0.3%2C0.1-0.7%2C0.2-1.3%2C0.2c-1%2C0-1.6-0.2-2-0.5c-0.4-0.3-0.6-0.7-0.6-1.2C-145.3%2C416.2-145.3%2C416.2-145.3%2C416.1z%20M-144%2C412.8%0D%0A%09%09%09c0%2C0.6%2C0.1%2C1%2C0.3%2C1.3c0.2%2C0.3%2C0.5%2C0.4%2C0.9%2C0.4c0.4%2C0%2C0.7-0.1%2C0.9-0.4c0.2-0.3%2C0.4-0.7%2C0.4-1.3c0-0.6-0.1-1-0.4-1.3%0D%0A%09%09%09c-0.2-0.3-0.5-0.4-0.9-0.4c-0.4%2C0-0.6%2C0.1-0.9%2C0.4C-143.9%2C411.8-144%2C412.2-144%2C412.8z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-136.1%2C415.7V408h1.5l3.2%2C5.2V408h1.5v7.8h-1.6l-3.1-5.1v5.1H-136.1z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-124.8%2C415.7v-0.8c-0.2%2C0.3-0.5%2C0.5-0.8%2C0.7c-0.3%2C0.2-0.7%2C0.3-1.1%2C0.3c-0.4%2C0-0.7-0.1-1-0.2c-0.3-0.2-0.5-0.4-0.7-0.7%0D%0A%09%09%09s-0.2-0.7-0.2-1.2v-3.6h1.5v2.6c0%2C0.8%2C0%2C1.3%2C0.1%2C1.5c0.1%2C0.2%2C0.2%2C0.3%2C0.3%2C0.4c0.1%2C0.1%2C0.3%2C0.2%2C0.6%2C0.2c0.3%2C0%2C0.5-0.1%2C0.7-0.2%0D%0A%09%09%09c0.2-0.1%2C0.3-0.3%2C0.4-0.5c0.1-0.2%2C0.1-0.7%2C0.1-1.5v-2.4h1.5v5.6H-124.8z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-122.3%2C410.1h1.4v0.8c0.5-0.6%2C1.1-0.9%2C1.8-0.9c0.4%2C0%2C0.7%2C0.1%2C0.9%2C0.2s0.5%2C0.4%2C0.7%2C0.7c0.2-0.3%2C0.5-0.5%2C0.8-0.7%0D%0A%09%09%09c0.3-0.1%2C0.6-0.2%2C0.9-0.2c0.4%2C0%2C0.8%2C0.1%2C1%2C0.3c0.3%2C0.2%2C0.5%2C0.4%2C0.6%2C0.7c0.1%2C0.2%2C0.2%2C0.6%2C0.2%2C1.2v3.6h-1.5v-3.2%0D%0A%09%09%09c0-0.6-0.1-0.9-0.2-1.1c-0.1-0.2-0.3-0.3-0.6-0.3c-0.2%2C0-0.4%2C0.1-0.6%2C0.2s-0.3%2C0.3-0.4%2C0.6s-0.1%2C0.6-0.1%2C1.2v2.7h-1.5v-3.1%0D%0A%09%09%09c0-0.5%2C0-0.9-0.1-1.1c-0.1-0.2-0.1-0.3-0.2-0.4c-0.1-0.1-0.3-0.1-0.5-0.1c-0.2%2C0-0.4%2C0.1-0.6%2C0.2c-0.2%2C0.1-0.3%2C0.3-0.4%2C0.5%0D%0A%09%09%09c-0.1%2C0.2-0.1%2C0.6-0.1%2C1.2v2.7h-1.5V410.1z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-112.9%2C415.7V408h1.5v2.8c0.5-0.5%2C1-0.8%2C1.6-0.8c0.7%2C0%2C1.2%2C0.2%2C1.7%2C0.7c0.4%2C0.5%2C0.7%2C1.2%2C0.7%2C2.1c0%2C1-0.2%2C1.7-0.7%2C2.2%0D%0A%09%09%09s-1%2C0.8-1.7%2C0.8c-0.3%2C0-0.6-0.1-0.9-0.2c-0.3-0.2-0.6-0.4-0.8-0.7v0.8H-112.9z%20M-111.4%2C412.8c0%2C0.6%2C0.1%2C1%2C0.3%2C1.3%0D%0A%09%09%09c0.3%2C0.4%2C0.6%2C0.6%2C1%2C0.6c0.3%2C0%2C0.6-0.1%2C0.8-0.4c0.2-0.3%2C0.3-0.7%2C0.3-1.3c0-0.6-0.1-1.1-0.3-1.4c-0.2-0.3-0.5-0.4-0.9-0.4%0D%0A%09%09%09c-0.4%2C0-0.7%2C0.1-0.9%2C0.4C-111.3%2C411.8-111.4%2C412.2-111.4%2C412.8z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-103.2%2C413.9l1.5%2C0.2c-0.2%2C0.5-0.5%2C1-0.9%2C1.2s-0.9%2C0.4-1.5%2C0.4c-1%2C0-1.7-0.3-2.2-1c-0.4-0.5-0.6-1.2-0.6-1.9%0D%0A%09%09%09c0-0.9%2C0.2-1.7%2C0.7-2.2c0.5-0.5%2C1.1-0.8%2C1.8-0.8c0.8%2C0%2C1.5%2C0.3%2C2%2C0.8c0.5%2C0.6%2C0.7%2C1.4%2C0.7%2C2.5h-3.7c0%2C0.4%2C0.1%2C0.8%2C0.4%2C1%0D%0A%09%09%09c0.2%2C0.2%2C0.5%2C0.4%2C0.9%2C0.4c0.2%2C0%2C0.4-0.1%2C0.6-0.2C-103.4%2C414.4-103.3%2C414.2-103.2%2C413.9z%20M-103.2%2C412.4c0-0.4-0.1-0.8-0.3-1%0D%0A%09%09%09c-0.2-0.2-0.5-0.3-0.8-0.3c-0.3%2C0-0.6%2C0.1-0.8%2C0.4s-0.3%2C0.6-0.3%2C1H-103.2z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-99.3%2C415.7h-1.5v-5.6h1.4v0.8c0.2-0.4%2C0.4-0.6%2C0.6-0.7c0.2-0.1%2C0.4-0.2%2C0.6-0.2c0.3%2C0%2C0.7%2C0.1%2C1%2C0.3l-0.5%2C1.3%0D%0A%09%09%09c-0.3-0.2-0.5-0.2-0.7-0.2c-0.2%2C0-0.4%2C0.1-0.5%2C0.2s-0.3%2C0.3-0.3%2C0.6s-0.1%2C0.9-0.1%2C1.9V415.7z%22%2F%3E%0D%0A%09%3C%2Fg%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpath%20d%3D%22M-55.7%2C415.7h-1.7l-0.7-1.8h-3.1l-0.6%2C1.8h-1.7l3-7.8h1.7L-55.7%2C415.7z%20M-58.6%2C412.7l-1.1-2.9l-1%2C2.9H-58.6z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-50.2%2C411.8l-1.5%2C0.3c0-0.3-0.2-0.5-0.3-0.7c-0.2-0.1-0.4-0.2-0.7-0.2c-0.4%2C0-0.7%2C0.1-0.9%2C0.4c-0.2%2C0.3-0.3%2C0.7-0.3%2C1.3%0D%0A%09%09%09c0%2C0.7%2C0.1%2C1.1%2C0.3%2C1.4s0.5%2C0.4%2C0.9%2C0.4c0.3%2C0%2C0.5-0.1%2C0.7-0.2s0.3-0.4%2C0.4-0.8l1.5%2C0.2c-0.2%2C0.7-0.4%2C1.2-0.9%2C1.5%0D%0A%09%09%09c-0.4%2C0.3-1%2C0.5-1.7%2C0.5c-0.8%2C0-1.5-0.3-2-0.8c-0.5-0.5-0.7-1.2-0.7-2.2c0-0.9%2C0.2-1.7%2C0.7-2.2s1.2-0.8%2C2-0.8%0D%0A%09%09%09c0.7%2C0%2C1.2%2C0.1%2C1.6%2C0.4C-50.7%2C410.7-50.4%2C411.2-50.2%2C411.8z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-44.5%2C411.8l-1.5%2C0.3c0-0.3-0.2-0.5-0.3-0.7c-0.2-0.1-0.4-0.2-0.7-0.2c-0.4%2C0-0.7%2C0.1-0.9%2C0.4c-0.2%2C0.3-0.3%2C0.7-0.3%2C1.3%0D%0A%09%09%09c0%2C0.7%2C0.1%2C1.1%2C0.3%2C1.4s0.5%2C0.4%2C0.9%2C0.4c0.3%2C0%2C0.5-0.1%2C0.7-0.2s0.3-0.4%2C0.4-0.8l1.5%2C0.2c-0.2%2C0.7-0.4%2C1.2-0.9%2C1.5%0D%0A%09%09%09c-0.4%2C0.3-1%2C0.5-1.7%2C0.5c-0.8%2C0-1.5-0.3-2-0.8c-0.5-0.5-0.7-1.2-0.7-2.2c0-0.9%2C0.2-1.7%2C0.7-2.2s1.2-0.8%2C2-0.8%0D%0A%09%09%09c0.7%2C0%2C1.2%2C0.1%2C1.6%2C0.4C-44.9%2C410.7-44.7%2C411.2-44.5%2C411.8z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-44%2C412.8c0-0.5%2C0.1-1%2C0.4-1.4s0.6-0.8%2C1-1.1c0.4-0.2%2C0.9-0.4%2C1.5-0.4c0.8%2C0%2C1.5%2C0.3%2C2.1%2C0.8c0.5%2C0.6%2C0.8%2C1.2%2C0.8%2C2.1%0D%0A%09%09%09c0%2C0.8-0.3%2C1.6-0.8%2C2.1c-0.5%2C0.6-1.2%2C0.8-2.1%2C0.8c-0.5%2C0-1-0.1-1.5-0.3c-0.5-0.2-0.8-0.6-1.1-1C-43.8%2C414-44%2C413.5-44%2C412.8z%0D%0A%09%09%09%20M-42.4%2C412.9c0%2C0.6%2C0.1%2C1%2C0.4%2C1.3c0.3%2C0.3%2C0.6%2C0.4%2C1%2C0.4c0.4%2C0%2C0.7-0.1%2C1-0.4c0.3-0.3%2C0.4-0.7%2C0.4-1.3c0-0.5-0.1-1-0.4-1.3%0D%0A%09%09%09c-0.3-0.3-0.6-0.4-1-0.4c-0.4%2C0-0.7%2C0.1-1%2C0.4C-42.3%2C411.9-42.4%2C412.4-42.4%2C412.9z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-33.6%2C415.7v-0.8c-0.2%2C0.3-0.5%2C0.5-0.8%2C0.7c-0.3%2C0.2-0.7%2C0.3-1.1%2C0.3c-0.4%2C0-0.7-0.1-1-0.2c-0.3-0.2-0.5-0.4-0.7-0.7%0D%0A%09%09%09s-0.2-0.7-0.2-1.2v-3.6h1.5v2.6c0%2C0.8%2C0%2C1.3%2C0.1%2C1.5c0.1%2C0.2%2C0.2%2C0.3%2C0.3%2C0.4c0.1%2C0.1%2C0.3%2C0.2%2C0.6%2C0.2c0.3%2C0%2C0.5-0.1%2C0.7-0.2%0D%0A%09%09%09c0.2-0.1%2C0.3-0.3%2C0.4-0.5c0.1-0.2%2C0.1-0.7%2C0.1-1.5v-2.4h1.5v5.6H-33.6z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-25.8%2C415.7h-1.5v-2.9c0-0.6%2C0-1-0.1-1.2c-0.1-0.2-0.2-0.3-0.3-0.4c-0.1-0.1-0.3-0.1-0.5-0.1c-0.3%2C0-0.5%2C0.1-0.7%2C0.2%0D%0A%09%09%09c-0.2%2C0.1-0.3%2C0.3-0.4%2C0.6c-0.1%2C0.2-0.1%2C0.7-0.1%2C1.3v2.5h-1.5v-5.6h1.4v0.8c0.5-0.6%2C1.1-1%2C1.9-1c0.3%2C0%2C0.6%2C0.1%2C0.9%2C0.2%0D%0A%09%09%09s0.5%2C0.3%2C0.6%2C0.5c0.1%2C0.2%2C0.2%2C0.4%2C0.3%2C0.6c0.1%2C0.2%2C0.1%2C0.6%2C0.1%2C1V415.7z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-22%2C410.1v1.2h-1v2.3c0%2C0.5%2C0%2C0.7%2C0%2C0.8c0%2C0.1%2C0.1%2C0.1%2C0.1%2C0.2c0.1%2C0%2C0.2%2C0.1%2C0.3%2C0.1c0.1%2C0%2C0.3%2C0%2C0.6-0.1l0.1%2C1.2%0D%0A%09%09%09c-0.3%2C0.1-0.7%2C0.2-1.2%2C0.2c-0.3%2C0-0.5%2C0-0.7-0.1s-0.4-0.2-0.5-0.3c-0.1-0.1-0.2-0.3-0.2-0.6c0-0.2%2C0-0.5%2C0-1v-2.4h-0.7v-1.2h0.7%0D%0A%09%09%09V409l1.5-0.9v2H-22z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-18.5%2C415.7V408h1.5l3.2%2C5.2V408h1.5v7.8h-1.6l-3.1-5.1v5.1H-18.5z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-7.3%2C415.7v-0.8c-0.2%2C0.3-0.5%2C0.5-0.8%2C0.7c-0.3%2C0.2-0.7%2C0.3-1.1%2C0.3c-0.4%2C0-0.7-0.1-1-0.2c-0.3-0.2-0.5-0.4-0.7-0.7%0D%0A%09%09%09s-0.2-0.7-0.2-1.2v-3.6h1.5v2.6c0%2C0.8%2C0%2C1.3%2C0.1%2C1.5c0.1%2C0.2%2C0.2%2C0.3%2C0.3%2C0.4c0.1%2C0.1%2C0.3%2C0.2%2C0.6%2C0.2c0.3%2C0%2C0.5-0.1%2C0.7-0.2%0D%0A%09%09%09c0.2-0.1%2C0.3-0.3%2C0.4-0.5c0.1-0.2%2C0.1-0.7%2C0.1-1.5v-2.4h1.5v5.6H-7.3z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M-4.7%2C410.1h1.4v0.8c0.5-0.6%2C1.1-0.9%2C1.8-0.9c0.4%2C0%2C0.7%2C0.1%2C0.9%2C0.2s0.5%2C0.4%2C0.7%2C0.7c0.2-0.3%2C0.5-0.5%2C0.8-0.7%0D%0A%09%09%09c0.3-0.1%2C0.6-0.2%2C0.9-0.2c0.4%2C0%2C0.8%2C0.1%2C1%2C0.3c0.3%2C0.2%2C0.5%2C0.4%2C0.6%2C0.7c0.1%2C0.2%2C0.2%2C0.6%2C0.2%2C1.2v3.6H2.1v-3.2%0D%0A%09%09%09c0-0.6-0.1-0.9-0.2-1.1c-0.1-0.2-0.3-0.3-0.6-0.3c-0.2%2C0-0.4%2C0.1-0.6%2C0.2s-0.3%2C0.3-0.4%2C0.6s-0.1%2C0.6-0.1%2C1.2v2.7h-1.5v-3.1%0D%0A%09%09%09c0-0.5%2C0-0.9-0.1-1.1c-0.1-0.2-0.1-0.3-0.2-0.4c-0.1-0.1-0.3-0.1-0.5-0.1c-0.2%2C0-0.4%2C0.1-0.6%2C0.2c-0.2%2C0.1-0.3%2C0.3-0.4%2C0.5%0D%0A%09%09%09c-0.1%2C0.2-0.1%2C0.6-0.1%2C1.2v2.7h-1.5V410.1z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M4.7%2C415.7V408h1.5v2.8c0.5-0.5%2C1-0.8%2C1.6-0.8c0.7%2C0%2C1.2%2C0.2%2C1.7%2C0.7c0.4%2C0.5%2C0.7%2C1.2%2C0.7%2C2.1c0%2C1-0.2%2C1.7-0.7%2C2.2%0D%0A%09%09%09s-1%2C0.8-1.7%2C0.8c-0.3%2C0-0.6-0.1-0.9-0.2c-0.3-0.2-0.6-0.4-0.8-0.7v0.8H4.7z%20M6.2%2C412.8c0%2C0.6%2C0.1%2C1%2C0.3%2C1.3c0.3%2C0.4%2C0.6%2C0.6%2C1%2C0.6%0D%0A%09%09%09c0.3%2C0%2C0.6-0.1%2C0.8-0.4c0.2-0.3%2C0.3-0.7%2C0.3-1.3c0-0.6-0.1-1.1-0.3-1.4c-0.2-0.3-0.5-0.4-0.9-0.4c-0.4%2C0-0.7%2C0.1-0.9%2C0.4%0D%0A%09%09%09C6.3%2C411.8%2C6.2%2C412.2%2C6.2%2C412.8z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M14.4%2C413.9l1.5%2C0.2c-0.2%2C0.5-0.5%2C1-0.9%2C1.2c-0.4%2C0.3-0.9%2C0.4-1.5%2C0.4c-1%2C0-1.7-0.3-2.2-1c-0.4-0.5-0.6-1.2-0.6-1.9%0D%0A%09%09%09c0-0.9%2C0.2-1.7%2C0.7-2.2c0.5-0.5%2C1.1-0.8%2C1.8-0.8c0.8%2C0%2C1.5%2C0.3%2C2%2C0.8c0.5%2C0.6%2C0.7%2C1.4%2C0.7%2C2.5h-3.7c0%2C0.4%2C0.1%2C0.8%2C0.4%2C1%0D%0A%09%09%09s0.5%2C0.4%2C0.9%2C0.4c0.2%2C0%2C0.4-0.1%2C0.6-0.2S14.3%2C414.2%2C14.4%2C413.9z%20M14.4%2C412.4c0-0.4-0.1-0.8-0.3-1c-0.2-0.2-0.5-0.3-0.8-0.3%0D%0A%09%09%09c-0.3%2C0-0.6%2C0.1-0.8%2C0.4c-0.2%2C0.2-0.3%2C0.6-0.3%2C1H14.4z%22%2F%3E%0D%0A%09%09%3Cpath%20d%3D%22M18.3%2C415.7h-1.5v-5.6h1.4v0.8c0.2-0.4%2C0.4-0.6%2C0.6-0.7c0.2-0.1%2C0.4-0.2%2C0.6-0.2c0.3%2C0%2C0.7%2C0.1%2C1%2C0.3l-0.5%2C1.3%0D%0A%09%09%09c-0.3-0.2-0.5-0.2-0.7-0.2c-0.2%2C0-0.4%2C0.1-0.5%2C0.2s-0.3%2C0.3-0.3%2C0.6s-0.1%2C0.9-0.1%2C1.9V415.7z%22%2F%3E%0D%0A%09%3C%2Fg%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E%0D%0A") 0 0 no-repeat;
+}
+
+.responsive .dijitInputInner {
+  background-color: white !important;
+}
+
+.responsive .dijitSelect .dijitArrowButton,
+.responsive .dijitSelect .dijitArrowButtonContainer {
+  border: 0;
+  background: none;
+}
+
+.responsive .dijitSelect .dijitArrowButtonInner {
+  width: 100%;
+}
+
+.responsive .dijitReset.dijitInputField {
+  padding: 3px;
+}
+
+.responsive .dijitSelectLabel,
+.responsive .dijitValidationTextBox .dijitValidationContainer {
+  padding: 0;
+}
+
+.responsive .dijitTextBox {
+  background-color: transparent;
+}
+
+.responsive .dijitSelect input.dijitInputField,
+.responsive .dijitTextBox input.dijitInputField {
+  padding: .5em !important;
+}
+
+.responsive .dijitSelect td {
+  line-height: normal;
+}
+
+.responsive .dijitSelect .dijitArrowButtonInner,
+.responsive .dijitComboBox .dijitArrowButtonInner {
+  margin: auto;
+}
+
+.responsive .dijitInputContainer {
+  overflow: visible;
+}
+
+.responsive .securityCodeInput input.dijitInputInner {
+  width: 4.5em !important;
+}
+
+.responsive input.dijitReset.dijitInputField.dijitArrowButtonInner {
+  height: 40px !important;
+}
+
+.responsive .dijitHover .dijitReset,
+.responsive .dijitHover.dijitReset {
+  background: none;
+}
+
+.responsive .dijitTextBoxHover {
+  background: white;
+}
+
+.responsive .dijitHover .dijitReset.dijitInputInner {
+  background-color: white !important;
+}
+
+.responsive .dijitSelectHover {
+  background: none !important;
+}
+
+.responsive .fieldInput {
+  padding: 0 0 0 3px;
+}
+
+.responsive .pmtAcctMiniApp .errorAboveInput .fieldLabel {
+  margin-top: 9px;
+}
+
+.responsive .fieldInputError {
+  display: block;
+  font-size: 0.75em;
+  margin: 0 0 .5em;
+  color: #D32F2F;
+  font-weight: bold;
+  padding-left: 3px;
+}
+
+.responsive .dijitError .dijitInputInner,
+.responsive .dijitError input:not([type="radio"]),
+.responsive .dijitError textarea,
+.responsive .dijitError .check-radio-set,
+.responsive .dijitError .checkbox {
+  border-left: 4px solid #E00720 !important;
+}
+
+.responsive .dijitSelectError {
+  border-left: 4px solid #E00720 !important;
+}
+
+.responsive .dijitReset .dijitValidationContainer {
+  display: none;
+}
+
+.responsive .firstNameInput {
+  float: left;
+  width: 100%;
+  padding-right: 3.3em;
+}
+
+.responsive .middleInitialInput {
+  float: right;
+  margin-left: -2.75em;
+}
+
+.responsive .lastNameInput {
+  clear: both;
+  padding-top: 10px;
+}
+
+.responsive .cardNumberInput + img,
+.responsive .cardNumberInput + img + img,
+.responsive .cardNumberInput + img + img + img,
+.responsive .cardNumberInput + img + img + img + img {
+  max-width: 40px;
+  margin: 7px 5px 0 0;
+  max-height: 24px;
+}
+
+.responsive .middleInitialInput input {
+  width: 2.75em;
+}
+
+.responsive .securityCodeInput input {
+  width: 4.5em;
+}
+
+.responsive .pmtAcctMiniApp {
+  padding-top: 4px;
+}
+
+.responsive .pmtAcctMiniApp #middleInitial {
+  width: 100%;
+}
+
+@media (min-width: 650px) {
+  .responsive .pmtAcctMiniApp #widget_cardNumber {
+    max-width: 70%;
+    float: left;
+    margin-right: 10px;
+    display: inline-block;
+  }
+}
+
+.responsive #expirationMonth,
+.responsive #expirationYear {
+  position: relative;
+  float: left;
+  margin-right: 8px;
+  max-width: 45%;
+}
+
+.responsive #expirationMonth .dijitSelectLabel,
+.responsive #expirationYear .dijitSelectLabel {
+  position: absolute;
+  z-index: 1;
+  left: .7em;
+  top: 0;
+  line-height: 40px;
+}
+
+.responsive #expirationMonth .dijitButtonText:after,
+.responsive #expirationYear .dijitButtonText:after {
+  content: " ";
+  border-left: 1px solid #BBBDBF;
+  position: absolute;
+  top: 0;
+  height: 40px;
+  right: 40px;
+  z-index: 1;
+}
+
+.responsive #expirationMonth .dijitDownArrowButton,
+.responsive #expirationYear .dijitDownArrowButton {
+  position: relative;
+}
+
+.responsive #expirationYear .dijitDownArrowButton:before,
+.responsive #expirationYear .dijitDownArrowButton:after,
+.responsive #expirationMonth .dijitDownArrowButton:before,
+.responsive #expirationMonth .dijitDownArrowButton:after {
+  content: "\25BC";
+  color: #fff;
+  position: absolute;
+  top: 8px;
+  right: 13px;
+  transform: scaleY(0.6);
+}
+
+.responsive #expirationYear .dijitDownArrowButton:before,
+.responsive #expirationMonth .dijitDownArrowButton:before {
+  color: #000;
+  top: 11px;
+}
+
+.responsive #expirationYear .dijitArrowButtonInner,
+.responsive #expirationMonth .dijitArrowButtonInner {
+  color: transparent;
+}
+
+.responsive #widget_securityCode + div,
+.responsive #widget_securityCode + div + div {
+  font-size: 11px;
+  color: #6A6A6A;
+  height: 21px;
+  line-height: 21px;
+  margin: 10px 0;
+}
+
+.responsive #widget_securityCode + div img,
+.responsive #widget_securityCode + div + div img {
+  float: left;
+  margin: 0 .7em 0 0;
+}
+
+.responsive .pmtAcctMiniApp [disabled] {
+  opacity: .4;
+}
+
+@media (min-width: 30.3125em) {
+  .responsive #widget_securityCode {
+    float: left;
+    margin-right: -80px;
+  }
+  .responsive #widget_securityCode + div,
+  .responsive #widget_securityCode + div + div {
+    float: left;
+    margin-left: 90px;
+  }
+  .responsive .checkSample:after {
+    left: 40%;
+  }
+}
+
+.responsive .fieldLabel {
+  width: 100%;
+}
+
+.responsive .pmtAcctMiniApp #widget_firstName, .responsive .pmtAcctMiniApp #widget_eftFirstName {
+  width: 84%;
+  margin: 0 2% 0 0;
+  padding: 0;
+  float: left;
+}
+
+.responsive .pmtAcctMiniApp #widget_middleInitial, .responsive .pmtAcctMiniApp #widget_eftMiddleInitial {
+  width: 14%;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.responsive .pmtAcctMiniApp #widget_lastName, .responsive .pmtAcctMiniApp #widget_eftLastName {
+  width: 100%;
+  margin-top: .6em;
+  padding: 0;
+  float: left;
+  clear: both;
+}
+
+.responsive .dijitReset.dijitInputField {
+  padding: 0;
+}
+
+@media (min-width: 413px) {
+  .responsive .pmtAcctMiniApp #widget_firstName, .responsive .pmtAcctMiniApp #widget_eftFirstName {
+    width: 43%;
+    clear: none;
+  }
+  .responsive .pmtAcctMiniApp #widget_middleInitial, .responsive .pmtAcctMiniApp #widget_eftMiddleInitial {
+    width: 10%;
+    margin: 0 2% 0 0;
+    clear: none;
+  }
+  .responsive .pmtAcctMiniApp #widget_lastName, .responsive .pmtAcctMiniApp #widget_eftLastName {
+    width: 43%;
+    margin: 0;
+    float: left;
+    clear: none;
+  }
+}
+
+@media (min-width: 485px) {
+  .responsive .fieldLabel,
+  .responsive .fieldLabel + .fieldInput {
+    float: left;
+  }
+  .responsive .fieldLabel {
+    width: 40%;
+    padding-right: 1em;
+    margin-bottom: 0;
+  }
+  .responsive .fieldLabel + .fieldInput {
+    width: 60%;
+    max-width: none;
+  }
+}
+
+/*# sourceMappingURL=credit-card.css.map */

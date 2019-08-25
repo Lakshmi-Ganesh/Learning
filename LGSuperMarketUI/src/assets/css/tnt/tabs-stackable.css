@@ -1,0 +1,201 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.tabs-stackable {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.tabs-stackable .tab-state {
+  position: absolute;
+  left: -10000px;
+}
+
+.tabs-stackable .tab-state .hidden {
+  display: none;
+}
+
+.tabs-stackable .tab {
+  display: inline-block;
+  padding: 10px;
+  max-height: 40px;
+  margin-top: -1px;
+  vertical-align: top;
+  background-color: #eee;
+  cursor: pointer;
+  border: 1px solid #e6e7e8;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.tabs-stackable .tab:hover {
+  background-color: #fff;
+}
+
+.tabs-stackable .tab .hidden {
+  display: none;
+}
+
+.tabs-stackable .tab .qps-opt-price {
+  float: right;
+  font-size: .7em;
+  color: #1b75bb;
+}
+
+.tabs-stackable .tab .qps-opt-price sup {
+  line-height: 1.5em;
+}
+
+.tabs-stackable .tab .qps-opt-price b {
+  font-size: 1.6em;
+}
+
+.tabs-stackable .tab .icon-arrow-solid-right {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: relative;
+  background-position: left center;
+}
+
+.tabs-stackable .tab-title {
+  font-size: 1.125em;
+  font-weight: 700;
+}
+
+.tabs-stackable .tab-panel {
+  display: none;
+  padding: 0 12px;
+  min-height: 300px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e6e7e8;
+  border-top: 0;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.tabs-stackable .tab-panel .pg-subtitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.tabs-stackable .tab-panel .hidden {
+  display: none;
+}
+
+.tabs-stackable .tab-panel .quote {
+  margin-top: 12px;
+  padding: 15px;
+  border: 1px solid #e6e7e8;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.tabs-stackable input:nth-child(1):checked ~ label:nth-of-type(1),
+.tabs-stackable input:nth-child(2):checked ~ label:nth-of-type(2),
+.tabs-stackable input:nth-child(3):checked ~ label:nth-of-type(3) {
+  background-color: #fff;
+  border-bottom: 0;
+}
+
+.tabs-stackable input:nth-child(1):checked ~ label:nth-of-type(1) .icon,
+.tabs-stackable input:nth-child(2):checked ~ label:nth-of-type(2) .icon,
+.tabs-stackable input:nth-child(3):checked ~ label:nth-of-type(3) .icon {
+  -webkit-transition: .1s -webkit-transform ease-out;
+  transition: .1s transform ease-out;
+  -webkit-transform-origin: 28% 46%;
+  transform-origin: 28% 46%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.tabs-stackable input:nth-child(1):checked ~ section:nth-of-type(1),
+.tabs-stackable input:nth-child(2):checked ~ section:nth-of-type(2),
+.tabs-stackable input:nth-child(3):checked ~ section:nth-of-type(3) {
+  display: block;
+}
+
+.tabs-stackable .coverage-item-header {
+  background: transparent;
+}
+
+@media (max-width: 670px) {
+  .tabs-stackable {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .tabs-stackable .tab {
+    background: #fff;
+  }
+  .tabs-stackable .tab-panel {
+    width: auto;
+  }
+  .tabs-stackable label:nth-of-type(1) {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .tabs-stackable label:nth-of-type(2) {
+    -ms-flex-order: 3;
+    order: 3;
+  }
+  .tabs-stackable label:nth-of-type(3) {
+    -ms-flex-order: 5;
+    order: 5;
+  }
+  .tabs-stackable section:nth-of-type(1) {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .tabs-stackable section:nth-of-type(2) {
+    -ms-flex-order: 4;
+    order: 4;
+  }
+  .tabs-stackable section:nth-of-type(3) {
+    -ms-flex-order: 6;
+    order: 6;
+  }
+}
+
+@media (min-width: 670px) {
+  .tabs-stackable input:nth-child(1).open-on-load ~ label:nth-of-type(1),
+  .tabs-stackable input:nth-child(2).open-on-load ~ label:nth-of-type(2),
+  .tabs-stackable input:nth-child(3).open-on-load ~ label:nth-of-type(3) {
+    background-color: #fff;
+    border-bottom: 0;
+  }
+  .tabs-stackable input:nth-child(1).open-on-load ~ label:nth-of-type(1) .icon,
+  .tabs-stackable input:nth-child(2).open-on-load ~ label:nth-of-type(2) .icon,
+  .tabs-stackable input:nth-child(3).open-on-load ~ label:nth-of-type(3) .icon {
+    transition: .1s transform ease-out;
+    transform-origin: 28% 46%;
+    transform: rotate(90deg);
+  }
+  .tabs-stackable input:nth-child(1).open-on-load ~ section:nth-of-type(1),
+  .tabs-stackable input:nth-child(2).open-on-load ~ section:nth-of-type(2),
+  .tabs-stackable input:nth-child(3).open-on-load ~ section:nth-of-type(3) {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=tabs-stackable.css.map */

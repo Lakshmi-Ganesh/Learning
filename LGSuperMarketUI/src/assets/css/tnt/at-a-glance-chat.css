@@ -1,0 +1,55 @@
+/*!v.2.42.0*/
+/* Width & spacing variables normalize margins */
+/* Use custom bold on text 14px or larger */
+/* Hide content in an accessible way */
+/* Animations - apply as sass includes to classes in the markup */
+/* page transitions */
+/* SASS extend usage:
+.selector {
+	@extend %clearfix;
+} */
+/* Shared collapsible styles */
+/* for collapsibles auto-expanded at larger breakpoints: */
+.pane-at-a-glance .chatprompt {
+  display: none;
+}
+
+.pane-at-a-glance .chat {
+  width: 50px;
+  height: 50px;
+  right: calc(1vw);
+  bottom: 15px;
+  padding: 5px 10px;
+  z-index: 3;
+  position: fixed;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20width%3D%2256%22%20height%3D%2256%22%20viewBox%3D%220%200%2056%2056%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22floating_chat-c%22%20x1%3D%2250%25%22%20x2%3D%2250%25%22%20y1%3D%220%25%22%20y2%3D%22100%25%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FFF%22%20stop-opacity%3D%22.12%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2220%25%22%20stop-color%3D%22%23FFF%22%20stop-opacity%3D%22.06%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23FFF%22%20stop-opacity%3D%220%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3Ccircle%20id%3D%22floating_chat-b%22%20cx%3D%2228%22%20cy%3D%2228%22%20r%3D%2228%22/%3E%0A%20%20%20%20%3Cfilter%20id%3D%22floating_chat-a%22%20width%3D%22142.9%25%22%20height%3D%22142.9%25%22%20x%3D%22-21.4%25%22%20y%3D%22-21.4%25%22%20filterUnits%3D%22objectBoundingBox%22%3E%0A%20%20%20%20%20%20%3CfeOffset%20in%3D%22SourceAlpha%22%20result%3D%22shadowOffsetOuter1%22/%3E%0A%20%20%20%20%20%20%3CfeGaussianBlur%20in%3D%22shadowOffsetOuter1%22%20result%3D%22shadowBlurOuter1%22%20stdDeviation%3D%224%22/%3E%0A%20%20%20%20%20%20%3CfeComposite%20in%3D%22shadowBlurOuter1%22%20in2%3D%22SourceAlpha%22%20operator%3D%22out%22%20result%3D%22shadowBlurOuter1%22/%3E%0A%20%20%20%20%20%20%3CfeColorMatrix%20in%3D%22shadowBlurOuter1%22%20values%3D%220%200%200%200%200%20%20%200%200%200%200%200%20%20%200%200%200%200%200%20%200%200%200%200.12%200%22/%3E%0A%20%20%20%20%3C/filter%3E%0A%20%20%3C/defs%3E%0A%20%20%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%0A%20%20%20%20%3Cuse%20fill%3D%22%23000%22%20filter%3D%22url%28%23floating_chat-a%29%22%20xlink%3Ahref%3D%22%23floating_chat-b%22/%3E%0A%20%20%20%20%3Cuse%20fill%3D%22%235381AC%22%20xlink%3Ahref%3D%22%23floating_chat-b%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2228%22%20cy%3D%2228%22%20r%3D%2227.75%22%20stroke%3D%22url%28%23floating_chat-c%29%22%20stroke-width%3D%22.5%22/%3E%0A%20%20%20%20%3Cg%20transform%3D%22translate%2816.602%2019.772%29%22%3E%0A%20%20%20%20%20%20%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M1.89190815%2C-7.10542736e-15%20L19.337966%2C-7.10542736e-15%20C20.143759%2C-7.10542736e-15%2020.8028891%2C0.787886483%2020.8028891%2C1.75100097%20L20.8028891%2C12.077089%20C20.8028891%2C13.0406298%2020.143759%2C13.8285163%2019.337966%2C13.8285163%20L16.1587076%2C13.8285163%20L16.1587076%2C17.8651555%20L13.0182467%2C13.8285163%20L1.89190815%2C13.8285163%20C1.08568881%2C13.8285163%200.426132327%2C13.0406298%200.426132327%2C12.077089%20L0.426132327%2C1.75100097%20C0.426132327%2C0.787886483%201.08568881%2C-7.10542736e-15%201.89190815%2C-7.10542736e-15%22/%3E%0A%20%20%20%20%20%20%3Cpath%20stroke%3D%22%23FFF%22%20stroke-width%3D%222%22%20d%3D%22M1.89190815%2C-7.10542736e-15%20L19.337966%2C-7.10542736e-15%20C20.143759%2C-7.10542736e-15%2020.8028891%2C0.787886483%2020.8028891%2C1.75100097%20L20.8028891%2C12.077089%20C20.8028891%2C13.0406298%2020.143759%2C13.8285163%2019.337966%2C13.8285163%20L16.1587076%2C13.8285163%20L16.1587076%2C17.8651555%20L13.0182467%2C13.8285163%20L1.89190815%2C13.8285163%20C1.08568881%2C13.8285163%200.426132327%2C13.0406298%200.426132327%2C12.077089%20L0.426132327%2C1.75100097%20C0.426132327%2C0.787886483%201.08568881%2C-7.10542736e-15%201.89190815%2C-7.10542736e-15%20Z%22/%3E%0A%20%20%20%20%3C/g%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: .9;
+  transition: opacity, transform .2s ease-in-out;
+}
+
+.pane-at-a-glance .chat:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.pane-at-a-glance .chat img {
+  display: none;
+}
+
+.pane-at-a-glance #dialog-coverages-chatbot iframe {
+  padding: 2px;
+  width: 100%;
+  height: 516px;
+  border-width: 0;
+}
+
+@media (min-width: 1020px) {
+  .pane-at-a-glance .chat {
+    right: calc( 0.5 * 100vw - 440px);
+  }
+}
+
+/*# sourceMappingURL=at-a-glance-chat.css.map */

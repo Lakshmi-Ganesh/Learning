@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "label-instruct.css",
+	"sources": [
+		"../../../../assets/css/tnt/label-instruct.scss",
+		"../../../../assets/css/_mixins.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,oBAAoB;AC8FpB,iDAAiD;AAuDhD,4CAA4C;AAwB7C,uCAAuC;AAiBvC,kEAAkE;AA0ClE,sBAAsB;AAYtB;;;IAGI;AAiCJ,+BAA+B;AAiD/B,2DAA2D;ADtU3D,AAAA,eAAe,CAAC;EACd,MAAM,EAAE,MAAM;EACd,SAAS,ECOF,MAAM;CDHd;;AAHC,MAAM,EAAE,SAAS,EAAE,MAAM;EAH3B,AAAA,eAAe,CAAC;IAIZ,MAAM,EAAE,OAAO;GAElB"
+}

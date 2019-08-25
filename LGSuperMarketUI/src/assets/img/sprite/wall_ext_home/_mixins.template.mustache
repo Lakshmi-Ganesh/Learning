@@ -1,0 +1,149 @@
+{
+'functions': true
+}
+
+$sprite: (
+{{#items}}
+	{{name}}: (
+	offset-x: {{px.offset_x}},
+	offset-y: {{px.offset_y}},
+	width: {{px.width}},
+	height: {{px.height}},
+	total-width: {{px.total_width}},
+	total-height: {{px.total_height}},
+	image: '{{{escaped_image}}}'
+	),
+{{/items}}
+);
+
+{{#options.functions}}
+
+	@mixin sprite-size($image) {
+	background-size: map-get(map-get($sprite, $image), 'total-width') map-get(map-get($sprite, $image), 'total-height');
+	}
+
+	@mixin sprite-width($image) {
+	width: map-get(map-get($sprite, $image), 'width');
+	}
+
+	@mixin sprite-height($image) {
+	height: map-get(map-get($sprite, $image), 'height');
+	}
+
+	@mixin sprite-position($image) {
+	background-position: map-get(map-get($sprite, $image), 'offset-x') map-get(map-get($sprite, $image), 'offset-y');
+	}
+
+	@mixin sprite-image($image) {
+	background-image: url(map-get(map-get($sprite, $image), 'image'));
+	}
+
+	@mixin sprite-image-retina($image) {
+	$image-path: map-get(map-get($sprite, $image), 'image');
+	$image-path-retina: str-slice($image-path, 1, str-index($image-path, '.png') - 1) + '@2x.png';
+
+	background-image: url($image-path-retina);
+	}
+
+	@mixin wall-sprite-home($image, $size: true) {
+	@include sprite-image($image);
+	@include sprite-position($image);
+	background-repeat: no-repeat;
+
+	@if $size {
+	@include sprite-width($image);
+	@include sprite-height($image);
+	}
+
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) {
+
+	@include sprite-size($image);
+	@include sprite-image-retina($image);
+
+	}
+	}
+
+
+	.ext-wall-home {
+	.high-quality-solid-stone-12 { @include wall-sprite-home(high-quality-solid-stone-12); }
+	.solid-stone-12 { @include wall-sprite-home(solid-stone-12); }
+	.high-quality-solid-stone-18 { @include wall-sprite-home(high-quality-solid-stone-18); }
+	.solid-stone-18 { @include wall-sprite-home(solid-stone-18); }
+	.concrete-walls-4-6 { @include wall-sprite-home(concrete-walls-4-6); }
+	.adobe { @include wall-sprite-home(adobe); }
+	.adobe-with-stucco { @include wall-sprite-home(adobe-with-stucco); }
+	.aluminum-on-masonry { @include wall-sprite-home(aluminum-on-masonry); }
+	.aluminum-siding { @include wall-sprite-home(aluminum-siding); }
+	.barn-plank-siding { @include wall-sprite-home(barn-plank-siding); }
+	.breakaway-wall-lattice-on-frame { @include wall-sprite-home(breakaway-wall-lattice-on-frame); }
+	.brick-and-block { @include wall-sprite-home(brick-and-block); }
+	.brick-and-block-high-quality { @include wall-sprite-home(brick-and-block-high-quality); }
+	.brick-veneer { @include wall-sprite-home(brick-veneer); }
+	.brick-veneer-high-quality { @include wall-sprite-home(brick-veneer-high-quality); }
+	.cedar-logs-high-quality { @include wall-sprite-home(cedar-logs-high-quality); }
+	.cement-fiber-shingle { @include wall-sprite-home(cement-fiber-shingle); }
+	.cement-fiber-shingles-on-masonry { @include wall-sprite-home(cement-fiber-shingles-on-masonry); }
+	.cement-fiber-siding { @include wall-sprite-home(cement-fiber-siding); }
+	.cement-fiber-siding-on-masonry { @include wall-sprite-home(cement-fiber-siding-on-masonry); }
+	.clapboard-on-masonry { @include wall-sprite-home(clapboard-on-masonry); }
+	.clapboard-siding { @include wall-sprite-home(clapboard-siding); }
+	.concrete-block-painted { @include wall-sprite-home(concrete-block-painted); }
+	.ext-insulation-and-finish-system { @include wall-sprite-home(ext-insulation-and-finish-system); }
+	.faux-panel { @include wall-sprite-home(faux-panel); }
+	.faux-panel-custom { @include wall-sprite-home(faux-panel-custom); }
+	.greenhouse-wall { @include wall-sprite-home(greenhouse-wall); }
+	.hardboard-on-masonry { @include wall-sprite-home(hardboard-on-masonry); }
+	.hardboard-siding { @include wall-sprite-home(hardboard-siding); }
+	.logs { @include wall-sprite-home(logs); }
+	.new-england-shingle { @include wall-sprite-home(new-england-shingle); }
+	.new-england-shingle-on-masonry { @include wall-sprite-home(new-england-shingle-on-masonry); }
+	.painted-decorative-block { @include wall-sprite-home(painted-decorative-block); }
+	.placeholder { @include wall-sprite-home(placeholder); }
+	.plywood-siding { @include wall-sprite-home(plywood-siding); }
+	.poured-in-place-concrete { @include wall-sprite-home(poured-in-place-concrete); }
+	.redwood-clapboard-siding { @include wall-sprite-home(redwood-clapboard-siding); }
+	.siding-vinyl-shake-shingle { @include wall-sprite-home(siding-vinyl-shake-shingle); }
+	.siding-vinyl-shake-shingle-on-masonry { @include wall-sprite-home(siding-vinyl-shake-shingle-on-masonry); }
+	.slump-block { @include wall-sprite-home(slump-block); }
+	.solid-brick { @include wall-sprite-home(solid-brick); }
+	.solid-brick-high-quality { @include wall-sprite-home(solid-brick-high-quality); }
+	.solid-brownstone { @include wall-sprite-home(solid-brownstone); }
+	.solid-logs { @include wall-sprite-home(solid-logs); }
+	.solid-stone { @include wall-sprite-home(solid-stone); }
+	.solid-stone-high-quality { @include wall-sprite-home(solid-stone-high-quality); }
+	.steel-on-masonry { @include wall-sprite-home(steel-on-masonry); }
+	.steel-siding { @include wall-sprite-home(steel-siding); }
+	.stone-and-block { @include wall-sprite-home(stone-and-block); }
+	.stone-and-block-high-quality { @include wall-sprite-home(stone-and-block-high-quality); }
+	.stone-veneer { @include wall-sprite-home(stone-veneer); }
+	.stone-veneer-high-quality { @include wall-sprite-home(stone-veneer-high-quality); }
+	.stucco-on-frame { @include wall-sprite-home(stucco-on-frame); }
+	.stucco-on-masonry { @include wall-sprite-home(stucco-on-masonry); }
+	.t-111-siding { @include wall-sprite-home(t-111-siding); }
+	.unreinforced-masonry-breakaway-wall { @include wall-sprite-home(unreinforced-masonry-breakaway-wall); }
+	.victorian-scalloped-shakes { @include wall-sprite-home(victorian-scalloped-shakes); }
+	.vinyl-on-masonry { @include wall-sprite-home(vinyl-on-masonry); }
+	.vinyl-or-plastic-siding { @include wall-sprite-home(vinyl-or-plastic-siding); }
+	.window-wall { @include wall-sprite-home(window-wall); }
+	.wood-shakes { @include wall-sprite-home(wood-shakes); }
+	.wood-siding { @include wall-sprite-home(wood-siding); }
+	.wood-siding-on-masonry { @include wall-sprite-home(wood-siding-on-masonry);}
+	img {
+	width: 40px;
+	height: 34px;
+	}
+
+	.mini-thumbnail img {
+	width: 20px;
+	height: 16px;
+	}
+	}
+
+
+{{/options.functions}}
